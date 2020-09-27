@@ -2,7 +2,7 @@ User Stories
 
 As an event organiser, I want to post my free event so that I can allocate tickets on the website.
 
-As a somebody interested in attending free events, I want to browse events so that I can buy tickets to events I like
+As a somebody interested in attending free events, I want to browse events so that I can acquire tickets to events I like
 
 
 
