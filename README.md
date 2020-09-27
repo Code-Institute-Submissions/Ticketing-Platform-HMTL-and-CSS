@@ -1,41 +1,64 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+User Stories
 
-Welcome USER_NAME,
+As an event organiser, I want to post my free event so that I can allocate tickets on the website.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+As a somebody interested in attending free events, I want to browse events so that I can buy tickets to events I like
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
+Strategy
 
-Another blue button should appear to click: *Open Browser*.
+Build a website that allows event organisers to post free events and allows people to get free tickets to attend these events.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Scope 
 
-A blue button should appear to click: *Make Public*,
+Current Version:
 
-Another blue button should appear to click: *Open Browser*.
+Event organisers can post their events. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+Event organisers can offer three ticket types (morning, afternoon, evening etc.) for each event.
 
-## Updates Since The Instructional Video
+Event organisers can decide whether to allow refunds
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+Customers can purchase tickets online.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Future Version:
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Integration with Stripe to take credit card payments.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Event organisers can charge for tickets.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+User accounts can be created.
 
---------
+Customer credit card details can be saved for future use.
 
-Happy coding!
+Event organisers can sell as many or as few ticket types (early bird, general admission, back-stage access etc.) as they want.
+
+Event organisers can decide when each ticket type will start and stop selling. They can choose to allow tickets to start selling at a specific date or time or when another specific ticket type is sold out.
+
+When an event is sold out, customers can choose to store their credit card details to be charged if another customer requests a refund.
+
+Event organisers can decide to only allow refunds if another customer has saved their credit card details and is waiting to buy the ticket.
+
+Event organisers can re-sell refunded tickets for a higher price.
+
+
+Structure
+
+The homepage lists all upcoming events. Potential customers can click into each of these events.
+
+The Nav bar contains a link to a page to create an event and also back to the home page.
+
+Skeleton
+
+
+
+Surface
+
+Colors based on www.rte.ie/news
+
+Tickets based on https://codepen.io/verpixelt/pen/cEJLa 
+
+
