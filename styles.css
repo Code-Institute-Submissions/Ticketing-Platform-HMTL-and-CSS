@@ -1,8 +1,13 @@
 
+
+
+
 *{
     margin: 0;
     padding: 0;
     background-color:#eeecec;
+    /* font-family: 'Bitter', serif; */
+    font-family: 'Nunito', sans-serif;
 }
 
 a {
