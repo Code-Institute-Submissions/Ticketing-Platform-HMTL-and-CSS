@@ -112,6 +112,8 @@ h3, h5, h6 {
     display: inline-block;
     background-color: #ffff;
     text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* .detailsContainer h5 {
@@ -133,9 +135,9 @@ h3, h5, h6 {
   .eventSummaryContainer img {
     border-radius: 5px;
     max-width: 50%;
-    max-height: 125px;
+    max-height: 155px;
     margin: 2% 2%;
-    margin-right: 0.5%;
+  
   }
 
   .eventSummaryContainer h3 {
@@ -148,8 +150,9 @@ h3, h5, h6 {
   } 
 
   .detailsContainer{
-      margin-left: 10%;
+      margin-left: 7%;
       font-size: 100%;
+      margin-right: 0;
   }
 
 
