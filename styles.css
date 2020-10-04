@@ -59,7 +59,7 @@ h3, h5, h6 {
 .eventSummaryContainer{
 
     margin: 0 auto;
-    margin-top: 3%;
+    margin-top: 5%;
     background-color: #ffff;
     width: 80vw;
     border-radius: 5px;
@@ -71,7 +71,7 @@ h3, h5, h6 {
 
 .eventSummaryContainer img{
     margin-top: 2%;
-    margin-bottom: 1.5%;
+    margin-bottom: 0%;
     max-width: 94%;
     height: 300px;
     background-color: #ffff;
@@ -80,19 +80,23 @@ h3, h5, h6 {
 
 .eventSummaryContainer p {
     background-color: #ffff;
-    font-size: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    font-size: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #8f897c
 }
 
 .eventSummaryContainer h3 {
     font-size: 200%;
+    margin: 10px 0px;
 }
 
-.eventSummaryContainer h5 {
-    margin-top: 5px;
+.eventSummaryContainer h5{
+    margin-top: 10px;
+    font-size: 70%;
 }
+
+
 
 .eventSummaryContainer i {
     background-color: #ffff;
@@ -105,18 +109,25 @@ h3, h5, h6 {
 }
 
 .detailsContainer {
+    display: inline-block;
     background-color: #ffff;
+    text-align: left;
 }
+
+/* .detailsContainer h5 {
+    text-align: left;
+} */
 
 @media only screen and (min-width: 700px) {
 
   .eventSummaryContainer{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     text-align: left;
     width: 90vw;
     max-width: 800px;
+    margin-top: 30px;
  }
 
   .eventSummaryContainer img {
@@ -129,15 +140,16 @@ h3, h5, h6 {
 
   .eventSummaryContainer h3 {
       font-size: 200%;
+      margin-bottom: 5%
   } 
 
   .eventSummaryContainer h5 {
-      margin-bottom: 2%;
+      margin-bottom: 4%;
   } 
 
   .detailsContainer{
-      margin: 0 auto;
-      font-size: 133%;
+      margin-left: 10%;
+      font-size: 100%;
   }
 
 
