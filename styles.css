@@ -61,7 +61,7 @@ h3, h5, h6 {
     margin: 0 auto;
     margin-top: 5%;
     background-color: #ffff;
-    width: 80vw;
+    width: 95vw;
     border-radius: 5px;
     color: #293d6a;
     text-align: center;
@@ -72,8 +72,8 @@ h3, h5, h6 {
 .eventSummaryContainer img{
     margin-top: 2%;
     margin-bottom: 0%;
-    max-width: 94%;
-    height: 300px;
+    max-width: 96%;
+    height: 200px;
     background-color: #ffff;
     border-radius: 5px;
 }
