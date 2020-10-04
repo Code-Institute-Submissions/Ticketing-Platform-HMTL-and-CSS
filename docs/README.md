@@ -106,6 +106,14 @@ Acknowledgements:
 ======
 My Code Institute Mentor, Rohit
 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+
+pics from unsplash:
+https://unsplash.com/photos/hzgs56Ze49s
+https://unsplash.com/photos/3ckWUnaCxzc
+https://unsplash.com/photos/juHayWuaaoQ
+
 
 
 
