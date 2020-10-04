@@ -50,11 +50,16 @@ nav a:hover {
 }
 
 
-h1{
+.eventSummaryContainer{
+
+    margin: 0 auto;
+    margin-top: 3%;
     background-color: #ffff;
     width: 80vw;
-    margin: 10px;
+    height: 500px;
     border-radius: 5px;
     color: #293d6a;
+    text-align: center;
+    border: 1px solid red;
 
 }
