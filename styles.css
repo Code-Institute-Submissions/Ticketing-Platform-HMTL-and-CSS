@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color:#eeecec;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav {
+    padding: 10px;
+    background-color: #293d6a;
+}
+
+nav ul{
+    background-color: #293d6a;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav li {
+    background-color: #293d6a;
+}
+
+nav a, nav a:visited {
+    background-color: #293d6a;
+    color: #ffff;
+    font-weight: bold;
+}
+
+h1{
+    background-color: #ffff;
+    width: 80vw;
+    margin: 10px;
+    border-radius: 5px;
+    color: #293d6a;
+
+}
