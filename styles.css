@@ -57,22 +57,32 @@ h3, h5, h6 {
 
 
 .eventSummaryContainer{
-
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    justify-content: center;
     margin: 0 auto;
     margin-top: 5%;
     background-color: #ffff;
     width: 95vw;
     border-radius: 5px;
     color: #293d6a;
-    text-align: center;
+    
     border: 1px solid #8f897c;
 
 }
 
+.detailsContainer {
+    background-color: #ffff;
+    margin: 1px;
+}
+
+
+
 .eventSummaryContainer img{
     margin-top: 2%;
     margin-bottom: 0%;
-    max-width: 96%;
+    max-width: 100%;
     height: 200px;
     background-color: #ffff;
     border-radius: 5px;
@@ -87,15 +97,10 @@ h3, h5, h6 {
 }
 
 .eventSummaryContainer h3 {
-    font-size: 200%;
-    margin: 10px 0px;
+    font-size: 180%;
+    margin: 13px 0px;
+    margin-bottom: 16px;
 }
-
-.eventSummaryContainer h5{
-    margin-top: 10px;
-    font-size: 70%;
-}
-
 
 
 .eventSummaryContainer i {
@@ -108,52 +113,51 @@ h3, h5, h6 {
     cursor: pointer;
 }
 
-.detailsContainer {
-    display: inline-block;
-    background-color: #ffff;
-    text-align: left;
-    margin-left: 10px;
-    margin-right: 10px;
+@media only screen and (min-width: 400px) {
+
+    .eventSummaryContainer{
+        width: 80vw;
+    }
+
 }
 
-/* .detailsContainer h5 {
-    text-align: left;
-} */
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
 
   .eventSummaryContainer{
-    display: flex;
+    display: block;
+    color: red;
+    /* flex-direction: row;
     align-items: center;
-    justify-content: left;
-    text-align: left;
+    justify-content: left; */
+    /* text-align: left;
     width: 90vw;
     max-width: 800px;
-    margin-top: 30px;
+    margin-top: 30px; */
  }
 
   .eventSummaryContainer img {
-    border-radius: 5px;
+    /* border-radius: 5px;
     max-width: 50%;
     max-height: 155px;
-    margin: 2% 2%;
+    margin: 2% 2%; */
   
   }
 
   .eventSummaryContainer h3 {
-      font-size: 200%;
-      margin-bottom: 5%
+      /* font-size: 200%;
+      margin-bottom: 11% */
   } 
 
-  .eventSummaryContainer h5 {
-      margin-bottom: 4%;
-  } 
+
 
   .detailsContainer{
-      margin-left: 7%;
+      /* margin-left: 7%;
       font-size: 100%;
-      margin-right: 0;
+      margin-right: 0; */
   }
+
+
 
 
 }
