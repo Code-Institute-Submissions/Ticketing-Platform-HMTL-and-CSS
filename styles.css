@@ -145,6 +145,12 @@ footer {
     
 }
 
+footer a {
+    background-color: #fefefe;
+    color:inherit;
+
+}
+
 
 .copyright, footer i {
        background-color: #fefefe; 
