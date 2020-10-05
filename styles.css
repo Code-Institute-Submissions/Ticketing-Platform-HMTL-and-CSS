@@ -67,7 +67,7 @@ h3, h5, h6 {
     max-width: 375px;
     border-radius: 5px;
     color: #293d6a;
-    
+    transition: transform 0.1s;
     border: 1px solid #8f897c;
 
 }
@@ -75,6 +75,7 @@ h3, h5, h6 {
 .detailsContainer {
     background-color: #ffff;
     margin: 7px;
+    
 }
 
 
@@ -111,6 +112,7 @@ h3, h5, h6 {
 .eventSummaryContainer:hover{
     border: 1px solid #293d6a;
     cursor: pointer;
+    transform: scale(1.03); 
 }
 
   .textContainer{
