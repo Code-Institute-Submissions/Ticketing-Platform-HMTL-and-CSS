@@ -61,10 +61,11 @@ h3, h5, h6 {
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: #ffff;
     width: 95vw;
-    max-width: 375px;
+    max-width: 350px;
     border-radius: 5px;
     color: #293d6a;
     transition: transform 0.1s;
@@ -92,8 +93,8 @@ h3, h5, h6 {
 .eventSummaryContainer p {
     background-color: #ffff;
     font-size: 60%;
-    margin-top: 24px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 7px;
     color: #8f897c
 }
 
@@ -139,17 +140,21 @@ h3, h5, h6 {
     */
  }
 
+ .eventSummaryContainer + .eventSummaryContainer{
+     margin-top: 15px;
+ }
+
    .detailsContainer{
        /* display: grid;
        grid-template-columns: 1fr 1fr; */
        display: flex;
        flex-direction: row;
-   
+        margin: 2px;
         align-items: center;
   }
 
   .eventSummaryContainer img {   
-      margin: 2%;
+      margin: 0%;
       max-width: 33%;
       height: 175px;
   }
@@ -158,6 +163,10 @@ h3, h5, h6 {
         margin-top: 2%;
         margin-bottom: 35px;
     }
+  .eventSummaryContainer p {
+    font-size: 70%;
+    margin-bottom: 9px
+  }
 
   .textContainer{
     margin-left: 10%
@@ -166,6 +175,9 @@ h3, h5, h6 {
   .ticketsRemaining {
       margin-bottom: 0;
   }
+
+
+
 
 
 
