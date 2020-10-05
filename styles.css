@@ -10,6 +10,12 @@
     font-family: 'Nunito', sans-serif;
 }
 
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
 a {
     text-decoration: none;
 }
@@ -116,11 +122,82 @@ h3, h5, h6 {
     transform: scale(1.03); 
 }
 
-  .textContainer{
+.textContainer{
 
     background-color: #ffff;
 
-  }
+}
+
+.contentWrapper{
+    padding-bottom: 2.5rem; 
+}
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+    background-color: #fefefe;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+.copyright, footer i {
+       background-color: #fefefe; 
+}
+
+.copyright {
+    font-size: 50%;
+}
+
+footer i{
+    transition: transform 0.5s;
+}
+
+footer i:hover{
+    transform: scale(2); 
+}
+
+/* code from https://codepen.io/thomasrye/pen/VaRoYv */
+
+.fa-instagram:hover{
+  /* display: inline-block; */
+  /* width: 110%;
+  height: 110%; */
+  /* text-align: center; */
+  border-radius: 40px;
+  color: #fff;
+  padding: 1px;
+  /* font-size: 220px; */
+  /* line-height: 250px; */
+  /* vertical-align: middle; */
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  /* box-shadow: 0px 3px 10px rgba(0,0,0,.25); */
+}
+
+/* color from https://encycolorpedia.com/3b5998 */
+
+.fa-facebook-f:hover{
+    color: #3b5998;
+}
+
+/* color from https://encycolorpedia.com/00acee */
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+/* color from https://encycolorpedia.com/0e76a8 */
+
+.fa-linkedin-in:hover {
+    color: #0e76a8;
+}
+
 
 
 
