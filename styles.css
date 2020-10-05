@@ -59,12 +59,12 @@ h3, h5, h6 {
 .eventSummaryContainer{
     display: flex;
     flex-direction: row;
-    /* text-align: center; */
     justify-content: center;
     margin: 0 auto;
     margin-top: 5%;
     background-color: #ffff;
     width: 95vw;
+    max-width: 375px;
     border-radius: 5px;
     color: #293d6a;
     
@@ -113,49 +113,63 @@ h3, h5, h6 {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 400px) {
+  .textContainer{
 
-    .eventSummaryContainer{
-        width: 80vw;
-    }
+    background-color: #ffff;
 
-}
+  }
 
 
-@media only screen and (min-width: 800px) {
+
+
+@media only screen and (min-width: 700px) {
 
   .eventSummaryContainer{
     display: block;
-    color: red;
+    max-width: 800px;
+    margin-top: 30px; 
     /* flex-direction: row;
     align-items: center;
     justify-content: left; */
     /* text-align: left;
     width: 90vw;
-    max-width: 800px;
-    margin-top: 30px; */
+
+    */
  }
 
-  .eventSummaryContainer img {
-    /* border-radius: 5px;
-    max-width: 50%;
-    max-height: 155px;
-    margin: 2% 2%; */
-  
+   .detailsContainer{
+       /* display: grid;
+       grid-template-columns: 1fr 1fr; */
+       display: flex;
+       flex-direction: row;
+   
+        align-items: center;
   }
 
-  .eventSummaryContainer h3 {
-      /* font-size: 200%;
-      margin-bottom: 11% */
-  } 
-
-
-
-  .detailsContainer{
-      /* margin-left: 7%;
-      font-size: 100%;
-      margin-right: 0; */
+  .eventSummaryContainer img {   
+      margin: 2%;
+      max-width: 33%;
+      height: 175px;
   }
+
+  .eventSummaryContainer h3 {   
+        margin-top: 2%;
+        margin-bottom: 72px;
+    }
+
+  .textContainer{
+    margin-left: 10%
+  }
+
+  .ticketsRemaining {
+      margin-bottom: 0;
+  }
+
+
+
+
+
+
 
 
 
