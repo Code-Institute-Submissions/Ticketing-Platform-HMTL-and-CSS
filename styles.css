@@ -351,19 +351,21 @@ background-clip: text;
 
 }
 
-/* The below code is copied from slack overflow question */
+/* The below code is copied from slack overflow questions */
 
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1; 
   }
 }
 
 .slideFromLeft{
-    animation: 1s ease-out 0s 1 slideInFromLeft
+    animation: 1s ease-in 0s 1 slideInFromLeft
 }
 
 
@@ -372,14 +374,16 @@ background-clip: text;
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
 .slideFromRight{  
-  animation: 1s ease-out 0s 1 slideInFromRight;
+  animation: 1s ease-in 0s 1 slideInFromRight;
 
 }
 
