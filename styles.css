@@ -1,14 +1,101 @@
-
-
-
-
 *{
-    margin: 0;
-    padding: 0;
-    background-color:#eeecec;
-    /* font-family: 'Bitter', serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+background-color:#eeecec;
+ 
     font-family: 'Nunito', sans-serif;
 }
+
+
+
+.btn {
+    background-color:#fefefe;
+    width: 63px;
+    height: 23px;
+    border: 1px solid #333;
+    font-family: 'Cinzel', serif;
+    /* font-size: 20px; */
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+    border-radius: 2px;
+}
+
+.btn::before, .btn::after {
+  position: absolute;
+  background-color:#fefefe;
+  z-index: -1;
+  transition: 1s;
+  content: '';
+}
+
+.btn::before {
+    /* border: 1px solid green; */
+  height: 24px;
+  width: 46px;
+
+}
+
+.btn::after {
+    /* border: 1px solid purple; */
+  width: 64px;
+  height: 11px;
+
+}
+
+.noselect {
+    background-color:#fefefe;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.btn:hover::before {
+  width: 0px;
+  background: #fff;
+}
+
+.btn:hover::after {
+  height: 0px;
+  background: #fff;
+}
+
+.btn:hover {
+  background: #fff;
+}
+
+
+#createEvent{
+    width: 105px;
+}
+
+#createEvent::before{
+    border: 1px solid red;
+    width: 88px;
+}
+
+#createEvent::after{
+    border: 1px solid purple;
+    width: 106px
+}
+
+#createEvent:hover::before {
+  width: 0px;
+ 
+}
+
+
+
+   /* font-family: 'Bitter', serif; */
 
 
 body {
@@ -28,15 +115,15 @@ nav {
     padding: 10px;
     background-color: #fefefe;
     color: #293d6a;
-    /* background-color: #293d6a; */
-    /* color: #ffff; */
     font-size: 100%;
-    /* font-weight: 100; */
     border-bottom: 1px solid #293d6a;
 }
 
+
+
+
+
 nav ul{
-    /* background-color: #293d6a; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -44,23 +131,19 @@ nav ul{
 }
 
 nav li {
-    /* background-color: #293d6a; */
     background-color: #fefefe;
 }
 
 
 
 nav a, nav a:visited {
-    /* background-color: #293d6a;
-    color: #ffff; */
     background-color: #fefefe;
-    color: #293d6a;
-   
+    color: #293d6a; 
 }
 
-nav a:hover {
+/* nav a:hover {
     text-decoration: underline
-}
+} */
 
 h3, h5, h6 {
     background-color: #ffff;
@@ -112,8 +195,8 @@ h3, h5, h6 {
 }
 
 .eventSummaryContainer h3 {
-    font-size: 180%;
-    margin: 13px 0px;
+    font-size: 130%;
+    margin: 7px 0px;
     margin-bottom: 16px;
 }
 
@@ -185,19 +268,9 @@ footer i:hover{
     
 background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 -webkit-background-clip: text;
-/* Also define standard property for compatibility */
 background-clip: text;
 -webkit-text-fill-color: transparent;
 
-/* font-size: 200px;  */
-
-
-
-  /* border-radius: 40px;
-  color: #fff;
-  padding: 1px;
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
 }
 
 /* color from https://encycolorpedia.com/3b5998 */
@@ -228,22 +301,24 @@ background-clip: text;
     display: block;
     max-width: 800px;
     margin-top: 30px; 
-    /* flex-direction: row;
+
+         /* flex-direction: row;
     align-items: center;
     justify-content: left; */
     /* text-align: left;
     width: 90vw;
 
     */
- }
+ } 
+
+
 
  .eventSummaryContainer + .eventSummaryContainer{
      margin-top: 15px;
  }
 
    .detailsContainer{
-       /* display: grid;
-       grid-template-columns: 1fr 1fr; */
+
        display: flex;
        flex-direction: row;
         margin: 2px;
