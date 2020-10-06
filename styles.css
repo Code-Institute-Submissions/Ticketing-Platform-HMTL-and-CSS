@@ -173,7 +173,7 @@ h3, h5, h6 {
     max-width: 350px;
     border-radius: 5px;
     color: #293d6a;
-    transition: transform 0.1s;
+    transition: transform 0.2s;
     border: 1px solid #8f897c;
 
 }
@@ -216,6 +216,7 @@ h3, h5, h6 {
 
 .eventSummaryContainer:hover{
     border: 1px solid #293d6a;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     cursor: pointer;
     transform: scale(1.03); 
 }
