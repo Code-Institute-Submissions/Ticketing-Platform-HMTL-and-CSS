@@ -32,6 +32,7 @@ nav {
     /* color: #ffff; */
     font-size: 100%;
     /* font-weight: 100; */
+    border-bottom: 1px solid #293d6a;
 }
 
 nav ul{
@@ -150,6 +151,7 @@ footer {
     display:flex;
     align-items: center;
     justify-content: space-evenly;
+    border-top: 1px solid #293d6a;
     
 }
 
