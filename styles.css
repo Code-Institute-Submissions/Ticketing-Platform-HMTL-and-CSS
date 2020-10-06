@@ -26,28 +26,34 @@ ul{
 
 nav {
     padding: 10px;
-    background-color: #293d6a;
-    color: #ffff;
+    background-color: #fefefe;
+    color: #293d6a;
+    /* background-color: #293d6a; */
+    /* color: #ffff; */
     font-size: 100%;
     font-weight: 900;
 }
 
 nav ul{
-    background-color: #293d6a;
+    /* background-color: #293d6a; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #fefefe;
 }
 
 nav li {
-    background-color: #293d6a;
+    /* background-color: #293d6a; */
+    background-color: #fefefe;
 }
 
 
 
 nav a, nav a:visited {
-    background-color: #293d6a;
-    color: #ffff;
+    /* background-color: #293d6a;
+    color: #ffff; */
+    background-color: #fefefe;
+    color: #293d6a;
    
 }
 
