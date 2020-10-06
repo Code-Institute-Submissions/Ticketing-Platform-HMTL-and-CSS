@@ -1,3 +1,8 @@
+
+
+
+
+
 *{
   margin: 0;
   padding: 0;
@@ -107,16 +112,16 @@ h3, h5, h6 {
 
 .btn:hover::before {
   width: 0px;
-  background: #eeecec;
+  background: #ffff;
 }
 
 .btn:hover::after {
   height: 0px;
-  background: #eeecec;
+  background: #ffff;
 }
 
 .btn:hover {
-  background: #eeecec;
+  background: #ffff;
 }
 
 /* Ends copied code */
@@ -250,7 +255,7 @@ footer i:hover{
     transform: scale(2); 
 }
 
-/* code from https://www.mazzitorch.com/instagram-logo-css-gradient-html-web-design/ */
+/* color from https://www.mazzitorch.com/instagram-logo-css-gradient-html-web-design/ */
 
 .fa-instagram:hover{
 
@@ -290,14 +295,6 @@ background-clip: text;
     display: block;
     max-width: 800px;
     margin-top: 30px; 
-
-         /* flex-direction: row;
-    align-items: center;
-    justify-content: left; */
-    /* text-align: left;
-    width: 90vw;
-
-    */
  } 
 
 
@@ -305,24 +302,24 @@ background-clip: text;
  .eventSummaryContainer + .eventSummaryContainer{
      margin-top: 15px;
  }
-
-   .detailsContainer{
-
+ 
+ .detailsContainer{
        display: flex;
        flex-direction: row;
-        margin: 2px;
-        align-items: center;
+       margin: 2px;
+       align-items: center;
   }
 
   .eventSummaryContainer img {   
       margin: 0%;
       max-width: 33%;
-      height: 175px;
+      height: 150px;
   }
 
-  .eventSummaryContainer h3 {   
-        margin-top: 2%;
-        margin-bottom: 35px;
+  .eventSummaryContainer h3 {  
+      margin-top: 5%;
+      margin-bottom: 24px;
+      font-size: 210%;
     }
   .eventSummaryContainer p {
     font-size: 70%;
@@ -337,17 +334,35 @@ background-clip: text;
       margin-bottom: 0;
   }
 
+}
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
+.slideFromRight{  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromRight;
 
+}
 
+.slideFromLeft{
 
-
-
-
-
-
-
+    animation: 1s ease-out 0s 1 slideInFromLeft
+    
 }
 
