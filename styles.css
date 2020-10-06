@@ -2,98 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-background-color:#eeecec;
- 
-    font-family: 'Nunito', sans-serif;
-}
-
-
-
-.btn {
-    background-color:#fefefe;
-    width: 63px;
-    height: 23px;
-    border: 1px solid #333;
-    font-family: 'Cinzel', serif;
-    /* font-size: 20px; */
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 0;
-    transition: 1s;
-    border-radius: 2px;
-}
-
-.btn::before, .btn::after {
-  position: absolute;
-  background-color:#fefefe;
-  z-index: -1;
-  transition: 1s;
-  content: '';
-}
-
-.btn::before {
-    /* border: 1px solid green; */
-  height: 24px;
-  width: 46px;
+  background-color:#eeecec;
+  font-family: 'Nunito', sans-serif;
 
 }
-
-.btn::after {
-    /* border: 1px solid purple; */
-  width: 64px;
-  height: 11px;
-
-}
-
-.noselect {
-    background-color:#fefefe;
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-}
-
-.btn:hover::before {
-  width: 0px;
-  background: #fff;
-}
-
-.btn:hover::after {
-  height: 0px;
-  background: #fff;
-}
-
-.btn:hover {
-  background: #fff;
-}
-
-
-#createEvent{
-    width: 105px;
-}
-
-#createEvent::before{
-    border: 1px solid red;
-    width: 88px;
-}
-
-#createEvent::after{
-    border: 1px solid purple;
-    width: 106px
-}
-
-#createEvent:hover::before {
-  width: 0px;
- 
-}
-
-
 
    /* font-family: 'Bitter', serif; */
 
@@ -141,14 +53,91 @@ nav a, nav a:visited {
     color: #293d6a; 
 }
 
-/* nav a:hover {
-    text-decoration: underline
-} */
 
 h3, h5, h6 {
     background-color: #ffff;
 }
 
+/* The below code is largely taken from https://codepen.io/chancesq/pen/qBOyQoW but amended to work on my site */
+
+.btn {
+    background-color:#fefefe;
+    width: 63px;
+    height: 23px;
+    border: 1px solid #293d6a;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+    border-radius: 2px;
+}
+
+.btn::before, .btn::after {
+  position: absolute;
+  background-color:#fefefe;
+  z-index: -1;
+  transition: 1s;
+  content: '';
+}
+
+.btn::before {
+  height: 24px;
+  width: 46px;
+}
+
+.btn::after {
+  width: 64px;
+  height: 11px;
+
+}
+
+.noselect {
+    background-color:#fefefe;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.btn:hover::before {
+  width: 0px;
+  background: #eeecec;
+}
+
+.btn:hover::after {
+  height: 0px;
+  background: #eeecec;
+}
+
+.btn:hover {
+  background: #eeecec;
+}
+
+/* Ends copied code */
+
+
+#createEvent{
+    width: 105px;
+}
+
+#createEvent::before{
+    width: 88px;
+}
+
+#createEvent::after{
+    width: 106px
+}
+
+#createEvent:hover::before {
+  width: 0px;
+ 
+}
 
 
 
