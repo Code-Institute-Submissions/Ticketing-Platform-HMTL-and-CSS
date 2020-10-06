@@ -144,6 +144,21 @@ h3, h5, h6 {
  
 }
 
+#currentPage{
+    cursor: default;
+}
+
+#currentPage::before{
+  height: 0;
+  width: 0;
+}
+
+#currentPage::after{
+  height: 0;
+  width: 0;
+}
+
+
 
 
 .eventSummaryContainer{
@@ -336,6 +351,8 @@ background-clip: text;
 
 }
 
+/* The below code is copied from slack overflow question */
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -344,6 +361,13 @@ background-clip: text;
     transform: translateX(0);
   }
 }
+
+.slideFromLeft{
+    animation: 1s ease-out 0s 1 slideInFromLeft
+}
+
+
+/* I created the below code based on slack overflow question (for sliding in from opposite side) */
 
 @keyframes slideInFromRight {
   0% {
@@ -355,14 +379,9 @@ background-clip: text;
 }
 
 .slideFromRight{  
-  /* This section calls the slideInFromLeft animation we defined above */
   animation: 1s ease-out 0s 1 slideInFromRight;
 
 }
 
-.slideFromLeft{
 
-    animation: 1s ease-out 0s 1 slideInFromLeft
-    
-}
 
