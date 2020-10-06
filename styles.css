@@ -138,6 +138,8 @@ h3, h5, h6 {
     padding-bottom: 2.5rem; 
 }
 
+/* code in first 4 attributes from free code camp */
+
 footer {
 
     position: absolute;
@@ -174,22 +176,26 @@ footer i:hover{
     transform: scale(2); 
 }
 
-/* code from https://codepen.io/thomasrye/pen/VaRoYv */
+/* code from https://www.mazzitorch.com/instagram-logo-css-gradient-html-web-design/ */
 
 .fa-instagram:hover{
-  /* display: inline-block; */
-  /* width: 110%;
-  height: 110%; */
-  /* text-align: center; */
-  border-radius: 40px;
+
+    
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+-webkit-background-clip: text;
+/* Also define standard property for compatibility */
+background-clip: text;
+-webkit-text-fill-color: transparent;
+
+/* font-size: 200px;  */
+
+
+
+  /* border-radius: 40px;
   color: #fff;
   padding: 1px;
-  /* font-size: 220px; */
-  /* line-height: 250px; */
-  /* vertical-align: middle; */
   background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-  /* box-shadow: 0px 3px 10px rgba(0,0,0,.25); */
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
 }
 
 /* color from https://encycolorpedia.com/3b5998 */
