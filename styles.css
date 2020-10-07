@@ -417,7 +417,7 @@ background-clip: text;
 
 .eventBox{
     width: 100vw;
-    margin-top: 2%;
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -431,27 +431,31 @@ background-clip: text;
     border: 3px solid #ffff
 }
 
+.eventDetails {
+    padding: 2.5%;
+    border: 1px solid #8f897c;
+    background-color: #ffff;
+    border-radius: 5px;
+    margin-top: 5%;
+    max-width: 95vw;
+}
+
 .eventDetails p, .eventDetails i, .eventDetails a {
     background-color: #ffff;
-    font-size: 70%;
+    font-size: 11px;
     color: #8f897c;
-    margin-bottom: 2.75px;
+    margin-bottom: 1vw;
 }
 
 .eventDetails i {
-    margin-right: 8px;
+    margin-right: 1.6vw;
+    color: #293d6a94;
 }
 
 .eventDetails a {
     text-decoration: underline;
-        margin-bottom: 2.75px;
+
 }
 
-.eventDetails {
-    padding: 1%;
-    border: 1px solid #8f897c;
-    background-color: #ffff;
-    border-radius: 5px;
-    /* margin-left: 5%; */
-}
+
 
