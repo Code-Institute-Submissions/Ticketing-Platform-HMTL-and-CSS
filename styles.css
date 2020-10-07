@@ -417,7 +417,6 @@ background-clip: text;
 
 .eventBox{
     width: 100vw;
-    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -428,7 +427,8 @@ background-clip: text;
     max-height: 50vh;
     max-width: 95vw;
     border-radius: 5px;
-    border: 3px solid #ffff
+    border: 3px solid #ffff;
+    margin-top: 3%
 }
 
 .eventDetails {
@@ -436,7 +436,7 @@ background-clip: text;
     border: 1px solid #8f897c;
     background-color: #ffff;
     border-radius: 5px;
-    margin: 0% 2.5%;
+    margin: 3% 2.5% 0% 2.5%;
     max-width: 95vw;
 }
 
