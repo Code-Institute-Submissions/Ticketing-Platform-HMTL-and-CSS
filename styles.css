@@ -175,8 +175,8 @@ h3, h5, h6 {
     color: #293d6a;
     transition: transform 0.3s;
     border: 1px solid #8f897c;
-      transform-origin: 50% 0%;
-  animation:flipInX 1s linear;
+      /* transform-origin: 50% 0%;
+  animation:flipInX 1s linear; */
 
 }
 
@@ -357,7 +357,7 @@ background-clip: text;
 
 /* The below code is copied from slack overflow questions */
 
-/* @keyframes slideInFromLeft {
+@keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
     opacity: 0;
@@ -369,13 +369,13 @@ background-clip: text;
 }
 
 .slideFromLeft{
-    animation: 2s ease-in 0s 1 slideInFromLeft
-} */
+    animation: 1s ease-in 0s 1 slideInFromLeft
+}
 
 
 /* I created the below code based on slack overflow question (for sliding in from opposite side) */
 
-/* @keyframes slideInFromRight {
+@keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
     opacity: 0;
@@ -387,12 +387,12 @@ background-clip: text;
 }
 
 .slideFromRight{  
-  animation: 2s ease-in 0s 1 slideInFromRight;
-} */
+  animation: 1s ease-in 0s 1 slideInFromRight;
+}
 
 /* Copied and modified code from https://codepen.io/zesht/pen/MWgQxer */
 
-@keyframes flipInX {
+/* @keyframes flipInX {
   0% {
     -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
     transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
@@ -405,11 +405,11 @@ background-clip: text;
     -webkit-transform: perspective(1000px);
     transform: perspective(1000px);
   }
-}
-
-/* .slideFromRight{  
-  animation: 2s ease-in 0s 1 slideInFromRight;
 } */
+
+.slideFromRight{  
+  animation: 1s ease-in 0s 1 slideInFromRight;
+}
 
 
 
