@@ -466,13 +466,19 @@ background-clip: text;
 
 
 .descriptionAndTickets {
-    border: 1px solid red;
-    max-width: 80vw;
+    max-width: 95vw;
+}
+
+.description{
+    background-color: #fff;
+    color: #000;
 }
 
 .description p{
     margin-bottom: 1em;
     line-height: 1.5em;
+    background-color: #fff;
+    color: #000;
 }
 
 
