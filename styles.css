@@ -466,12 +466,22 @@ background-clip: text;
 
 
 .descriptionAndTickets {
+   display: flex;
+  justify-content: center;
+  align-items: center;
     max-width: 95vw;
+
+    margin: 0 auto;
 }
 
 .description{
     background-color: #fff;
     color: #000;
+    max-width: 75ch;
+    padding: 2%;
+    border-radius: 5px;
+    border: 1px solid #8f897c;
+    margin-top: 3%
 }
 
 .description p{
@@ -479,6 +489,14 @@ background-clip: text;
     line-height: 1.5em;
     background-color: #fff;
     color: #000;
+}
+
+.tickets {
+        margin-top: 3%;
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    align-self: flex-start
 }
 
 
