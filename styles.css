@@ -440,11 +440,16 @@ background-clip: text;
     max-width: 95vw;
 }
 
-.eventDetails p, .eventDetails i, .eventDetails a {
+.eventDetails p, .eventDetails i, .eventDetails a, .eventDetails h3 {
     background-color: #ffff;
     font-size: 11px;
     color: #8f897c;
     margin-bottom: 1vw;
+}
+
+.eventDetails h3{
+    color:#293d6a;
+    font-size: 165%;
 }
 
 .eventDetails i {
