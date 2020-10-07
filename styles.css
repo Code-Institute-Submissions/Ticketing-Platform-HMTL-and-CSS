@@ -426,6 +426,7 @@ background-clip: text;
 
 .eventBox img{
     max-height: 50vh;
+    max-width: 95vw;
     border-radius: 5px;
     border: 3px solid #ffff
 }
