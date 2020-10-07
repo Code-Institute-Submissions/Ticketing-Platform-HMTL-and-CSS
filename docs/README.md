@@ -102,6 +102,23 @@ Tickets based on https://codepen.io/verpixelt/pen/cEJLa
 
 Colors from www.rte.ie/news and www.gaytodo.com
 
+Nav links animations from https://codepen.io/chancesq/pen/qBOyQoW
+
+https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load
+
+https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load
+
+https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/
+
+https://codepen.io/sdthornton/pen/wBZdXq
+
+https://codepen.io/zesht/pen/MWgQxer
+
+pics from unsplash:
+https://unsplash.com/photos/hzgs56Ze49s
+https://unsplash.com/photos/3ckWUnaCxzc
+https://unsplash.com/photos/juHayWuaaoQ
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
@@ -109,10 +126,6 @@ My Code Institute Mentor, Rohit
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://www.w3schools.com/icons/fontawesome_icons_intro.asp
 
-pics from unsplash:
-https://unsplash.com/photos/hzgs56Ze49s
-https://unsplash.com/photos/3ckWUnaCxzc
-https://unsplash.com/photos/juHayWuaaoQ
 
 
 
