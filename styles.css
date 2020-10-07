@@ -421,7 +421,7 @@ background-clip: text;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .eventBox img{
@@ -431,18 +431,27 @@ background-clip: text;
     border: 3px solid #ffff
 }
 
-.eventBox p, .eventBox i, .eventBox a {
+.eventDetails p, .eventDetails i, .eventDetails a {
     background-color: #ffff;
-    font-size: 60%;
-    margin-top: 0px;
-    margin-bottom: 7px;
-    color: #8f897c
+    font-size: 70%;
+    color: #8f897c;
+    margin-bottom: 2.75px;
+}
+
+.eventDetails i {
+    margin-right: 8px;
+}
+
+.eventDetails a {
+    text-decoration: underline;
+        margin-bottom: 2.75px;
 }
 
 .eventDetails {
+    padding: 1%;
     border: 1px solid #8f897c;
     background-color: #ffff;
     border-radius: 5px;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 
