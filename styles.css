@@ -247,8 +247,7 @@ footer {
     display:flex;
     align-items: center;
     justify-content: space-evenly;
-    border-top: 1px solid #293d6a;
-    
+    border-top: 1px solid #293d6a;    
 }
 
 footer a {
@@ -474,7 +473,7 @@ background-clip: text;
     padding: 2%;
     border-radius: 5px;
     border: 1px solid #8f897c;
-    margin: 3% 2.5% 0% 2.5%
+    margin: 3% 2.5% 3% 2.5%
 }
 
 .description p{
