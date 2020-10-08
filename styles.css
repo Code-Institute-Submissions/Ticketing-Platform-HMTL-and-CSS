@@ -491,6 +491,10 @@ background-clip: text;
     align-self: flex-start;
     margin: 3% 2.5% 0% 2.5%;
     padding: 20px;
+    border-radius: 5px;
+    /* display: flex; */
+    /* align-content: center; */
+    /* justify-content: center; */
 }
 
 
@@ -501,6 +505,8 @@ background-clip: text;
   /* margin: 3em auto; */
   color: #fff;
   font-family: sans-serif;
+  /* margin: 0 auto; */
+  border: 5px solid purple;
 }
 
 .card {
@@ -544,9 +550,11 @@ background-clip: text;
 h1 {
   font-size: 1.1em;
   margin-top: 0;
+  background-color: #e84c3d;
 }
 h1 span {
   font-weight: normal;
+  background-color: #e84c3d;
 }
 
 .title, .name, .seat, .time {
@@ -557,8 +565,9 @@ h1 span {
   font-size: .9em;
   color: #525252;
   margin: 0;
+  text-transform: none;
 }
-.title span, .name span, .seat span, .time span {
+.title span, .name span, .seat span, .time span, .number span {
   font-size: .7em;
   color: #a2aeae;
 }
@@ -615,14 +624,21 @@ h1 span {
   text-align: center;
   text-transform: uppercase;
 }
-.number h3 {
+.number input {
+    background-color: #fff;
   color: #e84c3d;
-  margin: .4em 0 0 0;
+  margin: 0 0 0 0;
   font-size: 2.5em;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
 }
 .number span {
   display: block;
   color: #a2aeae;
+  margin-top: 17px;
+  /* background-color: #fff;
+  color: #e84c3d; */
 }
 
 .barcode {
