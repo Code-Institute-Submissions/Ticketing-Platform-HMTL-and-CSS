@@ -119,12 +119,15 @@ https://unsplash.com/photos/hzgs56Ze49s
 https://unsplash.com/photos/3ckWUnaCxzc
 https://unsplash.com/photos/juHayWuaaoQ
 
+Text for party event from https://www.eventbrite.ie/e/psychedelic-gaff-23-dark-progressive-night-w-hypogeo-tickets-96357603185?aff=erelexpmlt
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+https://css-tricks.com/min-max-and-clamp-are-css-magic/
 
 
 
