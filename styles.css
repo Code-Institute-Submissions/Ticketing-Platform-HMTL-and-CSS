@@ -486,27 +486,37 @@ background-clip: text;
 }
 
 .tickets {
-
     background-color: #fff; 
     align-self: flex-start;
     margin: 3% 2.5% 0% 2.5%;
-    padding: 20px;
+    padding: 1%;
     border-radius: 5px;
-    /* display: flex; */
-    /* align-content: center; */
-    /* justify-content: center; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 5%;
+    max-width: 95vw;
 }
+
+
 
 
 /* Code from internet. See readme */
 
 .cardWrap {
-  width: 27em;
+  /* width: 27em; */
   /* margin: 3em auto; */
   color: #fff;
   font-family: sans-serif;
   /* margin: 0 auto; */
-  border: 5px solid purple;
+  /* border: 5px solid purple; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #fff;
+ max-width: 100%;
+  
 }
 
 .card {
@@ -516,16 +526,19 @@ background-clip: text;
   position: relative;
   padding: 1em;
   /* margin-top: 100px; */
+  max-width: 100%;
+ 
 }
 
 .cardLeft {
+    width: 75%;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  width: 16em;
+
 }
 
 .cardRight {
-  width: 6.5em;
+  width: 25%;
   border-left: .18em dashed #fff;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -647,6 +660,7 @@ h1 span {
   /* margin: .7em 0 0 .8em; */
   box-shadow: 1px 0 0 1px #343434, 5px 0 0 1px #343434, 10px 0 0 1px #343434, 11px 0 0 1px #343434, 15px 0 0 1px #343434, 18px 0 0 1px #343434, 22px 0 0 1px #343434, 23px 0 0 1px #343434, 26px 0 0 1px #343434, 30px 0 0 1px #343434, 35px 0 0 1px #343434, 37px 0 0 1px #343434, 41px 0 0 1px #343434, 44px 0 0 1px #343434, 47px 0 0 1px #343434, 51px 0 0 1px #343434, 56px 0 0 1px #343434, 59px 0 0 1px #343434, 64px 0 0 1px #343434, 68px 0 0 1px #343434, 72px 0 0 1px #343434, 74px 0 0 1px #343434, 77px 0 0 1px #343434, 81px 0 0 1px #343434;
 }
+
 
 
 
