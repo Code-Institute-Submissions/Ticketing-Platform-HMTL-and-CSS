@@ -488,14 +488,15 @@ background-clip: text;
 .tickets {
     background-color: #fff; 
     align-self: flex-start;
-    margin: 3% 2.5% 0% 2.5%;
+    margin: 3% 2.5% 5% 2.5%;
     padding: 1%;
+    padding-top: clamp(6px, 1%, 200px);
+    padding-bottom: clamp(7px, 1%, 200px);
     border-radius: 5px;
     display: flex;
     align-content: center;
     justify-content: center;
-    width: auto;
-    margin-bottom: 5%;
+    /* width: auto; */
     max-width: 95vw;
 }
 
@@ -515,7 +516,7 @@ background-clip: text;
   justify-content: center;
   align-content: center;
   background-color: #fff;
- max-width: 100%;
+ max-width: 100vw;
   
 }
 
@@ -526,19 +527,19 @@ background-clip: text;
   position: relative;
   padding: 1em;
   /* margin-top: 100px; */
-  max-width: 100%;
+  max-width: 100vw;
  
 }
 
 .cardLeft {
-    width: 75%;
+    /* width: 75%; */
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 
 }
 
 .cardRight {
-  width: 25%;
+  /* width: 25%; */
   border-left: .18em dashed #fff;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -570,17 +571,17 @@ h1 span {
   background-color: #e84c3d;
 }
 
-.title, .name, .seat, .time {
+.title, .name, .price, .refunds {
   text-transform: uppercase;
   font-weight: normal;
 }
-.title h2, .name h2, .seat h2, .time h2 {
+.title h2, .name h2, .price h2, .refunds h2 {
   font-size: .9em;
   color: #525252;
   margin: 0;
   text-transform: none;
 }
-.title span, .name span, .seat span, .time span, .number span {
+.title span, .name span, .price span, .refunds span, .number span {
   font-size: .7em;
   color: #a2aeae;
 }
@@ -589,16 +590,24 @@ h1 span {
   margin: .9em 0 0 0;
 }
 
-.name, .seat {
+.name, .price {
   margin: .7em 0 0 0;
 }
 
-.time {
+.refunds {
   margin: .7em 0 0 1em;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
 }
 
-.seat, .time {
+.price, .refunds {
   float: left;
+}
+
+.price{
+    position: absolute;
+    bottom: 5px;
 }
 
 .eye {
@@ -642,16 +651,14 @@ h1 span {
   color: #e84c3d;
   margin: 0 0 0 0;
   font-size: 2.5em;
-  width: 100%;
+  width: 60px;
   text-align: center;
   border-radius: 5px;
 }
 .number span {
   display: block;
   color: #a2aeae;
-  margin-top: 17px;
-  /* background-color: #fff;
-  color: #e84c3d; */
+  margin-top: 2.5em;
 }
 
 .barcode {
