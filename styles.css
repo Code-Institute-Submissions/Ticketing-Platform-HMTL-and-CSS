@@ -543,8 +543,7 @@ background-clip: text;
   float: left;
   position: relative;
   padding: 1em;
-  /* margin-top: 100px; */
-  max-width: 100vw;
+  width: clamp(300px, 45vw, 350px);
  
 }
 
@@ -556,7 +555,7 @@ background-clip: text;
 }
 
 .cardRight {
-  /* width: 25%; */
+  width: 25%;
   border-left: .18em dashed #fff;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -695,7 +694,7 @@ h1 span {
 @media only screen and (min-width: 768px) {
 
   .description{
-        width: min(60ch, 95vw);
+        width: min(70ch, 95vw);
  } 
 
 .description p{
