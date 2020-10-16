@@ -555,7 +555,7 @@ background-clip: text;
 }
 
 .cardRight {
-  width: 25%;
+  width: 33%;
   border-left: .18em dashed #fff;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -699,6 +699,10 @@ h1 span {
 
 .description p{
     font-size: 16px;
+}
+
+.cardRight {
+  width: 25%;
 }
 
 }
