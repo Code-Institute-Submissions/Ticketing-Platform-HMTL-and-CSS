@@ -18,6 +18,9 @@
 body {
     position: relative;
     min-height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -533,7 +536,8 @@ background-clip: text;
   justify-content: center;
   align-content: center;
   background-color: #fff;
- max-width: 100vw;
+    max-width: 100vw;
+    margin-bottom: 5%;
   
 }
 
@@ -578,7 +582,7 @@ background-clip: text;
 }
 
 h1 {
-  font-size: 1.1em;
+  font-size: clamp(3px, 5.8vw, 25px);
   margin-top: 0;
   background-color: #e84c3d;
 }
@@ -691,6 +695,8 @@ h1 span {
 
 
 
+
+
 @media only screen and (min-width: 768px) {
 
   .description{
@@ -705,6 +711,6 @@ h1 span {
   width: 25%;
 }
 
-}
 
+}
 
