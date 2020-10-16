@@ -123,6 +123,8 @@ Text for party event from https://www.eventbrite.ie/e/psychedelic-gaff-23-dark-p
 
 Credit Card Details CSS: https://designmodo.com/create-credit-card-ui/#download-the-credit-card-html
 
+Glowing input: https://css-tricks.com/snippets/css/glowing-blue-input-highlights/
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
