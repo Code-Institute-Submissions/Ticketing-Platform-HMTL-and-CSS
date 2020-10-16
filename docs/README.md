@@ -121,6 +121,8 @@ https://unsplash.com/photos/juHayWuaaoQ
 
 Text for party event from https://www.eventbrite.ie/e/psychedelic-gaff-23-dark-progressive-night-w-hypogeo-tickets-96357603185?aff=erelexpmlt
 
+Credit Card Details CSS: https://designmodo.com/create-credit-card-ui/#download-the-credit-card-html
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
