@@ -529,6 +529,12 @@ background-clip: text;
   border: 1px solid  #293d6a;
 }
 
+.date-field{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
 .tickets input, .tickets select {
     color: #293d6a;
 }
@@ -768,13 +774,13 @@ h1 span {
     -webkit-appearance: none;
 }
  
-.month select {
+/* .month select {
     float: left;
 }
  
 .year select {
     float: right;
-}
+} */
 
 .cvv-input input {
     float: left;
