@@ -563,8 +563,13 @@ background-clip: text;
       margin-bottom: 13%;
     padding-left: clamp(0px, 3%, 30px);
     padding-right: clamp(0px, 3%, 30px);
-  
 }
+
+
+
+
+
+
 
 .card {
   background: linear-gradient(to bottom, #e84c3d 0%, #e84c3d 26%, #ecedef 26%, #ecedef 100%);
@@ -573,6 +578,10 @@ background-clip: text;
   position: relative;
   padding: 1em;
   width: clamp(300px, 45vw, 350px);
+            /* box shadow copied from elsewhere on internet - see readme */
+
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
  
 }
 
@@ -581,7 +590,10 @@ background-clip: text;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 
+
 }
+
+
 
 .cardRight {
   width: 33%;
