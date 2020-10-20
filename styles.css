@@ -94,14 +94,13 @@ h3, h5, h6 {
 }
 
 .btn::before {
-  height: 24px;
-  width: 46px;
+  height: 26px;
+  width: 50px;
 }
 
 .btn::after {
-  width: 64px;
+  width: 66px;
   height: 11px;
-
 }
 
 .noselect {
@@ -140,7 +139,7 @@ h3, h5, h6 {
 }
 
 #createEvent::after{
-    width: 106px
+    width: 109px
 }
 
 #createEvent:hover::before {
