@@ -432,7 +432,7 @@ background-clip: text;
     max-width: 95vw;
     border-radius: 5px;
     border: 3px solid #ffff;
-    margin-top: 3%
+    margin-top: 5%
 }
 
 .eventDetails {
@@ -441,6 +441,7 @@ background-clip: text;
     background-color: #ffff;
     border-radius: 5px;
     margin: 3% 2.5% 0% 2.5%;
+    margin-top: clamp(1px, 10%, 85px);
     max-width: 95vw;
 }
 
@@ -477,7 +478,8 @@ background-clip: text;
     padding: 2%;
     border-radius: 5px;
     border: 1px solid #8f897c;
-    margin: 3% 2.5% 3% 2.5%
+    margin: 3% 2.5% 3% 2.5%;
+    margin-top: clamp(1px, 10%, 85px);
 }
 
 .description p{
@@ -494,6 +496,8 @@ background-clip: text;
     background-color: #fff; 
     align-self: flex-start;
     margin: 3% 2.5% 5% 2.5%;
+    margin-top: clamp(1px, 10%, 85px);
+    margin-bottom: clamp(1px, 10%, 85px);
     padding: 1%;
     padding-top: clamp(7px, 1%, 200px);
     padding-bottom: clamp(7px, 1%, 200px);
