@@ -1,15 +1,11 @@
 
 
-
-
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color:#eeecec;
   font-family: 'Nunito', sans-serif;
-
 }
 
    /* font-family: 'Bitter', serif; */
@@ -18,9 +14,9 @@
 body {
     position: relative;
     min-height: 100vh;
-    max-width: 1350px;
     margin: 0;
     padding: 0;
+    overflow-x:hidden;
 }
 
 a {
@@ -38,6 +34,7 @@ nav {
     font-size: 100%;
     border-bottom: 1px solid #293d6a;
     width: 100vw;
+    /* max-width:100%;  */
 }
 
 
@@ -245,6 +242,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100vw;
+    /* max-width:100%;  */
     height: 2.5rem; 
     background-color: #f7f7f7;
     display:flex;
@@ -419,6 +417,7 @@ background-clip: text;
 
 .eventBox{
     width: 100vw;
+    /* max-width:100%;  */
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -566,7 +565,7 @@ background-clip: text;
   justify-content: center;
   align-content: center;
   background-color: #fff;
-    max-width: 100vw;
+    /* max-width: 100vw; */
       margin-bottom: 13%;
     padding-left: clamp(0px, 3%, 30px);
     padding-right: clamp(0px, 3%, 30px);
