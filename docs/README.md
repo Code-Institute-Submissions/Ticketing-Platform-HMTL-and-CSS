@@ -131,6 +131,8 @@ Remove blue border when input selected: https://stackoverflow.com/questions/1457
 
 Credit Card Number will only accept 16 digits: https://www.w3schools.com/tags/att_pattern.asp
 
+Prevent horizontal overflow. Second Answer here: https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
