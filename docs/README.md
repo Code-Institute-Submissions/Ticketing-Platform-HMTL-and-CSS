@@ -88,7 +88,9 @@ Testing:
 
 Project barriers and solutions:
 
-Couldn't add shadow to tickets because they are comprised of two many divs. If tickets were constructed better, this would be possible
+Couldn't add shadow to tickets because they are comprised of two many divs. If tickets were constructed better, this would be possible.
+
+Initially I had the image, summary details, description and tickets all contained in the one flexbox container. This worked for all default phone and tablet sizes in google chrome developer tools but at certain screen lengths, it caused the page structure to collapse. I fixed this by putting the image and summary details in one flexbox and the other elements into a separate flexbox.
 
 ======
 
