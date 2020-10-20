@@ -540,7 +540,7 @@ background-clip: text;
     transform: scale(1.1)
 }
 
-.tickets input:focus, .tickets select:focus {
+.credit-card input:focus, .credit-card select:focus {
     color: #293d6a;
     outline: none;
       box-shadow: 0 0 5px #293d6a;
