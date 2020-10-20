@@ -66,6 +66,12 @@ h3, h5, h6 {
     background-color: #ffff;
 }
 
+        
+
+.eventPage {
+    animation: fadein 3s;
+}
+
 /* The below code is largely taken from https://codepen.io/chancesq/pen/qBOyQoW but amended to work on my site */
 
 .btn {
@@ -411,6 +417,14 @@ background-clip: text;
 
 .slideFromRight{  
   animation: 1s ease-in 0s 1 slideInFromRight;
+}
+
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 
