@@ -400,12 +400,15 @@
                 
                 <div class="form-body">
                     <!-- Card Number -->
-                    <input type="text" class="card-number" placeholder=" Credit Card Number">
+                    <input required type="number" class="card-number" placeholder=" Credit Card Number">
+
+                    
                 
                     <!-- Date Field -->
                     <div class="date-field">
                         <div class="month">
-                            <select name="Month">
+                            <select required name="Month">
+                            <option disabled value="Month" selected="selected">Month</option>
                             <option value="january">Jan</option>
                             <option value="february">Feb</option>
                             <option value="march">Mar</option>
@@ -421,7 +424,8 @@
                             </select>
                         </div>
                         <div class="year">
-                            <select name="Year">
+                            <select required name="Year">
+                            <option disabled value="Year" selected="selected">Year</option>
                             <option value="2020">2020</option>
                             <option value="2021">2021</option>
                             <option value="2022">2022</option>
@@ -436,7 +440,7 @@
                 
                     <div class="card-verification">
                     <div class="cvv-input">
-                        <input type="number" placeholder="CVV">
+                        <input required type="number" placeholder="CVV">
                     </div>
 
                     </div>
