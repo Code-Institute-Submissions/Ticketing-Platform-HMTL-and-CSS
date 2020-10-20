@@ -87,6 +87,9 @@ Testing:
 ======
 
 Project barriers and solutions:
+
+Couldn't add shadow to tickets because they are comprised of two many divs.
+
 ======
 
 Version control:
