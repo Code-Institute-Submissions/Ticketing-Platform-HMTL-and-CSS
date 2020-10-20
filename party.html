@@ -400,9 +400,9 @@
                 
                 <div class="form-body">
                     <!-- Card Number -->
-                    <input required type="number" class="card-number" placeholder=" Credit Card Number">
+                    <input required pattern="[0-9]{16}" title="16 digit number required"  class="card-number" placeholder=" Credit Card Number">
 
-                    
+
                 
                     <!-- Date Field -->
                     <div class="date-field">
@@ -440,7 +440,8 @@
                 
                     <div class="card-verification">
                     <div class="cvv-input">
-                        <input required type="number" placeholder="CVV">
+                        <input required pattern="[0-9]{3}" title="3 numbers" placeholder="CVV">
+                        
                     </div>
 
                     </div>
