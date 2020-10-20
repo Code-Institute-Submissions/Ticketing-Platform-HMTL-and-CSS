@@ -94,6 +94,8 @@ Initially I had the image, summary details, description and tickets all containe
 
 Tried using maxlength and minlenght to ensure user would get error if they didn't enter credit card with 16 digits and cvv code with 3 digits. This wouldn't work so I used the html pattern attribute instead. Acknowledgement to W3 school is in Acknowledgement section.
 
+There was a horizontal scrollbar even though elements were set to 100vw. This is because a visual error is caused when the vh is above 100vh. Fixed this using overflow-x:hidden. Acknowledgement to stackoverflow answer is in the Acknowledgement section.
+
 ======
 
 Version control:
