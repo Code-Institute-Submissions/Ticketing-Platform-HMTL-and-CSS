@@ -88,7 +88,7 @@ Testing:
 
 Project barriers and solutions:
 
-Couldn't add shadow to tickets because they are comprised of two many divs.
+Couldn't add shadow to tickets because they are comprised of two many divs. If tickets were constructed better, this would be possible
 
 ======
 
