@@ -127,6 +127,8 @@ Glowing input: https://css-tricks.com/snippets/css/glowing-blue-input-highlights
 
 Button Grows on hover from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/
 
+Remove green border when input selected: https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
