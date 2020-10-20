@@ -92,6 +92,8 @@ Couldn't add shadow to tickets because they are comprised of two many divs. If t
 
 Initially I had the image, summary details, description and tickets all contained in the one flexbox container. This worked for all default phone and tablet sizes in google chrome developer tools but at certain screen lengths, it caused the page structure to collapse. I fixed this by putting the image and summary details in one flexbox and the other elements into a separate flexbox.
 
+Tried using maxlength and minlenght to ensure user would get error if they didn't enter credit card with 16 digits and cvv code with 3 digits. This wouldn't work so I used the html pattern attribute instead. Acknowledgement to W3 school is in Acknowledgement section.
+
 ======
 
 Version control:
