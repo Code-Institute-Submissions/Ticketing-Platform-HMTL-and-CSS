@@ -552,11 +552,6 @@ background-clip: text;
     background-color: #fff;
 }
 
-.tickets input, .tickets select {
-    color: #293d6a;
-}
-
-
 
 
 
@@ -803,14 +798,7 @@ h1 span {
     -moz-appearance: none;
     -webkit-appearance: none;
 }
- 
-/* .month select {
-    float: left;
-}
- 
-.year select {
-    float: right;
-} */
+
 
 .cvv-input input {
     float: left;
@@ -831,6 +819,11 @@ h1 span {
  
 
 
+/* From https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
+
+.card input:focus{
+    outline: none;
+}
 
 
  
