@@ -33,7 +33,7 @@ ul{
 
 nav {
     padding: 10px;
-    background-color: #fefefe;
+    background-color: #f7f7f7;
     color: #293d6a;
     font-size: 100%;
     border-bottom: 1px solid #293d6a;
@@ -48,17 +48,17 @@ nav ul{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #fefefe;
+    background-color: #f7f7f7;
 }
 
 nav li {
-    background-color: #fefefe;
+    background-color: #f7f7f7;
 }
 
 
 
 nav a, nav a:visited {
-    background-color: #fefefe;
+    background-color: #f7f7f7;
     color: #293d6a; 
 }
 
@@ -70,7 +70,7 @@ h3, h5, h6 {
 /* The below code is largely taken from https://codepen.io/chancesq/pen/qBOyQoW but amended to work on my site */
 
 .btn {
-    background-color:#fefefe;
+    background-color:#f7f7f7;
     width: 63px;
     height: 23px;
     border: 1px solid #293d6a;
@@ -87,7 +87,7 @@ h3, h5, h6 {
 
 .btn::before, .btn::after {
   position: absolute;
-  background-color:#fefefe;
+  background-color:#f7f7f7;
   z-index: -1;
   transition: 1s;
   content: '';
@@ -105,7 +105,7 @@ h3, h5, h6 {
 }
 
 .noselect {
-    background-color:#fefefe;
+    background-color:#f7f7f7;
   -webkit-touch-callout: none;
     -webkit-user-select: none;
      -khtml-user-select: none;
@@ -247,7 +247,7 @@ footer {
     bottom: 0;
     width: 100vw;
     height: 2.5rem; 
-    background-color: #fefefe;
+    background-color: #f7f7f7;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
@@ -255,7 +255,7 @@ footer {
 }
 
 footer a {
-    background-color: #fefefe;
+    background-color: #f7f7f7;
     color:inherit;
 
 }
