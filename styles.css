@@ -151,7 +151,7 @@ h3, h5, h6 {
 }
 
 #createEvent::after{
-    width: clamp(67px, 20vw, 104px);
+    width: clamp(67px, 20vw, 105px);
     height: clamp(1px, 3vw, 13px);
 }
 
