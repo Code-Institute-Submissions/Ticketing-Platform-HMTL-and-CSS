@@ -16,7 +16,6 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-
     /* found this in the second answer here: https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one */
     overflow-x:hidden;
 }
@@ -33,7 +32,8 @@ nav {
     padding: 10px;
     background-color: #f7f7f7;
     color: #293d6a;
-    font-size: 100%;
+    /* font-size: 100%; */
+    font-size: clamp(10px, 3vw, 16px);
     border-bottom: 1px solid #293d6a;
     width: 100vw;
     /* max-width:100%;  */
@@ -76,9 +76,8 @@ h3, h5, h6 {
 
 .btn {
     background-color:#f7f7f7;
-    width: 63px;
-    height: 23px;
-    border: 1px solid #293d6a;
+    padding: clamp(0.5px, 0.75vw, 3.5px);
+    /* border: 1px solid #293d6a; */
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     display: flex;
@@ -90,6 +89,7 @@ h3, h5, h6 {
     border-radius: 2px;
 }
 
+
 .btn::before, .btn::after {
   position: absolute;
   background-color:#f7f7f7;
@@ -98,15 +98,7 @@ h3, h5, h6 {
   content: '';
 }
 
-.btn::before {
-  height: 26px;
-  width: 50px;
-}
 
-.btn::after {
-  width: 66px;
-  height: 11px;
-}
 
 .noselect {
     background-color:#f7f7f7;
@@ -118,12 +110,12 @@ h3, h5, h6 {
             user-select: none;
 }
 
-.btn:hover::before {
+.btn:hover::before, #events:hover::before, #createEvent:hover::before {
   width: 0px;
   background: #ffff;
 }
 
-.btn:hover::after {
+.btn:hover::after, #events:hover::after, #createEvent:hover::after {
   height: 0px;
   background: #ffff;
 }
@@ -134,22 +126,37 @@ h3, h5, h6 {
 
 /* Ends copied code */
 
+#events{
+   border: 1px solid #293d6a; 
+}
+
+#events::before {
+    width: clamp(52px, 16vw, 85px);
+    height: clamp(20px, 6.5vw, 30px);
+}
+
+#events::after {
+    width: clamp(40px, 13vw, 70px);
+    height: clamp(1px, 3vw, 13px);
+}
+
 
 #createEvent{
-    width: 105px;
+    border: 1px solid #293d6a;
 }
 
 #createEvent::before{
-    width: 88px;
+    width: clamp(1px, 16vw, 85px);
+    height: clamp(20px, 6vw, 30px);
 }
 
 #createEvent::after{
-    width: 109px
+    width: clamp(67px, 20vw, 104px);
+    height: clamp(1px, 3vw, 13px);
 }
 
 #createEvent:hover::before {
   width: 0px;
- 
 }
 
 #currentPage{
