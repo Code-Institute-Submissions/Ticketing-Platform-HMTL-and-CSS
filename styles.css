@@ -455,6 +455,7 @@ background-clip: text;
     border-radius: 5px;
     border: 3px solid #ffff;
     margin-top: clamp(1px, 5%, 70px);
+    border-width: clamp(1px, 2vw, 15px);
 }
 
 .eventDetails {
