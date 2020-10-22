@@ -142,6 +142,8 @@ Credit Card Number will only accept 16 digits: https://www.w3schools.com/tags/at
 
 Prevent horizontal overflow. Second Answer here: https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one
 
+Upload image: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
