@@ -112,16 +112,16 @@ h3, h5, h6 {
 
 .btn:hover::before, #events:hover::before, #createEvent:hover::before {
   width: 0px;
-  background: #ffff;
+  background: #f7f7f7;
 }
 
 .btn:hover::after, #events:hover::after, #createEvent:hover::after {
   height: 0px;
-  background: #ffff;
+  background: #f7f7f7;
 }
 
 .btn:hover {
-  background: #ffff;
+  background: #f7f7f7;
 }
 
 /* Ends copied code */
@@ -162,6 +162,7 @@ h3, h5, h6 {
 
 #currentPage{
     cursor: default;
+    border: 1px solid #293d6a;
 }
 
 #currentPage::before{
