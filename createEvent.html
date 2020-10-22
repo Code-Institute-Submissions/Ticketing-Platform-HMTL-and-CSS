@@ -27,6 +27,8 @@
 
     <div class="formWrapper">
 
+
+
         
     
         <form class="createEventForm" method="post" action="">
@@ -36,6 +38,11 @@
             <input required type="text" placeholder="Location" id="location" name="location">
             <input required type="datetime-local" placeholder="Start Date and Time" id="startTime" name="startTime">
             <input required type="datetime-local" placeholder="End Date and Time" id="endTime" name="endTime">
+            <div class="uploadImage">
+                <label required for="image">Upload a picture:</label>
+                <input type="file" id="image" name="image" accept="image/png, image/jpeg">
+            </div>
+ 
 
             <h4>Ticket 1</h4>
             <input required type="text" placeholder="Ticket Name" id="t1TicketName" name="t1TicketName">
