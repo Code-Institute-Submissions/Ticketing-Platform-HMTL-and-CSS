@@ -854,6 +854,64 @@ h1 span {
     outline: none;
 }
 
+.formWrapper{
+    width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createEventForm{
+    margin: 60px 0px;
+    padding: 30px 100px;
+    background-color: #ffff;
+        border: 1px solid #8f897c;
+        border-radius: 6px;
+          display: flex;
+          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.createEventForm input, .createEventForm textarea, .radio {
+ 
+    background-color: white;
+    outline: none;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 30px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    background: #fff;
+    width: 300px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 2%;
+}
+
+.radio {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid purple;
+     */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.radio input {
+    margin:0;
+    width: auto;
+    /* display: inline-block; */
+    
+}
+
+
+.allowRefunds, .noRefunds{
+    display: inline-block;
+}
+
 
  
  
