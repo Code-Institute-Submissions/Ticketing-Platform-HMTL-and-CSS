@@ -309,7 +309,7 @@
             </div>
         
 
-            <div class="tickets">
+            <form class="tickets" method="post" action="">
 
                 <h3>Tickets</h3>
                 <!-- Code taken from internet and amended to work on site. See readme -->
@@ -335,7 +335,7 @@
                         <div class="eye"></div>
                         <div class="number">
                         <span>quantity:</span>
-                        <input type="number" name="quantity" value="0" min="0" max="10">
+                        <input type="number" name="ticket1" id="ticket1" value="0" min="0" max="10">
                         
                         </div>
 
@@ -363,7 +363,7 @@
                         <div class="eye"></div>
                         <div class="number">
                         <span>quantity:</span>
-                        <input type="number" name="quantity" value="0" min="0" max="10">
+                        <input type="number" name="ticket2" id="ticket2"  value="0" min="0" max="10">
                         
                         </div>
 
@@ -391,7 +391,7 @@
                         <div class="eye"></div>
                         <div class="number">
                             <span>quantity:</span>
-                            <input type="number" name="quantity" value="0" min="0" max="10">
+                            <input type="number" name="ticket3" id="ticket3" value="0"  min="0" max="10">
                         </div>
 
                     </div>    
@@ -399,18 +399,18 @@
                 
 
 
-                <form class="credit-card">
+                <div class="credit-card">
                 
                 <div class="form-body">
                     <!-- Card Number -->
-                    <input required pattern="[0-9]{16}" title="16 digit number required"  class="card-number" placeholder=" Credit Card Number">
+                    <input required pattern="[0-9]{16}" title="16 digit number required"  class="card-number" placeholder=" Credit Card Number" name="creditCard" id="creditCard" >
 
 
                 
                     <!-- Date Field -->
                     <div class="date-field">
                         <div class="month">
-                            <select required name="Month">
+                            <select required name="month" id="month" >
                             <option selected value="" hidden>Month</option>
                             <option value="january">Jan</option>
                             <option value="february">Feb</option>
@@ -427,7 +427,7 @@
                             </select>
                         </div>
                         <div class="year">
-                            <select required name="Year">
+                            <select required name="year" id="year">
                             <option selected value="" hidden>Year</option>
                             <option value="2020">2020</option>
                             <option value="2021">2021</option>
@@ -442,21 +442,20 @@
                     </div>
                 
                     <div class="card-verification">
-                    <div class="cvv-input">
-                        <input required pattern="[0-9]{3}" title="3 numbers" placeholder="CVV">
-                        
-                    </div>
+                        <div class="cvv-input">
+                            <input required pattern="[0-9]{3}" title="3 numbers" placeholder="CVV" name="cvv" id="cvv">               
+                        </div>
 
                     </div>
                     
                     <button type="submit">Buy Now</button>
            
                 </div>
-                </form>
+                </div>
 
 
 
-            </div>
+            </form>
         </div>
 
 
