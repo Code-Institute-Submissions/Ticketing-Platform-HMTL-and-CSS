@@ -546,7 +546,7 @@ background-clip: text;
     margin-bottom: 9%;
 }
 
-.tickets button{
+.tickets button, .createEventForm button{
     background-color: #293d6a;
     color: #fff;
     border-radius: 5px;
