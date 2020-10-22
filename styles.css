@@ -476,7 +476,7 @@ background-clip: text;
     margin-bottom: clamp(5px, 1vw, 8px);
 }
 
-.eventDetails h3 {
+.eventDetails h3, .createEventForm h3 {
     color: #293d6a;
     font-size: clamp(24px, 4vw, 40px);
     margin: clamp(10px, 2.5vw, 30px);
@@ -910,6 +910,14 @@ h1 span {
 
 .allowRefunds, .noRefunds{
     display: inline-block;
+}
+
+
+.createEventForm h4 {
+    color: #293d6a;
+    font-weight: normal;
+    font-size: clamp(10px, 1.5vw, 30px);
+    margin: clamp(10px, 2.5vw, 30px);
 }
 
 
