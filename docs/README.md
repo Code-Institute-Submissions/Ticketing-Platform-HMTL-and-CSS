@@ -154,6 +154,8 @@ html select date and time: https://developer.mozilla.org/en-US/docs/Web/HTML/Ele
 
 Hide default input="file" and style label instead:https://stackoverflow.com/questions/21842274/cross-browser-custom-styling-for-file-upload-button/21842275#21842275
 
+Style radio buttons: https://stackoverflow.com/questions/45327086/how-change-the-color-of-the-radio-button
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
