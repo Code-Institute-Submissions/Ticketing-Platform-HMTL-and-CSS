@@ -893,7 +893,7 @@ h1 span {
 .radio {
     border: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0;
     /* border: 1px solid purple;
      */
@@ -913,8 +913,18 @@ h1 span {
     
 }
 
+.allowRefunds{
+    padding-left: 2vw;
+}
+
+.noRefunds {
+    padding-right: 2vw;
+}
+
 .radio label {
     background-color:#ffff;
+    color:#8e8e8e;
+    
 }
 
 
