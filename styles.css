@@ -569,7 +569,7 @@ background-clip: text;
 
 /* transition from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
 
-.tickets button:hover{
+.tickets button:hover, .createEventForm button:hover{
     transform: scale(1.1)
 }
 
@@ -887,7 +887,7 @@ h1 span {
     background: #fff;
     width: 85%;
     border-radius: 6px;
-    margin: 2.5%;
+    margin: 12px;
 }
 
 .radio {
@@ -988,7 +988,7 @@ hr {
 .createEventForm h3 {
     color: #293d6a;
     font-size: clamp(24px, 4vw, 40px);
-    margin: clamp(10px, 2.5vw, 30px);
+    margin-top: 30px;
     margin-bottom: 10px;
 }
  
