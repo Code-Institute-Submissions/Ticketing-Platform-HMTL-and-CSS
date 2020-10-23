@@ -573,12 +573,7 @@ background-clip: text;
     transform: scale(1.1)
 }
 
-.credit-card input:focus, .credit-card select:focus {
-    color: #293d6a;
-    outline: none;
-      box-shadow: 0 0 5px #293d6a;
-  border: 1px solid  #293d6a;
-}
+
 
 .date-field{
     display: flex;
@@ -890,6 +885,10 @@ h1 span {
     margin: 12px;
 }
 
+#eventDescription{
+    height: 300px;
+}
+
 .radio {
     border: none;
     display: flex;
@@ -933,7 +932,7 @@ h1 span {
     font-weight: normal;
     font-size: clamp(12px, 1.2vw, 14px);
     background-color: #ffff;
-    margin: 0px 7.5%;
+    margin: 12px 7.5% 0px;
     align-self: flex-start;
 }
 
@@ -990,6 +989,13 @@ hr {
     font-size: clamp(24px, 4vw, 40px);
     margin-top: 30px;
     margin-bottom: 10px;
+}
+
+.credit-card input:focus, .credit-card select:focus, .credit-card input:hover, .credit-card select:hover, .createEventForm input:focus, .createEventForm textarea:focus, .createEventForm input:hover, .createEventForm textarea:hover  {
+    color: #293d6a;
+    outline: none;
+      box-shadow: 0 0 5px #293d6a;
+  border: 1px solid  #293d6a;
 }
  
 
