@@ -156,6 +156,8 @@ Hide default input="file" and style label instead:https://stackoverflow.com/ques
 
 Style radio buttons: https://stackoverflow.com/questions/45327086/how-change-the-color-of-the-radio-button
 
+Style hrs - code based on: https://css-tricks.com/examples/hrs/
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
