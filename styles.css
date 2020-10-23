@@ -909,7 +909,6 @@ h1 span {
 .allowRefunds, .noRefunds{
     display: inline-block;
     background-color:#ffff;
-    
 }
 
 .allowRefunds{
@@ -958,9 +957,6 @@ margin-top: 0;
     border: none
 }
 
-/* .uploadImage{
-    padding-left: 20px;
-} */
 
 
 /* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
@@ -1005,6 +1001,11 @@ hr {
     background-image: linear-gradient(to right, rgba(41, 61, 106, 0.1), rgba(41, 61, 106, 0.75), rgb(41, 61, 106, 0.1));
     margin: 20px 0px;
 }
+
+.allowRefunds:hover label, .noRefunds:hover label{
+    color: #293d6a
+}
+
 
 .createEventForm h3 {
     color: #293d6a;
