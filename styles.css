@@ -998,6 +998,13 @@ hr {
       box-shadow: 0 0 5px #293d6a;
   border: 1px solid  #293d6a;
 }
+
+
+/* code based on https://stackoverflow.com/questions/54308139/how-to-show-placeholder-when-we-hover-on-input-type-text */
+
+:hover::-webkit-input-placeholder {
+  color: #293d6a;
+}
  
 
 
