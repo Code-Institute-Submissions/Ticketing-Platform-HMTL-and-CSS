@@ -875,9 +875,9 @@ h1 span {
 
 }
 
-.createEventForm input, .createEventForm textarea, .radio {
+.createEventForm input, .createEventForm textarea, .radio, .uploadImage, .imageLabel{
  
-    background-color: white;
+    background-color: #ffff;
     outline: none;
     font-size: 14px;
     font-weight: 100;
@@ -924,6 +924,20 @@ h1 span {
     font-size: clamp(10px, 1vw, 30px);
     background-color: #ffff;
 }
+
+input[type="datetime-local"] {
+  color:#8e8e8e;
+  border: 1px solid blue;
+}
+
+input[type="file"] {
+display: none;
+}
+
+.imageLabel{
+    color: #8e8e8e;
+}
+
 
 
  
