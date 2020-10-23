@@ -952,6 +952,26 @@ margin-top: 0;
     border: none;
 }
 
+.imageLabel, input[type="file"]  {
+    padding-left: 0;
+    margin: 0;
+    border: none
+}
+
+/* .uploadImage{
+    padding-left: 20px;
+} */
+
+
+
+.uploadImage:hover .imageLabel, .uploadImage:hover input{
+    color: #293d6a
+}
+
+
+
+
+
 
 /* styling of radio buttons based on code from https://stackoverflow.com/questions/45327086/how-change-the-color-of-the-radio-button */
 
@@ -992,11 +1012,17 @@ hr {
     margin-bottom: 10px;
 }
 
-.credit-card input:focus, .credit-card select:focus, .credit-card input:hover, .credit-card select:hover, .createEventForm input:focus, .createEventForm textarea:focus, .createEventForm input:hover, .createEventForm textarea:hover  {
+.credit-card input:focus, .credit-card select:focus, .credit-card input:hover, .credit-card select:hover, .createEventForm input:focus, .createEventForm textarea:focus, .createEventForm input:hover, .createEventForm textarea:hover, .uploadImage:hover, .uploadImage:focus  {
     color: #293d6a;
     outline: none;
       box-shadow: 0 0 5px #293d6a;
   border: 1px solid  #293d6a;
+}
+
+.uploadImage:hover input {
+        outline: none;
+      box-shadow: 0 0px #ffff;
+  border: none;
 }
 
 
