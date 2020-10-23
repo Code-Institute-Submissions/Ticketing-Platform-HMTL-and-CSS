@@ -476,7 +476,7 @@ background-clip: text;
     margin-bottom: clamp(5px, 1vw, 8px);
 }
 
-.eventDetails h3, .createEventForm h3 {
+.eventDetails h3 {
     color: #293d6a;
     font-size: clamp(24px, 4vw, 40px);
     margin: clamp(10px, 2.5vw, 30px);
@@ -555,7 +555,7 @@ background-clip: text;
     cursor: pointer;
     width: 90%;
     border-color: transparent;
-    margin-top: 13%;
+    margin-top: 7%;
     margin-bottom: 13%;
     padding: 5px 0;
 
@@ -887,7 +887,7 @@ h1 span {
     background: #fff;
     width: 85%;
     border-radius: 6px;
-    margin: 2%;
+    margin: 2.5%;
 }
 
 .radio {
@@ -931,8 +931,10 @@ h1 span {
 .createEventForm h4 {
     color: #293d6a;
     font-weight: normal;
-    font-size: clamp(10px, 1vw, 30px);
+    font-size: clamp(12px, 1.2vw, 14px);
     background-color: #ffff;
+    margin: 0px 7.5%;
+    align-self: flex-start;
 }
 
 input[type="datetime-local"] {
@@ -945,7 +947,7 @@ margin-top: 0;
 
 .imageLabel{
     color: #8e8e8e;
-    margin-top: 0;
+    margin-top: 1.3%;
     margin-bottom: 0;
     line-height: normal;
     border: none;
@@ -971,7 +973,24 @@ input[type="radio"]:checked {
   background-color: #293d6a;
   border-color: #293d6a;
 }
+
  
+/* hr { height:3px; border:none; color:rgb(60,90,180); background-color:rgb(60,90,180); } */
+
+hr {
+    width: 75%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(41, 61, 106, 0.1), rgba(41, 61, 106, 0.75), rgb(41, 61, 106, 0.1));
+    margin: 20px 0px;
+}
+
+.createEventForm h3 {
+    color: #293d6a;
+    font-size: clamp(24px, 4vw, 40px);
+    margin: clamp(10px, 2.5vw, 30px);
+    margin-bottom: 10px;
+}
  
 
 
