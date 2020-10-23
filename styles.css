@@ -893,7 +893,7 @@ h1 span {
 .radio {
     border: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0;
     /* border: 1px solid purple;
      */
