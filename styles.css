@@ -963,6 +963,7 @@ margin-top: 0;
 } */
 
 
+/* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
 
 .uploadImage:hover .imageLabel, .uploadImage:hover input{
     color: #293d6a
@@ -1018,6 +1019,9 @@ hr {
       box-shadow: 0 0 5px #293d6a;
   border: 1px solid  #293d6a;
 }
+
+
+/* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
 
 .uploadImage:hover input {
         outline: none;

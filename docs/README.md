@@ -160,6 +160,8 @@ Style hrs - code based on: https://css-tricks.com/examples/hrs/
 
 Placeholder changes color on hover - based on:https://stackoverflow.com/questions/54308139/how-to-show-placeholder-when-we-hover-on-input-type-text
 
+Style child when hovering on parent: /* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
