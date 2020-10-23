@@ -96,7 +96,9 @@ Tried using maxlength and minlenght to ensure user would get error if they didn'
 
 There was a horizontal scrollbar even though elements were set to 100vw. This is because a visual error is caused when the vh is above 100vh. Fixed this using overflow-x:hidden. Acknowledgement to stackoverflow answer is in the Acknowledgement section.
 
-Placeholder for input type= "datetimelocal" wouldn't show. I used the solution from this answer: https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687 and amended it to work for datetimelocal
+Placeholder for input type= "datetimelocal" wouldn't show. I used the solution from this answer: https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687 and amended it to work for datetimelocal.
+
+Default input type="file" output was clashing with my color scheme. I hid the display and styled the label instead. https://stackoverflow.com/questions/21842274/cross-browser-custom-styling-for-file-upload-button/21842275#21842275
 
 ======
 
@@ -149,6 +151,8 @@ Upload image: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/fi
 Make placeholder show for input="datetimelocal": https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687
 
 html select date and time: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local
+
+Hide default input="file" and style label instead:https://stackoverflow.com/questions/21842274/cross-browser-custom-styling-for-file-upload-button/21842275#21842275
 
 Acknowledgements: 
 ======
