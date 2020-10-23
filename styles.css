@@ -927,7 +927,6 @@ h1 span {
 
 input[type="datetime-local"] {
   color:#8e8e8e;
-  border: 1px solid blue;
 }
 
 input[type="file"] {
@@ -939,7 +938,25 @@ display: none;
 }
 
 
+/* styling of radio buttons based on code from https://stackoverflow.com/questions/45327086/how-change-the-color-of-the-radio-button */
 
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  padding: 3px;
+  background-clip: content-box;
+  border: 1px solid #bbbbbb;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: #293d6a;
+  border-color: #293d6a;
+}
  
  
 
