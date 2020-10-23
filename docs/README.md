@@ -158,6 +158,8 @@ Style radio buttons: https://stackoverflow.com/questions/45327086/how-change-the
 
 Style hrs - code based on: https://css-tricks.com/examples/hrs/
 
+Placeholder changes color on hover - based on:https://stackoverflow.com/questions/54308139/how-to-show-placeholder-when-we-hover-on-input-type-text
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
