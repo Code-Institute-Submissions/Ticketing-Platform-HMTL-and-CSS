@@ -96,6 +96,8 @@ Tried using maxlength and minlenght to ensure user would get error if they didn'
 
 There was a horizontal scrollbar even though elements were set to 100vw. This is because a visual error is caused when the vh is above 100vh. Fixed this using overflow-x:hidden. Acknowledgement to stackoverflow answer is in the Acknowledgement section.
 
+Placeholder for input type= "datetimelocal" wouldn't show. I used the solution from this answer: https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687 and amended it to work for datetimelocal
+
 ======
 
 Version control:
@@ -143,6 +145,10 @@ Credit Card Number will only accept 16 digits: https://www.w3schools.com/tags/at
 Prevent horizontal overflow. Second Answer here: https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one
 
 Upload image: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
+
+Make placeholder show for input="datetimelocal": https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687
+
+html select date and time: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local
 
 Acknowledgements: 
 ======
