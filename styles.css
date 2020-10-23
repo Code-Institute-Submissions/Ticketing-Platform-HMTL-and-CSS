@@ -916,8 +916,8 @@ h1 span {
 .createEventForm h4 {
     color: #293d6a;
     font-weight: normal;
-    font-size: clamp(10px, 1.5vw, 30px);
-    margin: clamp(10px, 2.5vw, 30px);
+    font-size: clamp(10px, 1vw, 30px);
+    background-color: #ffff;
 }
 
 
