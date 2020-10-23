@@ -940,11 +940,15 @@ input[type="datetime-local"] {
 }
 
 input[type="file"] {
-display: none;
+margin-top: 0;
 }
 
 .imageLabel{
     color: #8e8e8e;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: normal;
+    border: none;
 }
 
 
