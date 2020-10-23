@@ -37,8 +37,12 @@
             <input required type="text" placeholder="Event Title" id="eventTitle" name="eventTitle">
             <textarea required placeholder="Event Description" id="eventDescription" name="eventDescription"></textarea>
             <input required type="text" placeholder="Location" id="location" name="location">
-            <input required type="datetime-local" placeholder="Start Date and Time" id="startTime" name="startTime">
-            <input required type="datetime-local" placeholder="End Date and Time" id="endTime" name="endTime">
+
+            <!-- Made placeholder show using solution from https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687 -->
+
+            <input required type="text" placeholder="Start Date and Time" id="startTime" name="startTime" onfocus="(this.type='datetime-local')" onblur="(this.type='text')">
+
+            <input required type="text" placeholder="End Date and Time" id="endTime" name="endTime" onfocus="(this.type='datetime-local')" onblur="(this.type='text')">
             <div class="uploadImage">
                 <label required for="image">Upload a picture:</label>
                 <input type="file" id="image" name="image" accept="image/png, image/jpeg">
