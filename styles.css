@@ -190,15 +190,15 @@ h3, h5, h6 {
     color: #293d6a;
     transition: transform 0.3s;
     border: 1px solid #8f897c;
-      /* transform-origin: 50% 0%;
-  animation:flipInX 1s linear; */
 
+    /* box shadow from https://codepen.io/sdthornton/pen/wBZdXq */
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .detailsContainer {
     background-color: #ffff;
     margin: 7px;
-    
+        
 }
 
 .textContainer p i {
