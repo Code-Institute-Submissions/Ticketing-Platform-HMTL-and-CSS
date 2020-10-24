@@ -8,8 +8,6 @@
   font-family: "Nunito", sans-serif;
 }
 
-/* font-family: 'Bitter', serif; */
-
 body {
   position: relative;
   min-height: 100vh;
@@ -469,6 +467,7 @@ footer ul {
 }
 
 .description {
+  font-family: "Bitter", serif;
   background-color: #fff;
   color: #000;
   width: min(40ch, 95vw);
