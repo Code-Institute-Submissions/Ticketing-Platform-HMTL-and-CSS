@@ -1,9 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Styling for all pages */
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #eeecec;
   font-family: "Nunito", sans-serif;
 }
@@ -35,9 +43,15 @@ nav {
 }
 
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   background-color: #f7f7f7;
 }
 
@@ -65,11 +79,19 @@ h6 {
   padding: clamp(0.5px, 0.75vw, 3.5px);
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   z-index: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   border-radius: 2px;
 }
@@ -79,6 +101,8 @@ h6 {
   position: absolute;
   background-color: #f7f7f7;
   z-index: -1;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   content: "";
 }
@@ -87,7 +111,6 @@ h6 {
   background-color: #f7f7f7;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -168,9 +191,15 @@ footer {
   height: 2.5rem;
   /* end copied code */
   background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   border-top: 1px solid #293d6a;
 }
 
@@ -184,22 +213,40 @@ footer i {
 }
 
 footer i {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 footer i:hover {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 footer ul {
   width: 100%;
   background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .fa-instagram:hover {
   /* code from https://www.mazzitorch.com/instagram-logo-css-gradient-html-web-design/ */
+  background: -o-radial-gradient(
+    30% 107%,
+    circle,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
   background: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
@@ -232,13 +279,21 @@ footer ul {
 
 .eventPage,
 .createEventForm {
-  animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
 }
 
 .eventSummaryContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -247,11 +302,16 @@ footer ul {
   max-width: 285px;
   border-radius: 5px;
   color: #293d6a;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   border: 1px solid #8f897c;
 
   /* box shadow from https://codepen.io/sdthornton/pen/wBZdXq */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .detailsContainer {
@@ -293,9 +353,12 @@ footer ul {
 .eventSummaryContainer:hover {
   border: 1px solid #293d6a;
   /* Box shadow code taken from https://codepen.io/sdthornton/pen/wBZdXq */
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   cursor: pointer;
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .textContainer {
@@ -308,42 +371,84 @@ footer ul {
 
 /* The below code is copied from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load */
 
-@keyframes slideInFromLeft {
+@-webkit-keyframes slideInFromLeft {
   0% {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
 
 .slideFromLeft {
-  animation: 1s ease-in 0s 1 slideInFromLeft;
+  -webkit-animation: 1s ease-in 0s 1 slideInFromLeft;
+          animation: 1s ease-in 0s 1 slideInFromLeft;
 }
 
 /* End copied code */
 
 /* Below is similar code to the stackoverflow answer but I amended the code to make the slide happen from the opposite side. I than gave the elements a class name based on where I wanted them to slide from */
 
-@keyframes slideInFromRight {
+@-webkit-keyframes slideInFromRight {
   0% {
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
 
 .slideFromRight {
-  animation: 1s ease-in 0s 1 slideInFromRight;
+  -webkit-animation: 1s ease-in 0s 1 slideInFromRight;
+          animation: 1s ease-in 0s 1 slideInFromRight;
 }
 
 .slideFromRight {
-  animation: 1s ease-in 0s 1 slideInFromRight;
+  -webkit-animation: 1s ease-in 0s 1 slideInFromRight;
+          animation: 1s ease-in 0s 1 slideInFromRight;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
@@ -369,10 +474,17 @@ footer ul {
   }
 
   .detailsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: 2px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .eventSummaryContainer img {
@@ -405,11 +517,19 @@ footer ul {
 .eventBox {
   width: 100vw;
   /* max-width:100%;  */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .eventBox img {
@@ -459,11 +579,19 @@ footer ul {
 
 .descriptionAndTicketsWrapper {
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .description {
@@ -490,7 +618,8 @@ footer ul {
 .tickets {
   border: 1px solid #8f897c;
   background-color: #fff;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   margin: 3% 2.5% 5% 2.5%;
   margin-top: clamp(1px, 10%, 85px);
   margin-bottom: clamp(1px, 10%, 85px);
@@ -533,9 +662,14 @@ footer ul {
   padding: 5px 0;
 
   /* Box shadow code taken from https://codepen.io/sdthornton/pen/wBZdXq */
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 
   /* transition from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
+
+  -webkit-transition: all 0.2s ease-in-out;
+
+  -o-transition: all 0.2s ease-in-out;
 
   transition: all 0.2s ease-in-out;
 }
@@ -549,16 +683,25 @@ footer ul {
 
 .tickets button:hover,
 .createEventForm button:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 
-  box-shadow: 0 19px 38px rgba(249, 171, 85, 0.3),
+  -webkit-box-shadow: 0 19px 38px rgba(249, 171, 85, 0.3),
+    0 15px 12px rgba(249, 171, 85, 0.22);
+
+          box-shadow: 0 19px 38px rgba(249, 171, 85, 0.3),
     0 15px 12px rgba(249, 171, 85, 0.22);
   border: 1px solid #f9ab55;
 }
 
 .date-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #fff;
 }
 
@@ -567,9 +710,14 @@ footer ul {
 .cardWrap {
   color: #fff;
   font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background-color: #fff;
   margin-bottom: 13%;
   padding-left: clamp(0px, 3%, 30px);
@@ -577,6 +725,21 @@ footer ul {
 }
 
 .card {
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(#e84c3d),
+    color-stop(26%, #e84c3d),
+    color-stop(26%, #ecedef),
+    to(#ecedef)
+  );
+  background: -o-linear-gradient(
+    top,
+    #e84c3d 0%,
+    #e84c3d 26%,
+    #ecedef 26%,
+    #ecedef 100%
+  );
   background: linear-gradient(
     to bottom,
     #e84c3d 0%,
@@ -736,7 +899,15 @@ h1 span {
 .barcode {
   height: 2em;
   width: 0;
-  box-shadow: 1px 0 0 1px #343434, 5px 0 0 1px #343434, 10px 0 0 1px #343434,
+  -webkit-box-shadow: 1px 0 0 1px #343434, 5px 0 0 1px #343434, 10px 0 0 1px #343434,
+    11px 0 0 1px #343434, 15px 0 0 1px #343434, 18px 0 0 1px #343434,
+    22px 0 0 1px #343434, 23px 0 0 1px #343434, 26px 0 0 1px #343434,
+    30px 0 0 1px #343434, 35px 0 0 1px #343434, 37px 0 0 1px #343434,
+    41px 0 0 1px #343434, 44px 0 0 1px #343434, 47px 0 0 1px #343434,
+    51px 0 0 1px #343434, 56px 0 0 1px #343434, 59px 0 0 1px #343434,
+    64px 0 0 1px #343434, 68px 0 0 1px #343434, 72px 0 0 1px #343434,
+    74px 0 0 1px #343434, 77px 0 0 1px #343434, 81px 0 0 1px #343434;
+          box-shadow: 1px 0 0 1px #343434, 5px 0 0 1px #343434, 10px 0 0 1px #343434,
     11px 0 0 1px #343434, 15px 0 0 1px #343434, 18px 0 0 1px #343434,
     22px 0 0 1px #343434, 23px 0 0 1px #343434, 26px 0 0 1px #343434,
     30px 0 0 1px #343434, 35px 0 0 1px #343434, 37px 0 0 1px #343434,
@@ -850,9 +1021,15 @@ h1 span {
 
 .formWrapper {
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .createEventForm {
@@ -861,10 +1038,19 @@ h1 span {
   background-color: #ffff;
   border: 1px solid #8f897c;
   border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .createEventForm input,
@@ -892,8 +1078,12 @@ h1 span {
 
 .radio {
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0;
 }
 
@@ -927,7 +1117,8 @@ h1 span {
   font-size: clamp(12px, 1.2vw, 14px);
   background-color: #ffff;
   margin: 12px 7.5% 0px;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 input[type="datetime-local"] {
@@ -985,6 +1176,19 @@ hr {
   width: 75%;
   border: 0;
   height: 2px;
+  background-image: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(rgba(41, 61, 106, 0.1)),
+    color-stop(rgba(41, 61, 106, 0.75)),
+    to(rgb(41, 61, 106, 0.1))
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(41, 61, 106, 0.1),
+    rgba(41, 61, 106, 0.75),
+    rgb(41, 61, 106, 0.1)
+  );
   background-image: linear-gradient(
     to right,
     rgba(41, 61, 106, 0.1),
@@ -1022,14 +1226,16 @@ hr {
 .uploadImage:focus {
   color: #293d6a;
   outline: none;
-  box-shadow: 0 0 5px #f9ab55;
+  -webkit-box-shadow: 0 0 5px #f9ab55;
+          box-shadow: 0 0 5px #f9ab55;
   border: 1px solid #f9ab55;
 }
 
 .uploadImage:hover input {
   /* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
   outline: none;
-  box-shadow: 0 0px #ffff;
+  -webkit-box-shadow: 0 0px #ffff;
+          box-shadow: 0 0px #ffff;
   border: none;
 }
 
