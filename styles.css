@@ -1,119 +1,110 @@
+/* Styling for all pages */
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color:#eeecec;
-  font-family: 'Nunito', sans-serif;
+  background-color: #eeecec;
+  font-family: "Nunito", sans-serif;
 }
 
-   /* font-family: 'Bitter', serif; */
-
+/* font-family: 'Bitter', serif; */
 
 body {
-    position: relative;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    /* found this in the second answer here: https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one */
-    overflow-x:hidden;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* found overflow-x:hidden in the second answer here: https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one */
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
 
 nav {
-    padding: 10px;
-    background-color: #f7f7f7;
-    color: #293d6a;
-    /* font-size: 100%; */
-    font-size: clamp(10px, 3vw, 16px);
-    border-bottom: 1px solid #293d6a;
-    width: 100vw;
-    /* max-width:100%;  */
+  padding: 10px;
+  background-color: #f7f7f7;
+  color: #293d6a;
+  font-size: clamp(10px, 3vw, 16px);
+  border-bottom: 1px solid #293d6a;
+  width: 100vw;
 }
 
-
-nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: #f7f7f7;
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #f7f7f7;
 }
 
 nav li {
-    background-color: #f7f7f7;
-    margin-right: 5vw;
+  background-color: #f7f7f7;
+  margin-right: 5vw;
 }
 
-
-
-nav a, nav a:visited {
-    background-color: #f7f7f7;
-    color: #293d6a; 
+nav a,
+nav a:visited {
+  background-color: #f7f7f7;
+  color: #293d6a;
 }
 
-
-h3, h5, h6 {
-    background-color: #ffff;
+h3,
+h5,
+h6 {
+  background-color: #ffff;
 }
 
-        
-
-.eventPage, .createEventForm {
-    animation: fadein 3s;
-}
-
-/* The below code is largely taken from https://codepen.io/chancesq/pen/qBOyQoW but amended to work on my site */
+/* The below code originates from https://codepen.io/chancesq/pen/qBOyQoW It is substantially amended to make responsive and work on my site */
 
 .btn {
-    background-color:#f7f7f7;
-    padding: clamp(0.5px, 0.75vw, 3.5px);
-    /* border: 1px solid #293d6a; */
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 0;
-    transition: 1s;
-    border-radius: 2px;
+  background-color: #f7f7f7;
+  padding: clamp(0.5px, 0.75vw, 3.5px);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+  border-radius: 2px;
 }
 
-
-.btn::before, .btn::after {
+.btn::before,
+.btn::after {
   position: absolute;
-  background-color:#f7f7f7;
+  background-color: #f7f7f7;
   z-index: -1;
   transition: 1s;
-  content: '';
+  content: "";
 }
-
-
 
 .noselect {
-    background-color:#f7f7f7;
+  background-color: #f7f7f7;
   -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.btn:hover::before, #events:hover::before, #createEvent:hover::before {
+.btn:hover::before,
+#events:hover::before,
+#createEvent:hover::before {
   width: 0px;
   background: #f7f7f7;
 }
 
-.btn:hover::after, #events:hover::after, #createEvent:hover::after {
+.btn:hover::after,
+#events:hover::after,
+#createEvent:hover::after {
   height: 0px;
   background: #f7f7f7;
 }
@@ -124,264 +115,200 @@ h3, h5, h6 {
 
 /* Ends copied code */
 
-#events{
-   border: 1px solid #293d6a; 
+#events {
+  border: 1px solid #293d6a;
 }
 
 #events::before {
-    height: clamp(1px, 7vw, 35px);
-    width: clamp(1px, 8.5vw, 41px);
+  height: clamp(1px, 7vw, 35px);
+  width: clamp(1px, 8.5vw, 41px);
 }
 
 #events::after {
-    width: clamp(40px, 13vw, 70px);
-    height: clamp(1px, 3vw, 13px);
+  width: clamp(40px, 13vw, 70px);
+  height: clamp(1px, 3vw, 13px);
 }
 
-
-#createEvent{
-    border: 1px solid #293d6a;
+#createEvent {
+  border: 1px solid #293d6a;
 }
 
-#createEvent::before{
-    width: clamp(52px, 16vw, 85px);
-    height: clamp(20px, 6.5vw, 30px);
+#createEvent::before {
+  width: clamp(52px, 16vw, 85px);
+  height: clamp(20px, 6.5vw, 30px);
 }
 
-#createEvent::after{
-    width: clamp(67px, 20vw, 105px);
-    height: clamp(1px, 3vw, 13px);
+#createEvent::after {
+  width: clamp(67px, 20vw, 105px);
+  height: clamp(1px, 3vw, 13px);
 }
 
 #createEvent:hover::before {
   width: 0px;
- 
 }
 
-#currentPage{
-    cursor: default;
-    border: 1px solid #293d6a;
+#currentPage {
+  cursor: default;
+  border: 1px solid #293d6a;
 }
 
-#currentPage::before{
+#currentPage::before {
   height: 0;
   width: 0;
 }
 
-#currentPage::after{
+#currentPage::after {
   height: 0;
   width: 0;
 }
-
-
-
-
-.eventSummaryContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #ffff;
-    width: 95vw;
-    max-width: 285px;
-    border-radius: 5px;
-    color: #293d6a;
-    transition: transform 0.3s;
-    border: 1px solid #8f897c;
-
-    /* box shadow from https://codepen.io/sdthornton/pen/wBZdXq */
-      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-.detailsContainer {
-    background-color: #ffff;
-    margin: 7px;
-        
-}
-
-.textContainer p i {
-    color: #293d6a94;
-}
-
-
-
-.eventSummaryContainer img{
-    margin-top: 2%;
-    margin-bottom: 0%;
-    max-width: 100%;
-    height: 150px;
-    background-color: #ffff;
-    border-radius: 5px;
-}
-
-.eventSummaryContainer p {
-    background-color: #ffff;
-    font-size: 60%;
-    margin-top: 0px;
-    margin-bottom: 7px;
-    color: #8f897c
-}
-
-.eventSummaryContainer h3 {
-    font-size: 130%;
-    margin: 11px 0px;
-}
-
-
-.eventSummaryContainer i {
-    background-color: #ffff;
-    color: #8f897c;
-}
-
-/* Box shadow code taken from https://codepen.io/sdthornton/pen/wBZdXq */
-
-.eventSummaryContainer:hover{
-    border: 1px solid #293d6a;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    cursor: pointer;
-    transform: scale(1.03); 
-}
-
-.textContainer{
-
-    background-color: #ffff;
-
-}
-
-.contentWrapper{
-    padding-bottom: 2.5rem; 
-}
-
-/* code in first 4 attributes from free code camp */
 
 footer {
-
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    /* max-width:100%;  */
-    height: 2.5rem; 
-    background-color: #f7f7f7;
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-top: 1px solid #293d6a;    
+  /* code in first 4 attributes from https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/*/
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 2.5rem;
+  /* end copied code */
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid #293d6a;
 }
 
 footer a {
-    background-color: #f7f7f7;
-    color:inherit;
-
+  background-color: #f7f7f7;
+  color: inherit;
 }
 
-
-.copyright, footer i {
-       background-color: #f7f7f7;; 
+footer i {
+  background-color: #f7f7f7;
 }
 
-.copyright {
-    font-size: 50%;
+footer i {
+  transition: transform 0.5s;
 }
 
-footer i{
-    transition: transform 0.5s;
+footer i:hover {
+  transform: scale(1.5);
 }
 
-footer i:hover{
-    transform: scale(1.5); 
+footer ul {
+  width: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-around;
 }
 
-footer ul{
-    width: 100%;
-    background-color: #f7f7f7;
-    display: flex;
-    justify-content: space-around;
+.fa-instagram:hover {
+  /* code from https://www.mazzitorch.com/instagram-logo-css-gradient-html-web-design/ */
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* color from https://www.mazzitorch.com/instagram-logo-css-gradient-html-web-design/ */
-
-.fa-instagram:hover{
-
-    
-background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
-
+.fa-facebook-f:hover {
+  /* color from https://encycolorpedia.com/3b5998 */
+  color: #3b5998;
 }
-
-/* color from https://encycolorpedia.com/3b5998 */
-
-.fa-facebook-f:hover{
-    color: #3b5998;
-}
-
-/* color from https://encycolorpedia.com/00acee */
 
 .fa-twitter:hover {
-    color: #00acee;
+  /* color from https://encycolorpedia.com/00acee */
+  color: #00acee;
 }
-
-/* color from https://encycolorpedia.com/0e76a8 */
 
 .fa-linkedin-in:hover {
-    color: #0e76a8;
+  /* color from https://encycolorpedia.com/0e76a8 */
+  color: #0e76a8;
 }
 
+/* Home Page (Events Page) */
 
-@media only screen and (min-width: 700px) {
-
-  .eventSummaryContainer{
-    display: block;
-    max-width: 800px;
-    margin-top: 30px; 
- } 
-
-
-
-
-
-
- .eventSummaryContainer + .eventSummaryContainer{
-     margin-top: 15px;
- }
- 
- .detailsContainer{
-       display: flex;
-       flex-direction: row;
-       margin: 2px;
-       align-items: center;
-  }
-
-  .eventSummaryContainer img {   
-      margin: 0%;
-      max-width: 33%;
-      height: 150px;
-  }
-
-  .eventSummaryContainer h3 {  
-      margin-top: 7%;
-      margin-bottom: 18px;
-      font-size: 210%;
-    }
-  .eventSummaryContainer p {
-    font-size: 70%;
-    margin-bottom: 9px
-  }
-
-  .textContainer{
-    margin-left: 10%
-  }
-
-  .ticketsRemaining {
-      margin-bottom: 0;
-  }
-
+.eventPage,
+.createEventForm {
+  animation: fadein 3s;
 }
 
-/* The below code is copied from slack overflow questions */
+.eventSummaryContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #ffff;
+  width: 95vw;
+  max-width: 285px;
+  border-radius: 5px;
+  color: #293d6a;
+  transition: transform 0.3s;
+  border: 1px solid #8f897c;
+
+  /* box shadow from https://codepen.io/sdthornton/pen/wBZdXq */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.detailsContainer {
+  background-color: #ffff;
+  margin: 7px;
+}
+
+.textContainer p i {
+  color: #293d6a94;
+}
+
+.eventSummaryContainer img {
+  margin-top: 2%;
+  margin-bottom: 0%;
+  max-width: 100%;
+  height: 150px;
+  background-color: #ffff;
+  border-radius: 5px;
+}
+
+.eventSummaryContainer p {
+  background-color: #ffff;
+  font-size: 60%;
+  margin-top: 0px;
+  margin-bottom: 7px;
+  color: #8f897c;
+}
+
+.eventSummaryContainer h3 {
+  font-size: 130%;
+  margin: 11px 0px;
+}
+
+.eventSummaryContainer i {
+  background-color: #ffff;
+  color: #8f897c;
+}
+
+.eventSummaryContainer:hover {
+  border: 1px solid #293d6a;
+  /* Box shadow code taken from https://codepen.io/sdthornton/pen/wBZdXq */
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.textContainer {
+  background-color: #ffff;
+}
+
+.contentWrapper {
+  padding-bottom: 2.5rem;
+}
+
+/* The below code is copied from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load */
 
 @keyframes slideInFromLeft {
   0% {
@@ -390,16 +317,17 @@ background-clip: text;
   }
   100% {
     transform: translateX(0);
-    opacity: 1; 
+    opacity: 1;
   }
 }
 
-.slideFromLeft{
-    animation: 1s ease-in 0s 1 slideInFromLeft
+.slideFromLeft {
+  animation: 1s ease-in 0s 1 slideInFromLeft;
 }
 
+/* End copied code */
 
-/* I created the below code based on slack overflow question (for sliding in from opposite side) */
+/* Below is similar code to the stackoverflow answer but I amended the code to make the slide happen from the opposite side. I than gave the elements a class name based on where I wanted them to slide from */
 
 @keyframes slideInFromRight {
   0% {
@@ -412,209 +340,230 @@ background-clip: text;
   }
 }
 
-.slideFromRight{  
+.slideFromRight {
   animation: 1s ease-in 0s 1 slideInFromRight;
 }
 
-/* Copied and modified code from https://codepen.io/zesht/pen/MWgQxer */
-
-/* @keyframes flipInX {
-  0% {
-    -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  
-  100% {
-    -webkit-transform: perspective(1000px);
-    transform: perspective(1000px);
-  }
-} */
-
-.slideFromRight{  
+.slideFromRight {
   animation: 1s ease-in 0s 1 slideInFromRight;
 }
-
-
-
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
+/* End of "similar code" */
 
+@media only screen and (min-width: 700px) {
+  .eventSummaryContainer {
+    display: block;
+    max-width: 800px;
+    margin-top: 30px;
+  }
+
+  .eventSummaryContainer + .eventSummaryContainer {
+    margin-top: 15px;
+  }
+
+  .detailsContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+    align-items: center;
+  }
+
+  .eventSummaryContainer img {
+    margin: 0%;
+    max-width: 33%;
+    height: 150px;
+  }
+
+  .eventSummaryContainer h3 {
+    margin-top: 7%;
+    margin-bottom: 18px;
+    font-size: 210%;
+  }
+  .eventSummaryContainer p {
+    font-size: 70%;
+    margin-bottom: 9px;
+  }
+
+  .textContainer {
+    margin-left: 10%;
+  }
+
+  .ticketsRemaining {
+    margin-bottom: 0;
+  }
+}
 
 /* Party Page */
 
-.eventBox{
-    width: 100vw;
-    /* max-width:100%;  */
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
+.eventBox {
+  width: 100vw;
+  /* max-width:100%;  */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.eventBox img{
-    max-height: 50vh;
-    max-width: 95vw;
-    border-radius: 5px;
-    border: 3px solid #ffff;
-    margin-top: clamp(1px, 5%, 70px);
-    border-width: clamp(1px, 1vw, 5px);
+.eventBox img {
+  max-height: 50vh;
+  max-width: 95vw;
+  border-radius: 5px;
+  border: 3px solid #ffff;
+  margin-top: clamp(1px, 5%, 70px);
+  border-width: clamp(1px, 1vw, 5px);
 }
 
 .eventDetails {
-    padding: 0 2.5%;
-    border: 1px solid #8f897c;
-    background-color: #ffff;
-    border-radius: 5px;
-    margin: 3% 2.5% 0% 2.5%;
-    margin-top: clamp(1px, 10%, 85px);
-    max-width: 95vw;
+  padding: 0 2.5%;
+  border: 1px solid #8f897c;
+  background-color: #ffff;
+  border-radius: 5px;
+  margin: 3% 2.5% 0% 2.5%;
+  margin-top: clamp(1px, 10%, 85px);
+  max-width: 95vw;
 }
 
-.eventDetails p, .eventDetails i, .eventDetails a, .eventDetails h3 {
-    background-color: #ffff;
-    font-size: clamp(10px, 2vw, 17px);
-    color: #8f897c;
-    margin-bottom: clamp(5px, 1vw, 8px);
+.eventDetails p,
+.eventDetails i,
+.eventDetails a,
+.eventDetails h3 {
+  background-color: #ffff;
+  font-size: clamp(10px, 2vw, 17px);
+  color: #8f897c;
+  margin-bottom: clamp(5px, 1vw, 8px);
 }
 
 .eventDetails h3 {
-    color: #293d6a;
-    font-size: clamp(24px, 4vw, 40px);
-    margin: clamp(10px, 2.5vw, 30px);
-    margin-bottom: 3px;
+  color: #293d6a;
+  font-size: clamp(24px, 4vw, 40px);
+  margin: clamp(10px, 2.5vw, 30px);
+  margin-bottom: 3px;
 }
 
 .eventDetails i {
-    margin-right: 1.6vw;
-    color: #293d6a94;
+  margin-right: 1.6vw;
+  color: #293d6a94;
 }
 
 .eventDetails a {
-    text-decoration: underline;
-
+  text-decoration: underline;
 }
 
-.descriptionAndTicketsWrapper{
-    width: 100vw;
-    /* max-width:100%;  */
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
+.descriptionAndTicketsWrapper {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-
-.description{
-    background-color: #fff;
-    color: #000;
-    width: min(40ch, 95vw);
-    word-wrap:break-word;
-    padding: 2%;
-    border-radius: 5px;
-    border: 1px solid #8f897c;
-    margin: 3% 2.5% 3% 2.5%;
-    margin-top: clamp(1px, 10%, 85px);
+.description {
+  background-color: #fff;
+  color: #000;
+  width: min(40ch, 95vw);
+  word-wrap: break-word;
+  padding: 2%;
+  border-radius: 5px;
+  border: 1px solid #8f897c;
+  margin: 3% 2.5% 3% 2.5%;
+  margin-top: clamp(1px, 10%, 85px);
 }
 
-.description p{
-    margin-bottom: 1em;
-    line-height: 1.5em;
-    background-color: #fff;
-    color: #000;
-    font-size: 14px;
-    
+.description p {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
 }
 
 .tickets {
-    border: 1px solid #8f897c;
-    background-color: #fff; 
-    align-self: flex-start;
-    margin: 3% 2.5% 5% 2.5%;
-    margin-top: clamp(1px, 10%, 85px);
-    margin-bottom: clamp(1px, 10%, 85px);
-    padding: 1%;
-    padding-top: clamp(7px, 1%, 200px);
-    padding-bottom: clamp(7px, 1%, 200px);
-    border-radius: 5px;
-    max-width: 95vw;
+  border: 1px solid #8f897c;
+  background-color: #fff;
+  align-self: flex-start;
+  margin: 3% 2.5% 5% 2.5%;
+  margin-top: clamp(1px, 10%, 85px);
+  margin-bottom: clamp(1px, 10%, 85px);
+  padding: 1%;
+  padding-top: clamp(7px, 1%, 200px);
+  padding-bottom: clamp(7px, 1%, 200px);
+  border-radius: 5px;
+  max-width: 95vw;
 }
 
 .tickets h3 {
-    color: #293d6a;
-    font-size: clamp(24px, 4vw, 40px);
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 3px;
+  color: #293d6a;
+  font-size: clamp(24px, 4vw, 40px);
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 3px;
 }
 
-.tickets hr{
-    margin: 0px auto 40px;
+.tickets hr {
+  margin: 0px auto 40px;
 }
 
 .eventDetails hr {
-    margin: 0px auto 10px;
-    margin-bottom: clamp(10px, 2.5vw, 30px);
+  margin: 0px auto 10px;
+  margin-bottom: clamp(10px, 2.5vw, 30px);
 }
 
-.tickets button, .createEventForm button{
-    background-color: #293d6a;
-    color: #fff;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 150%;
-    cursor: pointer;
-    width: 100%;
-    border-color: transparent;
-    margin-top: 13%;
-    margin-bottom: 13%;
-    padding: 5px 0;
+.tickets button,
+.createEventForm button {
+  background-color: #293d6a;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 150%;
+  cursor: pointer;
+  width: 100%;
+  border-color: transparent;
+  margin-top: 13%;
+  margin-bottom: 13%;
+  padding: 5px 0;
 
-    /* box shadow from internet */
-      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  /* Box shadow code taken from https://codepen.io/sdthornton/pen/wBZdXq */
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 
-      /* transition from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
+  /* transition from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
 
-      transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.createEventForm button{
-    margin-top: 5%;
-    width: 85%
+.createEventForm button {
+  margin-top: 5%;
+  width: 85%;
 }
 
 /* transition from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
 
-.tickets button:hover, .createEventForm button:hover{
-    transform: scale(1.1);
+.tickets button:hover,
+.createEventForm button:hover {
+  transform: scale(1.1);
 
-    box-shadow: 0 19px 38px rgba(249, 171, 85,0.30), 0 15px 12px rgba(249, 171, 85,0.22);
-  border: 1px solid  #F9AB55;
-  
+  box-shadow: 0 19px 38px rgba(249, 171, 85, 0.3),
+    0 15px 12px rgba(249, 171, 85, 0.22);
+  border: 1px solid #f9ab55;
 }
 
-
-
-.date-field{
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
+.date-field {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
 }
 
-
-
-
-
-
-/* Code from internet. See readme */
+/* Code originates from https://codepen.io/verpixelt/pen/cEJLa but amended substantially to make responsive and to work on my site */
 
 .cardWrap {
   color: #fff;
@@ -623,20 +572,19 @@ background-clip: text;
   justify-content: center;
   align-content: center;
   background-color: #fff;
-    /* max-width: 100vw; */
-      margin-bottom: 13%;
-    padding-left: clamp(0px, 3%, 30px);
-    padding-right: clamp(0px, 3%, 30px);
+  margin-bottom: 13%;
+  padding-left: clamp(0px, 3%, 30px);
+  padding-right: clamp(0px, 3%, 30px);
 }
 
-
-
-
-
-
-
 .card {
-  background: linear-gradient(to bottom, #e84c3d 0%, #e84c3d 26%, #ecedef 26%, #ecedef 100%);
+  background: linear-gradient(
+    to bottom,
+    #e84c3d 0%,
+    #e84c3d 26%,
+    #ecedef 26%,
+    #ecedef 100%
+  );
   height: 11em;
   float: left;
   position: relative;
@@ -644,38 +592,33 @@ background-clip: text;
   width: clamp(300px, 45vw, 350px);
 }
 
-
 .cardLeft {
-    /* width: 75%; */
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-
-
 }
-
-
 
 .cardRight {
   width: 33%;
-  border-left: .18em dashed #fff;
+  border-left: 0.18em dashed #fff;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-.cardRight:before, .cardRight:after {
+.cardRight:before,
+.cardRight:after {
   content: "";
   position: absolute;
   display: block;
-  width: .9em;
-  height: .9em;
+  width: 0.9em;
+  height: 0.9em;
   background: #fff;
   border-radius: 50%;
-  left: -.5em;
+  left: -0.5em;
 }
 .cardRight:before {
-  top: -.4em;
+  top: -0.4em;
 }
 .cardRight:after {
-  bottom: -.4em;
+  bottom: -0.4em;
 }
 
 h1 {
@@ -688,43 +631,55 @@ h1 span {
   background-color: #e84c3d;
 }
 
-.title, .name, .price, .refunds {
+.title,
+.name,
+.price,
+.refunds {
   text-transform: uppercase;
   font-weight: normal;
 }
-.title h2, .name h2, .price h2, .refunds h2 {
-  font-size: .9em;
+.title h2,
+.name h2,
+.price h2,
+.refunds h2 {
+  font-size: 0.9em;
   color: #525252;
   margin: 0;
   text-transform: none;
 }
-.title span, .name span, .price span, .refunds span, .number span {
-  font-size: .7em;
+.title span,
+.name span,
+.price span,
+.refunds span,
+.number span {
+  font-size: 0.7em;
   color: #a2aeae;
 }
 
 .title {
-  margin: .9em 0 0 0;
+  margin: 0.9em 0 0 0;
 }
 
-.name, .price {
-  margin: .7em 0 0 0;
+.name,
+.price {
+  margin: 0.7em 0 0 0;
 }
 
 .refunds {
-  margin: .7em 0 0 1em;
+  margin: 0.7em 0 0 1em;
   position: absolute;
   bottom: 5px;
   right: 5px;
 }
 
-.price, .refunds {
+.price,
+.refunds {
   float: left;
 }
 
-.price{
-    position: absolute;
-    bottom: 5px;
+.price {
+  position: absolute;
+  bottom: 5px;
 }
 
 .eye {
@@ -736,7 +691,8 @@ h1 span {
   border-radius: 1em/0.6em;
   z-index: 1;
 }
-.eye:before, .eye:after {
+.eye:before,
+.eye:after {
   content: "";
   display: block;
   position: absolute;
@@ -751,8 +707,8 @@ h1 span {
   top: 4px;
 }
 .eye:after {
-  width: .5em;
-  height: .5em;
+  width: 0.5em;
+  height: 0.5em;
   background: #fff;
   z-index: 3;
   left: 12px;
@@ -764,7 +720,7 @@ h1 span {
   text-transform: uppercase;
 }
 .number input {
-    background-color: #fff;
+  background-color: #fff;
   color: #e84c3d;
   margin: 0 0 0 0;
   font-size: 2.5em;
@@ -781,223 +737,228 @@ h1 span {
 .barcode {
   height: 2em;
   width: 0;
-  /* margin: .7em 0 0 .8em; */
-  box-shadow: 1px 0 0 1px #343434, 5px 0 0 1px #343434, 10px 0 0 1px #343434, 11px 0 0 1px #343434, 15px 0 0 1px #343434, 18px 0 0 1px #343434, 22px 0 0 1px #343434, 23px 0 0 1px #343434, 26px 0 0 1px #343434, 30px 0 0 1px #343434, 35px 0 0 1px #343434, 37px 0 0 1px #343434, 41px 0 0 1px #343434, 44px 0 0 1px #343434, 47px 0 0 1px #343434, 51px 0 0 1px #343434, 56px 0 0 1px #343434, 59px 0 0 1px #343434, 64px 0 0 1px #343434, 68px 0 0 1px #343434, 72px 0 0 1px #343434, 74px 0 0 1px #343434, 77px 0 0 1px #343434, 81px 0 0 1px #343434;
+  box-shadow: 1px 0 0 1px #343434, 5px 0 0 1px #343434, 10px 0 0 1px #343434,
+    11px 0 0 1px #343434, 15px 0 0 1px #343434, 18px 0 0 1px #343434,
+    22px 0 0 1px #343434, 23px 0 0 1px #343434, 26px 0 0 1px #343434,
+    30px 0 0 1px #343434, 35px 0 0 1px #343434, 37px 0 0 1px #343434,
+    41px 0 0 1px #343434, 44px 0 0 1px #343434, 47px 0 0 1px #343434,
+    51px 0 0 1px #343434, 56px 0 0 1px #343434, 59px 0 0 1px #343434,
+    64px 0 0 1px #343434, 68px 0 0 1px #343434, 72px 0 0 1px #343434,
+    74px 0 0 1px #343434, 77px 0 0 1px #343434, 81px 0 0 1px #343434;
 }
 
+/* End of copied (but amended) code */
 
-.tickets h4, .card-number, .form-body, .month, .year, .cvv-input, .cvv-details p, .cvv-input input, .month select, .year select{
-    background-color: white;
+/* Below Code originates from https://designmodo.com/create-credit-card-ui/#download-the-credit-card-html. Substantially amended for my site. */
+
+.tickets h4,
+.card-number,
+.form-body,
+.month,
+.year,
+.cvv-input,
+.cvv-details p,
+.cvv-input input,
+.month select,
+.year select {
+  background-color: white;
 }
-
-
 
 .credit-card {
-    width: 360px;
-    max-width: 95%;
-    /* height: 400px; */
-    margin: 0 auto 0;
-    /* border: 1px solid #ddd; */
-    border-radius: 6px;
-    background-color: #fff;
-
+  width: 360px;
+  max-width: 95%;
+  margin: 0 auto 0;
+  border-radius: 6px;
+  background-color: #fff;
 }
-
-
 
 .card-number,
 .cvv-input input,
 .month select,
 .year select {
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 30px;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 30px;
 }
- 
+
 .card-number,
 .month select,
 .year select {
-    font-size: 14px;
-    font-weight: 100;
-    
+  font-size: 14px;
+  font-weight: 100;
 }
- 
+
 .card-number,
 .cvv-input input,
 .month select,
 .year select {
-   
-    color: #8e8e8e;
+  color: #8e8e8e;
 }
 
 .card-number {
-    width: 100%;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    border: 2px solid #e1e8ee;
-    border-radius: 6px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border: 2px solid #e1e8ee;
+  border-radius: 6px;
 }
 
 .month select,
 .year select {
-    width: clamp(86px, 29vw, 130px);
-    margin-bottom: 20px;
-    padding-left: 20px;
-    border: 2px solid #e1e8ee;
-    border-radius: 6px;
-    background: url(caret.png) no-repeat;
-    background-position: 85% 50%;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+  width: clamp(86px, 29vw, 130px);
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border: 2px solid #e1e8ee;
+  border-radius: 6px;
+  background: url(caret.png) no-repeat;
+  background-position: 85% 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
-
 
 .cvv-input input {
-    float: left;
-    width: 145px;
-    padding-left: 20px;
-    border: 2px solid #e1e8ee;
-    border-radius: 6px;
-    background: #fff;
+  float: left;
+  width: 145px;
+  padding-left: 20px;
+  border: 2px solid #e1e8ee;
+  border-radius: 6px;
+  background: #fff;
 }
- 
+
 .cvv-details {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 16px;
-    float: right;
-    margin-bottom: 20px;
-}
- 
-
-
-/* From https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
-
-.card input:focus{
-    outline: none;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  float: right;
+  margin-bottom: 20px;
 }
 
-.formWrapper{
-    width: 100vw;
+/* End of copied code */
+
+.card input:focus {
+  /* From https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
+  outline: none;
+}
+
+@media only screen and (max-width: 345px) {
+  .cardWrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Create Event Page */
+
+.formWrapper {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.createEventForm{
-    margin: 60px 0px;
-    /* padding: 0px 100px; */
-    width: clamp(250px, 90vw, 500px);
-    background-color: #ffff;
-        border: 1px solid #8f897c;
-        border-radius: 6px;
-          display: flex;
-          flex-direction: column;
+.createEventForm {
+  margin: 60px 0px;
+  width: clamp(250px, 90vw, 500px);
+  background-color: #ffff;
+  border: 1px solid #8f897c;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
-.createEventForm input, .createEventForm textarea, .radio, .uploadImage, .imageLabel{
- 
-    background-color: #ffff;
-    outline: none;
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 30px;
-    padding: 0px 20px;
-    border: 2px solid #e1e8ee;
-    background: #fff;
-    width: 85%;
-    border-radius: 6px;
-    margin: 12px;
-    color: #293d6a
+.createEventForm input,
+.createEventForm textarea,
+.radio,
+.uploadImage,
+.imageLabel {
+  background-color: #ffff;
+  outline: none;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 30px;
+  padding: 0px 20px;
+  border: 2px solid #e1e8ee;
+  background: #fff;
+  width: 85%;
+  border-radius: 6px;
+  margin: 12px;
+  color: #293d6a;
 }
 
-#eventDescription{
-    height: 150px;
+#eventDescription {
+  height: 150px;
 }
 
 .radio {
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    /* border: 1px solid purple;
-     */
-  /* justify-content: center; */
-  /* align-items: center; */
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .radio input {
-    margin:0;
-    width: auto;
+  margin: 0;
+  width: auto;
 }
 
-
-.allowRefunds, .noRefunds{
-    display: inline-block;
-    background-color:#ffff;
+.allowRefunds,
+.noRefunds {
+  display: inline-block;
+  background-color: #ffff;
 }
 
-.allowRefunds{
-    padding-left: 2vw;
+.allowRefunds {
+  padding-left: 2vw;
 }
 
 .noRefunds {
-    padding-right: 2vw;
+  padding-right: 2vw;
 }
 
 .radio label {
-    background-color:#ffff;
-    color:#8e8e8e;
-    
+  background-color: #ffff;
+  color: #8e8e8e;
 }
 
-
 .createEventForm h4 {
-    color: #293d6a;
-    font-weight: normal;
-    font-size: clamp(12px, 1.2vw, 14px);
-    background-color: #ffff;
-    margin: 12px 7.5% 0px;
-    align-self: flex-start;
+  color: #293d6a;
+  font-weight: normal;
+  font-size: clamp(12px, 1.2vw, 14px);
+  background-color: #ffff;
+  margin: 12px 7.5% 0px;
+  align-self: flex-start;
 }
 
 input[type="datetime-local"] {
-  color:#8e8e8e;
+  color: #8e8e8e;
 }
 
 input[type="file"] {
-margin-top: 0;
+  margin-top: 0;
 }
 
-.imageLabel{
-    color: #8e8e8e;
-    margin-top: 1.3%;
-    margin-bottom: 0;
-    line-height: normal;
-    border: none;
+.imageLabel {
+  color: #8e8e8e;
+  margin-top: 1.3%;
+  margin-bottom: 0;
+  line-height: normal;
+  border: none;
 }
 
-.imageLabel, input[type="file"]  {
-    padding-left: 0;
-    margin: 0;
-    border: none
+.imageLabel,
+input[type="file"] {
+  padding-left: 0;
+  margin: 0;
+  border: none;
 }
 
-
-
-/* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
-
-.uploadImage:hover .imageLabel, .uploadImage:hover input{
-    color: #293d6a
+.uploadImage:hover .imageLabel,
+.uploadImage:hover input {
+  /* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
+  color: #293d6a;
 }
-
-
-
-
-
 
 /* styling of radio buttons based on code from https://stackoverflow.com/questions/45327086/how-change-the-color-of-the-radio-button */
 
@@ -1019,74 +980,75 @@ input[type="radio"]:checked {
   border-color: #293d6a;
 }
 
- 
-
 /* styling of hrs based on https://css-tricks.com/examples/hrs/ */
 
 hr {
-    width: 75%;
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(41, 61, 106, 0.1), rgba(41, 61, 106, 0.75), rgb(41, 61, 106, 0.1));
-    margin: 20px 0px;
+  width: 75%;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(41, 61, 106, 0.1),
+    rgba(41, 61, 106, 0.75),
+    rgb(41, 61, 106, 0.1)
+  );
+  margin: 20px 0px;
 }
 
-.allowRefunds:hover label, .noRefunds:hover label{
-    color: #293d6a
+#createEventHr {
+  margin: 0px 0px 20px;
 }
 
+.allowRefunds:hover label,
+.noRefunds:hover label {
+  color: #293d6a;
+}
 
 .createEventForm h3 {
-    color: #293d6a;
-    font-size: clamp(24px, 4vw, 40px);
-    margin-top: 30px;
-    margin-bottom: 10px;
+  color: #293d6a;
+  font-size: clamp(24px, 4vw, 40px);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.credit-card input:focus, .credit-card select:focus, .credit-card input:hover, .credit-card select:hover, .createEventForm input:focus, .createEventForm textarea:focus, .createEventForm input:hover, .createEventForm textarea:hover, .uploadImage:hover, .uploadImage:focus  {
-    color: #293d6a;
-    outline: none;
-      box-shadow: 0 0 5px #F9AB55;
-  border: 1px solid  #F9AB55;
+.credit-card input:focus,
+.credit-card select:focus,
+.credit-card input:hover,
+.credit-card select:hover,
+.createEventForm input:focus,
+.createEventForm textarea:focus,
+.createEventForm input:hover,
+.createEventForm textarea:hover,
+.uploadImage:hover,
+.uploadImage:focus {
+  color: #293d6a;
+  outline: none;
+  box-shadow: 0 0 5px #f9ab55;
+  border: 1px solid #f9ab55;
 }
-
-
-/* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
 
 .uploadImage:hover input {
-        outline: none;
-      box-shadow: 0 0px #ffff;
+  /* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
+  outline: none;
+  box-shadow: 0 0px #ffff;
   border: none;
 }
 
-
-/* code based on https://stackoverflow.com/questions/54308139/how-to-show-placeholder-when-we-hover-on-input-type-text */
-
 :hover::-webkit-input-placeholder {
+  /* code based on https://stackoverflow.com/questions/54308139/how-to-show-placeholder-when-we-hover-on-input-type-text */
   color: #293d6a;
 }
 
 @media only screen and (min-width: 768px) {
+  .description {
+    width: min(70ch, 95vw);
+  }
 
-  .description{
-        width: min(70ch, 95vw);
- } 
-
-.description p{
+  .description p {
     font-size: 16px;
+  }
+
+  .cardRight {
+    width: 25%;
+  }
 }
-
-.cardRight {
-  width: 25%;
-}
-
-
-}
-
-@media only screen and (max-width: 345px){
-    .cardWrap{
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
