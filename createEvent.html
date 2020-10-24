@@ -1,124 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Event</title>
-    <script src="https://kit.fontawesome.com/e9611e5a4d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-
+    <script
+      src="https://kit.fontawesome.com/e9611e5a4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="index.html">
-                    <div class="btn" id="events">
-                        <span class="noselect">Events</span>
-                    </div>
-                </a></li>
+      <ul>
+        <li>
+          <a href="index.html">
+            <div class="btn" id="events">
+              <span class="noselect">Events</span>
+            </div>
+          </a>
+        </li>
 
-            <li><a href="createEvent.html">
-                    <div class="btn" id="currentPage">
-                        <span class="noselect">Create Event</span>
-                    </div>
-            </a></li>
-        </ul>
+        <li>
+          <a href="createEvent.html">
+            <div class="btn" id="currentPage">
+              <span class="noselect">Create Event</span>
+            </div>
+          </a>
+        </li>
+      </ul>
     </nav>
 
     <div class="formWrapper contentWrapper">
+      <form class="createEventForm" method="post" action="">
+        <h3>Create Event</h3>
+        <hr id="createEventHr" />
+        <input
+          required
+          type="text"
+          placeholder="Event Title"
+          id="eventTitle"
+          name="eventTitle"
+        />
+        <textarea
+          required
+          placeholder="Event Description"
+          id="eventDescription"
+          name="eventDescription"
+        ></textarea>
+        <input
+          required
+          type="text"
+          placeholder="Location"
+          id="location"
+          name="location"
+        />
 
-        <form class="createEventForm" method="post" action="">
+        <!-- Made placeholder show using solution from https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687 -->
 
-            <h3>Create Event</h3>
-            <hr id='createEventHr'>
-            <input required type="text" placeholder="Event Title" id="eventTitle" name="eventTitle">
-            <textarea required placeholder="Event Description" id="eventDescription" name="eventDescription"></textarea>
-            <input required type="text" placeholder="Location" id="location" name="location">
+        <input
+          required
+          type="text"
+          placeholder="Start Date and Time"
+          id="startTime"
+          name="startTime"
+          onfocus="(this.type='datetime-local')"
+          onblur="(this.type='text')"
+        />
 
-            <!-- Made placeholder show using solution from https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687 -->
+        <input
+          required
+          type="text"
+          placeholder="End Date and Time"
+          id="endTime"
+          name="endTime"
+          onfocus="(this.type='datetime-local')"
+          onblur="(this.type='text')"
+        />
+        <div class="uploadImage">
+          <label class="imageLabel" for="image">Upload Image:</label>
+          <input
+            required
+            type="file"
+            id="image"
+            name="image"
+            accept="image/png, image/jpeg"
+          />
+        </div>
+        <hr />
 
-            <input required type="text" placeholder="Start Date and Time" id="startTime" name="startTime" onfocus="(this.type='datetime-local')" onblur="(this.type='text')">
+        <h4>Ticket 1 Details</h4>
+        <input
+          required
+          type="text"
+          placeholder="Ticket Name"
+          id="t1TicketName"
+          name="t1TicketName"
+        />
+        <textarea
+          required
+          placeholder="Ticket Description"
+          id="t1TicketDescription"
+          name="t1TicketDescription"
+        ></textarea>
+        <input
+          required
+          type="number"
+          placeholder="Number of Tickets"
+          id="t1Capacity"
+          name="t1Capacity"
+          min="1"
+        />
+        <input
+          required
+          type="number"
+          placeholder="Price"
+          id="t1Price"
+          name="t1Price"
+          min="0"
+        />
+        <div class="radio">
+          <div class="allowRefunds">
+            <input
+              required
+              type="radio"
+              id="t1AllowRefunds"
+              name="t1Refunds"
+              value="t1AllowRefunds"
+              checked
+            />
+            <label for="t1AllowRefunds">Allow Refunds</label><br />
+          </div>
+          <div class="noRefunds">
+            <input
+              required
+              type="radio"
+              id="t1NoRefunds"
+              name="t1Refunds"
+              value="t1NoRefunds"
+            />
+            <label for="t1NoRefunds">No Refunds</label><br />
+          </div>
+        </div>
 
-            <input required type="text" placeholder="End Date and Time" id="endTime" name="endTime" onfocus="(this.type='datetime-local')" onblur="(this.type='text')">
-                <div class="uploadImage">
-                
-                    <label class="imageLabel" for="image">Upload Image:</label>
-                    <input required type="file" id="image" name="image" accept="image/png, image/jpeg">
-                </div>
-            <hr>
+        <hr />
 
-            <h4>Ticket 1 Details</h4>
-            <input required type="text" placeholder="Ticket Name" id="t1TicketName" name="t1TicketName">
-            <textarea required placeholder="Ticket Description" id="t1TicketDescription" name="t1TicketDescription"></textarea>
-            <input required type="number" placeholder="Number of Tickets" id="t1Capacity" name="t1Capacity" min="1">
-            <input required type="number" placeholder="Price" id="t1Price" name="t1Price" min="0">
-            <div class="radio">
-                <div class="allowRefunds">
-                    <input required type="radio" id="t1AllowRefunds" name="t1Refunds" value="t1AllowRefunds" checked>
-                    <label for="t1AllowRefunds">Allow Refunds</label><br>
-                </div>
-                <div class="noRefunds">
-                    <input required type="radio" id="t1NoRefunds" name="t1Refunds" value="t1NoRefunds">
-                    <label for="t1NoRefunds">No Refunds</label><br> 
-                </div>
-            </div>
+        <h4>Ticket 2 Details</h4>
+        <input
+          required
+          type="text"
+          placeholder="Ticket Name"
+          id="t2TicketName"
+          name="t2TicketName"
+        />
+        <textarea
+          required
+          placeholder="Ticket Description"
+          id="t2TicketDescription"
+          name="t2TicketDescription"
+        ></textarea>
+        <input
+          required
+          type="number"
+          placeholder="Number of Tickets"
+          id="t2Capacity"
+          name="t2Capacity"
+          min="1"
+        />
+        <input
+          required
+          type="number"
+          placeholder="Price"
+          id="t2Price"
+          name="t2Price"
+          min="0"
+        />
+        <div class="radio">
+          <div class="allowRefunds">
+            <input
+              required
+              type="radio"
+              id="t2AllowRefunds"
+              name="t2Refunds"
+              value="t2AllowRefunds"
+              checked
+            />
+            <label for="t2AllowRefunds">Allow Refunds</label><br />
+          </div>
+          <div class="noRefunds">
+            <input
+              required
+              type="radio"
+              id="t2NoRefunds"
+              name="t2Refunds"
+              value="t2NoRefunds"
+            />
+            <label for="t2NoRefunds">No Refunds</label><br />
+          </div>
+        </div>
 
-            <hr>
+        <hr />
 
-            <h4>Ticket 2 Details</h4>
-            <input required type="text" placeholder="Ticket Name" id="t2TicketName" name="t2TicketName">
-            <textarea required placeholder="Ticket Description" id="t2TicketDescription" name="t2TicketDescription"></textarea>
-            <input required type="number" placeholder="Number of Tickets" id="t2Capacity" name="t2Capacity" min="1">
-            <input required type="number" placeholder="Price" id="t2Price" name="t2Price" min="0">
-            <div class="radio">
-                <div class="allowRefunds">
-                    <input required type="radio" id="t2AllowRefunds" name="t2Refunds" value="t2AllowRefunds" checked>
-                    <label for="t2AllowRefunds">Allow Refunds</label><br>
-                </div>
-                <div class="noRefunds">
-                    <input required type="radio" id="t2NoRefunds" name="t2Refunds" value="t2NoRefunds">
-                    <label for="t2NoRefunds">No Refunds</label><br> 
-                </div>
-            </div>
+        <h4>Ticket 3 Details</h4>
+        <input
+          required
+          type="text"
+          placeholder="Ticket Name"
+          id="t3TicketName"
+          name="t3TicketName"
+        />
+        <textarea
+          required
+          placeholder="Ticket Description"
+          id="t3TicketDescription"
+          name="t3TicketDescription"
+        ></textarea>
+        <input
+          required
+          type="number"
+          placeholder="Number of Tickets"
+          id="t3Capacity"
+          name="t3Capacity"
+          min="1"
+        />
+        <input
+          required
+          type="number"
+          placeholder="Price"
+          id="t3Price"
+          name="t3Price"
+          min="0"
+        />
+        <div class="radio">
+          <div class="allowRefunds">
+            <input
+              required
+              type="radio"
+              id="t3AllowRefunds"
+              name="t3Refunds"
+              value="t3AllowRefunds"
+              checked
+            />
+            <label for="t3AllowRefunds">Allow Refunds</label><br />
+          </div>
+          <div class="noRefunds">
+            <input
+              required
+              type="radio"
+              id="t3NoRefunds"
+              name="t3Refunds"
+              value="t3NoRefunds"
+            />
+            <label for="t3NoRefunds">No Refunds</label><br />
+          </div>
+        </div>
 
-            <hr>
+        <hr />
 
-            <h4>Ticket 3 Details</h4>
-            <input required type="text" placeholder="Ticket Name" id="t3TicketName" name="t3TicketName">
-            <textarea required placeholder="Ticket Description" id="t3TicketDescription" name="t3TicketDescription"></textarea>
-            <input required type="number" placeholder="Number of Tickets" id="t3Capacity" name="t3Capacity" min="1">
-            <input required type="number" placeholder="Price" id="t3Price" name="t3Price" min="0">
-            <div class="radio">
-                <div class="allowRefunds">
-                    <input required type="radio" id="t3AllowRefunds" name="t3Refunds" value="t3AllowRefunds" checked>
-                    <label for="t3AllowRefunds">Allow Refunds</label><br>
-                </div>
-                <div class="noRefunds">
-                    <input required type="radio" id="t3NoRefunds" name="t3Refunds" value="t3NoRefunds">
-                    <label for="t3NoRefunds">No Refunds</label><br> 
-                </div>
-            </div>
-
-            <hr>
-
-            <button type="submit">Create Event</button>
-            
-        </form>
-
-   
-    
+        <button type="submit">Create Event</button>
+      </form>
     </div>
 
     <footer>
-        <ul>
-            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
-
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
     </footer>
-
-    
-</body>
+  </body>
 </html>
