@@ -331,7 +331,13 @@ background-clip: text;
 }
 
 
+@media only screen and (min-width: 700px) {
 
+  .eventSummaryContainer{
+    display: block;
+    max-width: 800px;
+    margin-top: 30px; 
+ } 
 
 
 
@@ -1059,15 +1065,6 @@ hr {
 :hover::-webkit-input-placeholder {
   color: #293d6a;
 }
-
-@media only screen and (min-width: 700px) {
-
-  .eventSummaryContainer{
-    display: block;
-    max-width: 800px;
- } 
-}
-
 
 @media only screen and (min-width: 768px) {
 
