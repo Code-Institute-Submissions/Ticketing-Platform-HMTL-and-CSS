@@ -483,6 +483,7 @@ background-clip: text;
     color: #293d6a;
     font-size: clamp(24px, 4vw, 40px);
     margin: clamp(10px, 2.5vw, 30px);
+    margin-bottom: 3px;
 }
 
 .eventDetails i {
@@ -546,7 +547,16 @@ background-clip: text;
     font-size: clamp(24px, 4vw, 40px);
     text-align: center;
     margin-top: 5%;
-    margin-bottom: 9%;
+    margin-bottom: 3px;
+}
+
+.tickets hr{
+    margin: 0px auto 40px;
+}
+
+.eventDetails hr {
+    margin: 0px auto 10px;
+    margin-bottom: clamp(10px, 2.5vw, 30px);
 }
 
 .tickets button, .createEventForm button{
