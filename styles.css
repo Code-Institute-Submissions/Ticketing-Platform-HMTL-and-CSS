@@ -291,6 +291,13 @@ footer i:hover{
     transform: scale(1.5); 
 }
 
+footer ul{
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+}
+
 /* color from https://www.mazzitorch.com/instagram-logo-css-gradient-html-web-design/ */
 
 .fa-instagram:hover{
@@ -1036,8 +1043,6 @@ hr {
 :hover::-webkit-input-placeholder {
   color: #293d6a;
 }
- 
-
 
 
 @media only screen and (min-width: 768px) {
