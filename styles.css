@@ -556,7 +556,7 @@ background-clip: text;
     text-align: center;
     font-size: 150%;
     cursor: pointer;
-    width: 90%;
+    width: 100%;
     border-color: transparent;
     margin-top: 7%;
     margin-bottom: 13%;
@@ -570,10 +570,18 @@ background-clip: text;
       transition: all .2s ease-in-out;
 }
 
+.createEventForm button{
+    width: 85%
+}
+
 /* transition from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
 
 .tickets button:hover, .createEventForm button:hover{
-    transform: scale(1.1)
+    transform: scale(1.1);
+
+    box-shadow: 0 19px 38px rgba(249, 171, 85,0.30), 0 15px 12px rgba(249, 171, 85,0.22);
+  border: 1px solid  #F9AB55;
+  
 }
 
 
@@ -1020,8 +1028,8 @@ hr {
 .credit-card input:focus, .credit-card select:focus, .credit-card input:hover, .credit-card select:hover, .createEventForm input:focus, .createEventForm textarea:focus, .createEventForm input:hover, .createEventForm textarea:hover, .uploadImage:hover, .uploadImage:focus  {
     color: #293d6a;
     outline: none;
-      box-shadow: 0 0 5px #293d6a;
-  border: 1px solid  #293d6a;
+      box-shadow: 0 0 5px #F9AB55;
+  border: 1px solid  #F9AB55;
 }
 
 
