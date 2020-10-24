@@ -810,7 +810,7 @@ h1 span {
 .month select,
 .year select {
    
-    color: #86939e;
+    color: #293d6a;
 }
 
 .card-number {
@@ -894,6 +894,7 @@ h1 span {
     width: 85%;
     border-radius: 6px;
     margin: 12px;
+    color: #293d6a
 }
 
 #eventDescription{
@@ -1054,6 +1055,7 @@ hr {
     display: block;
     max-width: 800px;
  } 
+}
 
 
 @media only screen and (min-width: 768px) {
