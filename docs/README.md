@@ -100,6 +100,7 @@ Placeholder for input type= "datetimelocal" wouldn't show. I used the solution f
 
 Default input type="file" output was clashing with my color scheme. I hid the display and styled the label instead. https://stackoverflow.com/questions/21842274/cross-browser-custom-styling-for-file-upload-button/21842275#21842275
 
+Tested HTML using https://validator.w3.org/. The only errors it displayed were that action="" in two forms. As this project is not connected to a backend, I have not taken any action.
 ======
 
 Version control:
