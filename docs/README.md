@@ -103,6 +103,8 @@ Default input type="file" output was clashing with my color scheme. I hid the di
 Tested HTML using https://validator.w3.org/. The only errors it displayed were that action="" in two forms. As this project is not connected to a backend, I have not taken any action.
 
 Tested CSS using https://jigsaw.w3.org/css-validator. It highlighted that .cardWrap has the same color and background-color. However this is required for the ticket overall to display properly. It also highlighted that, when checked, the radio button's border color is the same as its background color. I am also satisfied this is okay as there is a gap between the border and the button. The other warnings all related to code that I imported from elsewhere in the internet. The warnings are all similar: -webkit-tap-highlight-color is an unknown vendor extension. After seeking advice on slack, I have not changed these.
+
+Checked for responsiveness on all devices listed in chrome development tools
 ======
 
 Version control:
