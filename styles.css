@@ -568,7 +568,7 @@ background-clip: text;
     cursor: pointer;
     width: 100%;
     border-color: transparent;
-    margin-top: 7%;
+    margin-top: 13%;
     margin-bottom: 13%;
     padding: 5px 0;
 
@@ -581,6 +581,7 @@ background-clip: text;
 }
 
 .createEventForm button{
+    margin-top: 5%;
     width: 85%
 }
 
