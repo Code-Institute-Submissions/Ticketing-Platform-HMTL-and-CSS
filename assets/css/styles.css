@@ -524,7 +524,7 @@ footer ul {
       align-content: center;
   -webkit-box-pack: space-around;
       -ms-flex-pack: space-around;
-          justify-content: space-around;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -544,7 +544,7 @@ footer ul {
   border: 1px solid #8f897c;
   background-color: #ffff;
   border-radius: 5px;
-  margin: 3% 2.5% 0% 2.5%;
+  margin: 3% 0% 0% 0%;
   margin-top: clamp(1px, 10%, 85px);
   max-width: 95vw;
 }
@@ -554,14 +554,16 @@ footer ul {
 .eventDetails a,
 .eventDetails h3 {
   background-color: #ffff;
-  font-size: clamp(10px, 2vw, 17px);
+  font-size: clamp(10px, 2vw, 14px);
   color: #8f897c;
   margin-bottom: clamp(5px, 1vw, 8px);
 }
 
+
+
 .eventDetails h3 {
   color: #293d6a;
-  font-size: clamp(24px, 4vw, 40px);
+  font-size: clamp(24px, 4vw, 33px);
   margin: clamp(10px, 2.5vw, 30px);
   margin-bottom: 3px;
 }
@@ -589,7 +591,7 @@ footer ul {
       align-content: center;
   -webkit-box-pack: space-around;
       -ms-flex-pack: space-around;
-          justify-content: space-around;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -604,7 +606,7 @@ footer ul {
   padding: 2%;
   border-radius: 5px;
   border: 1px solid #8f897c;
-  margin: 3% 2.5% 3% 2.5%;
+  margin: 3% 0% 3% 0%;
   margin-top: clamp(1px, 10%, 85px);
 }
 
@@ -621,7 +623,7 @@ footer ul {
   background-color: #fff;
   -ms-flex-item-align: start;
       align-self: flex-start;
-     margin: 3% 5% 5% 5%;
+     margin: 3% 0% 5% 0%;
   margin-top: clamp(1px, 10%, 85px);
   margin-bottom: clamp(1px, 10%, 85px);
   padding: 1%;
@@ -1018,33 +1020,41 @@ h1 span {
   }
 }
 
-/* @media only screen and (min-width: 1195px) {
-    .alignmentContainer{
- 
-            display: flex;
-  justify-content: center;
-  align-items: center;
+@media only screen and (min-width: 1000px) {
+    .eventBox img{
+        width: 600px;
+    }
+
+    .eventDetails {
+        width: 500px;
+    margin-left: 3%;
+    }
+
+    .description{
+        width: 600px;
+    }
+
+    .tickets {
+        width: 500px;
+    margin-left: 3%;
     }
 
 
+}
 
-        .alignmentContainerImage{
-            flex: 1.5
-    }
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .description {
+    width: min(70ch, 95vw);
+  }
 
-        .alignmentContainerEventDetails{
-        flex: 1
-    }
+  .description p {
+    font-size: 16px;
+  }
 
-        .alignmentContainerDescription{
-        flex: 1.5
-    }
-
-        .alignmentContainerTickets{
-            flex: 1;
-        align-self: flex-start;
-    }
-} */
+  .cardRight {
+    width: 25%;
+  }
+}
 
 /* Create Event Page */
 
@@ -1277,16 +1287,3 @@ input[type="radio"]:checked, input[type="radio"]:focus{
   color: #293d6a;
 }
 
-@media only screen and (min-width: 768px) {
-  .description {
-    width: min(70ch, 95vw);
-  }
-
-  .description p {
-    font-size: 16px;
-  }
-
-  .cardRight {
-    width: 25%;
-  }
-}
