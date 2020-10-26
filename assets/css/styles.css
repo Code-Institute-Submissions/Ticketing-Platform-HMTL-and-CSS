@@ -1077,7 +1077,7 @@ h1 span {
           align-items: center;
 }
 
-.createEventForm {
+.createEventForm, .createEventForm form {
   margin: 60px 0px;
   width: clamp(250px, 90vw, 500px);
   background-color: #ffff;
@@ -1096,6 +1096,13 @@ h1 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.createEventForm form {
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0;
+    margin-top:0;
 }
 
 .createEventForm input,
@@ -1252,11 +1259,12 @@ hr {
   color: #293d6a;
 }
 
-.createEventForm h3 {
+.createEventForm header {
   color: #293d6a;
   font-size: clamp(24px, 4vw, 40px);
   margin-top: 30px;
   margin-bottom: 10px;
+  background-color: #ffff;
 }
 
 .credit-card input:focus,
