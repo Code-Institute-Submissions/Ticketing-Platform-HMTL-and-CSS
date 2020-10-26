@@ -512,6 +512,8 @@ footer ul {
 
 .eventBox {
   width: 100vw;
+  margin-top: 3px;
+  /* border: 1px solid red; */
   /* max-width:100%;  */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,9 +522,9 @@ footer ul {
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: space-around;
+      -ms-flex-pack: space-around;
+          justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -574,7 +576,10 @@ footer ul {
 }
 
 .descriptionAndTicketsWrapper {
+
   width: 100vw;
+  margin-top: 3px;
+  /* border: 1px solid green; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,9 +587,9 @@ footer ul {
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: space-around;
+      -ms-flex-pack: space-around;
+          justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -616,7 +621,7 @@ footer ul {
   background-color: #fff;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin: 3% 2.5% 5% 2.5%;
+     margin: 3% 5% 5% 5%;
   margin-top: clamp(1px, 10%, 85px);
   margin-bottom: clamp(1px, 10%, 85px);
   padding: 1%;
@@ -1012,6 +1017,34 @@ h1 span {
     padding-right: 0;
   }
 }
+
+/* @media only screen and (min-width: 1195px) {
+    .alignmentContainer{
+ 
+            display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+
+
+
+        .alignmentContainerImage{
+            flex: 1.5
+    }
+
+        .alignmentContainerEventDetails{
+        flex: 1
+    }
+
+        .alignmentContainerDescription{
+        flex: 1.5
+    }
+
+        .alignmentContainerTickets{
+            flex: 1;
+        align-self: flex-start;
+    }
+} */
 
 /* Create Event Page */
 
