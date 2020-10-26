@@ -167,6 +167,8 @@ Placeholder changes color on hover - based on:https://stackoverflow.com/question
 
 Style child when hovering on parent: /* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
 
+Fav icon from https://favicon.io/emoji-favicons/ticket
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
