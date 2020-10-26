@@ -68,7 +68,7 @@ nav a:visited {
 
 h3,
 h5,
-h6 {
+h6, header {
   background-color: #ffff;
 }
 
@@ -340,7 +340,7 @@ footer ul {
   color: #8f897c;
 }
 
-.eventSummaryContainer h3 {
+.eventSummaryContainer header {
   font-size: 130%;
   margin: 11px 0px;
 }
@@ -489,7 +489,7 @@ footer ul {
     height: 150px;
   }
 
-  .eventSummaryContainer h3 {
+  .eventSummaryContainer header {
     margin-top: 7%;
     margin-bottom: 18px;
     font-size: 210%;
@@ -540,7 +540,7 @@ footer ul {
 }
 
 .eventDetails {
-  padding: 0 2.5%;
+  padding: 2.5% 2.5% 2.5%;
   border: 1px solid #8f897c;
   background-color: #ffff;
   border-radius: 5px;
@@ -552,7 +552,7 @@ footer ul {
 .eventDetails p,
 .eventDetails i,
 .eventDetails a,
-.eventDetails h3 {
+.eventDetails header {
   background-color: #ffff;
   font-size: clamp(10px, 2vw, 14px);
   color: #8f897c;
@@ -561,10 +561,11 @@ footer ul {
 
 
 
-.eventDetails h3 {
+.eventDetails header, .description header {
   color: #293d6a;
   font-size: clamp(24px, 4vw, 33px);
-  margin: clamp(10px, 2.5vw, 30px);
+  text-align: center;
+  /* margin: clamp(10px, 2.5vw, 30px); */
   margin-bottom: 3px;
 }
 
@@ -618,7 +619,7 @@ footer ul {
   font-size: 14px;
 }
 
-.tickets {
+.tickets, .tickets form {
   border: 1px solid #8f897c;
   background-color: #fff;
   -ms-flex-item-align: start;
@@ -633,7 +634,11 @@ footer ul {
   max-width: 95vw;
 }
 
-.tickets h3 {
+.tickets form {
+    border: none;
+}
+
+.tickets header {
   color: #293d6a;
   font-size: clamp(24px, 4vw, 40px);
   text-align: center;
@@ -645,10 +650,15 @@ footer ul {
   margin: 0px auto 40px;
 }
 
-.eventDetails hr {
+.eventDetails hr, .description hr {
   margin: 0px auto 10px;
   margin-bottom: clamp(10px, 2.5vw, 30px);
 }
+
+.description hr{
+    margin-bottom: clamp(10px, 4.5vw, 40px);
+}
+
 
 .tickets button,
 .createEventForm button {
@@ -1037,6 +1047,7 @@ h1 span {
         width: 600px;
         margin-left: 1.5%;
         margin-right: 1.5%;
+        padding: 2% 7% 5% 7%;
     }
 
     .tickets {
