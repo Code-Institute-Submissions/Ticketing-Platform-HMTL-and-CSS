@@ -563,7 +563,7 @@ footer ul {
 
 .eventDetails header, .description header {
   color: #293d6a;
-  font-size: clamp(24px, 4vw, 33px);
+  font-size: clamp(24px, 4vw, 35px);
   text-align: center;
   /* margin: clamp(10px, 2.5vw, 30px); */
   margin-bottom: 3px;
@@ -640,7 +640,7 @@ footer ul {
 
 .tickets header {
   color: #293d6a;
-  font-size: clamp(24px, 4vw, 40px);
+  font-size: clamp(24px, 4vw, 35px);
   text-align: center;
   margin-top: 5%;
   margin-bottom: 3px;
