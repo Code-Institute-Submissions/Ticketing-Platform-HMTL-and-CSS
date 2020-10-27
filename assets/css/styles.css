@@ -279,7 +279,7 @@ footer ul {
   color: #3b5998;
 }
 
-.a-twitter:hover {
+.fa-twitter:hover {
   /* color from https://encycolorpedia.com/00acee */
   color: #00acee;
 }
@@ -291,13 +291,13 @@ footer ul {
 
 /* Home Page (Events Page) */
 
-.eventPage,
-.createEventForm {
+.event-page,
+.create-event-form {
   -webkit-animation: fadein 3s;
           animation: fadein 3s;
 }
 
-.eventSummaryContainer {
+.home-event-summary-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,16 +328,16 @@ footer ul {
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.detailsContainer {
+.home-details-container {
   background-color: #ffff;
   margin: 7px;
 }
 
-.textContainer p i {
+.home-text-container p i {
   color: #293d6a94;
 }
 
-.eventSummaryContainer img {
+.home-event-summary-container img {
   margin-top: 2%;
   margin-bottom: 0%;
   max-width: 100%;
@@ -346,7 +346,7 @@ footer ul {
   border-radius: 5px;
 }
 
-.eventSummaryContainer p {
+.home-event-summary-container p {
   background-color: #ffff;
   font-size: 60%;
   margin-top: 0px;
@@ -354,17 +354,17 @@ footer ul {
   color: #8f897c;
 }
 
-.eventSummaryContainer header {
+.home-event-summary-container header {
   font-size: 130%;
   margin: 11px 0px;
 }
 
-.eventSummaryContainer i {
+.home-event-summary-container i {
   background-color: #ffff;
   color: #8f897c;
 }
 
-.eventSummaryContainer:hover {
+.home-event-summary-container:hover {
   border: 1px solid #293d6a;
   /* Box shadow code taken from https://codepen.io/sdthornton/pen/wBZdXq */
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -375,17 +375,21 @@ footer ul {
           transform: scale(1.03);
 }
 
-.textContainer {
+.home-text-container {
   background-color: #ffff;
 }
 
-.contentWrapper {
+.home-content-wrapper {
   padding-bottom: 2.5rem;
 }
 
-/* The below code is copied from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load */
+/* The below code is copied from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load 
 
-@-webkit-keyframes slideInFromLeft {
+    On load the elements will alternate, sliding in from the right or the left of the screen. It will take 1 second for this to complete.
+    The animnation will be slower at the beginning and faster towards the end
+*/
+
+@-webkit-keyframes home-slide-in-from-left {
   0% {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
@@ -398,7 +402,7 @@ footer ul {
   }
 }
 
-@keyframes slideInFromLeft {
+@keyframes home-slide-in-from-left {
   0% {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
@@ -411,16 +415,16 @@ footer ul {
   }
 }
 
-.slideFromLeft {
-  -webkit-animation: 1s ease-in 0s 1 slideInFromLeft;
-          animation: 1s ease-in 0s 1 slideInFromLeft;
+.home-slide-from-left{
+  -webkit-animation: 1s ease-in 0s 1 home-slide-in-from-left;
+          animation: 1s ease-in 0s 1 home-slide-in-from-left;
 }
 
 /* End copied code */
 
 /* Below is similar code to the stackoverflow answer but I amended the code to make the slide happen from the opposite side. I than gave the elements a class name based on where I wanted them to slide from */
 
-@-webkit-keyframes slideInFromRight {
+@-webkit-keyframes home-slide-in-from-right {
   0% {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -433,7 +437,7 @@ footer ul {
   }
 }
 
-@keyframes slideInFromRight {
+@keyframes home-slide-in-from-right {
   0% {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -446,44 +450,23 @@ footer ul {
   }
 }
 
-.slideFromRight {
-  -webkit-animation: 1s ease-in 0s 1 slideInFromRight;
-          animation: 1s ease-in 0s 1 slideInFromRight;
-}
-
-.slideFromRight {
-  -webkit-animation: 1s ease-in 0s 1 slideInFromRight;
-          animation: 1s ease-in 0s 1 slideInFromRight;
-}
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.home-slide-from-right {
+  -webkit-animation: 1s ease-in 0s 1 home-slide-in-from-right;
+          animation: 1s ease-in 0s 1 home-slide-in-from-right;
 }
 
 /* End of "similar code" */
 
+/* This media query makes the event take advantage of the horizontal space on larger screens by increasing its width to a maximum of 800px  */
+
 @media only screen and (min-width: 700px) {
-  .eventSummaryContainer {
+  .home-event-summary-container {
     display: block;
     max-width: 800px;
     margin-top: 30px;
   }
 
-  .detailsContainer {
+  .home-details-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -497,27 +480,27 @@ footer ul {
             align-items: center;
   }
 
-  .eventSummaryContainer img {
+  .home-event-summary-container img {
     margin: 0%;
     max-width: 33%;
     height: 150px;
   }
 
-  .eventSummaryContainer header {
+  .home-event-summary-container header {
     margin-top: 7%;
     margin-bottom: 18px;
     font-size: 210%;
   }
-  .eventSummaryContainer p {
+  .home-event-summary-container p {
     font-size: 70%;
     margin-bottom: 9px;
   }
 
-  .textContainer {
+  .home-text-container {
     margin-left: 10%;
   }
 
-  .ticketsRemaining {
+  .home-tickets-remaining {
     margin-bottom: 0;
   }
 }
@@ -676,7 +659,7 @@ footer ul {
 
 
 .tickets button,
-.createEventForm button {
+.create-event-form button {
   background-color: #293d6a;
   color: #fff;
   border-radius: 5px;
@@ -702,7 +685,7 @@ footer ul {
   transition: all 0.2s ease-in-out;
 }
 
-.createEventForm button {
+.create-event-form button {
   margin-top: 5%;
   width: 85%;
 }
@@ -710,7 +693,7 @@ footer ul {
 /* transition from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
 
 .tickets button:hover,
-.createEventForm button:hover {
+.create-event-form button:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -1038,6 +1021,24 @@ h1 span {
   outline: none;
 }
 
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media only screen and (min-width: 1160px) {
     .eventBox img{
         width: 600px;
@@ -1102,7 +1103,7 @@ h1 span {
           align-items: center;
 }
 
-.createEventForm, .createEventForm form {
+.create-event-form, .create-event-form form {
   margin: 60px 0px;
   width: clamp(250px, 90vw, 500px);
   background-color: #ffff;
@@ -1123,7 +1124,7 @@ h1 span {
           align-items: center;
 }
 
-.createEventForm form {
+.create-event-form form {
     border-top: none;
     border-bottom: none;
     border-radius: 0;
@@ -1133,8 +1134,8 @@ h1 span {
     margin-bottom: 0;
 }
 
-.createEventForm input,
-.createEventForm textarea,
+.create-event-form input,
+.create-event-form textarea,
 .radio,
 .uploadImage,
 .imageLabel {
@@ -1191,7 +1192,7 @@ h1 span {
   color: #8e8e8e;
 }
 
-.createEventForm h4 {
+.create-event-form h4 {
   color: #293d6a;
   font-weight: normal;
   font-size: clamp(12px, 1.2vw, 14px);
@@ -1287,7 +1288,7 @@ hr {
   color: #293d6a;
 }
 
-.createEventForm header {
+.create-event-form header {
   color: #293d6a;
   font-size: clamp(24px, 4vw, 40px);
   margin-top: 30px;
@@ -1299,10 +1300,10 @@ hr {
 .credit-card select:focus,
 .credit-card input:hover,
 .credit-card select:hover,
-.createEventForm input:focus,
-.createEventForm textarea:focus,
-.createEventForm input:hover,
-.createEventForm textarea:hover,
+.create-event-form input:focus,
+.create-event-form textarea:focus,
+.create-event-form input:hover,
+.create-event-form textarea:hover,
 .uploadImage:hover,
 .uploadImage:focus {
   color: #293d6a;
