@@ -126,14 +126,14 @@ h6, header {
 
 .nav-btn:hover::before,
 #nav-events:hover::before,
-#nav-createEvent:hover::before {
+#nav-create-event:hover::before {
   width: 0px;
   background: #f7f7f7;
 }
 
 .nav-btn:hover::after,
 #nav-events:hover::after,
-#nav-createEvent:hover::after {
+#nav-create-event:hover::after {
   height: 0px;
   background: #f7f7f7;
 }
@@ -158,21 +158,21 @@ h6, header {
   height: clamp(1px, 3vw, 13px);
 }
 
-#nav-createEvent {
+#nav-create-event {
   border: 1px solid #293d6a;
 }
 
-#nav-createEvent::before {
+#nav-create-event::before {
   width: clamp(52px, 16vw, 85px);
   height: clamp(20px, 6.5vw, 30px);
 }
 
-#nav-createEvent::after {
+#nav-create-event::after {
   width: clamp(67px, 20vw, 105px);
   height: clamp(1px, 3vw, 13px);
 }
 
-#nav-createEvent:hover::before {
+#nav-create-event:hover::before {
   width: 0px;
 }
 
