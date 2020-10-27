@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-/* Styling for all pages */
+/*The below styling will apply to all elements unless over-written*/
 
 * {
   margin: 0;
@@ -15,6 +15,9 @@
   background-color: #eeecec;
   font-family: "Nunito", sans-serif;
 }
+
+
+/* The body has position relative that the footer will remain in place when it has position absolute */
 
 body {
   position: relative;
@@ -33,6 +36,8 @@ ul {
   list-style-type: none;
 }
 
+/* clamp property keeps the font size at 3vw but won't allow it to be larger than 16px or smaller than 10px */
+
 nav {
   padding: 10px;
   background-color: #f7f7f7;
@@ -46,9 +51,6 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -72,9 +74,14 @@ h6, header {
   background-color: #ffff;
 }
 
-/* The below code originates from https://codepen.io/chancesq/pen/qBOyQoW It is substantially amended to make responsive and work on my site */
+/* The below code originates from https://codepen.io/chancesq/pen/qBOyQoW 
+    It is substantially amended to make responsive and work on my site.
+    The ::before and ::after create additional borders that are not visible to the eye and overlap all but the corners of the border around the nav link.
+    On hover, these additional borders disappear and an animation gives the impression that the border has grown from the corners of the nav link to enclose the nav link.
+    The dimensions had to be adjusted to fit the word length of each nav link at each screen size
+    */
 
-.btn {
+.nav-btn {
   background-color: #f7f7f7;
   padding: clamp(0.5px, 0.75vw, 3.5px);
   cursor: pointer;
@@ -96,8 +103,8 @@ h6, header {
   border-radius: 2px;
 }
 
-.btn::before,
-.btn::after {
+.nav-btn::before,
+.nav-btn::after {
   position: absolute;
   background-color: #f7f7f7;
   z-index: -1;
@@ -107,7 +114,7 @@ h6, header {
   content: "";
 }
 
-.noselect {
+.nav-noselect {
   background-color: #f7f7f7;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -116,69 +123,69 @@ h6, header {
   user-select: none;
 }
 
-.btn:hover::before,
-#events:hover::before,
-#createEvent:hover::before {
+.nav-btn:hover::before,
+#nav-events:hover::before,
+#nav-createEvent:hover::before {
   width: 0px;
   background: #f7f7f7;
 }
 
-.btn:hover::after,
-#events:hover::after,
-#createEvent:hover::after {
+.nav-btn:hover::after,
+#nav-events:hover::after,
+#nav-createEvent:hover::after {
   height: 0px;
   background: #f7f7f7;
 }
 
-.btn:hover {
+.nav-btn:hover {
   background: #f7f7f7;
 }
 
 /* Ends copied code */
 
-#events {
+#nav-events {
   border: 1px solid #293d6a;
 }
 
-#events::before {
+#nav-events::before {
   height: clamp(1px, 7vw, 35px);
   width: clamp(1px, 8.5vw, 41px);
 }
 
-#events::after {
+#nav-events::after {
   width: clamp(40px, 13vw, 70px);
   height: clamp(1px, 3vw, 13px);
 }
 
-#createEvent {
+#nav-createEvent {
   border: 1px solid #293d6a;
 }
 
-#createEvent::before {
+#nav-createEvent::before {
   width: clamp(52px, 16vw, 85px);
   height: clamp(20px, 6.5vw, 30px);
 }
 
-#createEvent::after {
+#nav-createEvent::after {
   width: clamp(67px, 20vw, 105px);
   height: clamp(1px, 3vw, 13px);
 }
 
-#createEvent:hover::before {
+#nav-createEvent:hover::before {
   width: 0px;
 }
 
-#currentPage {
+#nav-currentPage {
   cursor: default;
   border: 1px solid #293d6a;
 }
 
-#currentPage::before {
+#nav-currentPage::before {
   height: 0;
   width: 0;
 }
 
-#currentPage::after {
+#nav-currentPage::after {
   height: 0;
   width: 0;
 }
