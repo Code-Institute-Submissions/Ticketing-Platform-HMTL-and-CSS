@@ -78,8 +78,9 @@ h6, header {
     It is substantially amended to make responsive and work on my site.
     The ::before and ::after create additional borders that are not visible to the eye and overlap all but the corners of the border around the nav link.
     On hover, these additional borders disappear and an animation gives the impression that the border has grown from the corners of the nav link to enclose the nav link.
+    It takes 1 second for this to happen.
     The dimensions had to be adjusted to fit the word length of each nav link at each screen size
-    */
+*/
 
 .nav-btn {
   background-color: #f7f7f7;
@@ -175,20 +176,22 @@ h6, header {
   width: 0px;
 }
 
-#nav-currentPage {
+#nav-current-page {
   cursor: default;
   border: 1px solid #293d6a;
 }
 
-#nav-currentPage::before {
+#nav-current-page::before {
   height: 0;
   width: 0;
 }
 
-#nav-currentPage::after {
+#nav-current-page::after {
   height: 0;
   width: 0;
 }
+
+
 
 footer {
   /* code in first 4 attributes from https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/*/
@@ -219,6 +222,8 @@ footer i {
   background-color: #f7f7f7;
 }
 
+/* On hover the social media icons increase in size and change from this website's color scheme to the color scheme of the relevant social media site. It takes half a second for this to happen */
+
 footer i {
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -226,6 +231,8 @@ footer i {
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
+
+
 
 footer i:hover {
   -webkit-transform: scale(1.5);
@@ -267,12 +274,12 @@ footer ul {
   -webkit-text-fill-color: transparent;
 }
 
-.fa-facebook-f:hover {
+.-fa-facebook-f:hover {
   /* color from https://encycolorpedia.com/3b5998 */
   color: #3b5998;
 }
 
-.fa-twitter:hover {
+.a-twitter:hover {
   /* color from https://encycolorpedia.com/00acee */
   color: #00acee;
 }
