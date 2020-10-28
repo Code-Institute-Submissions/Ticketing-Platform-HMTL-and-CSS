@@ -74,6 +74,33 @@ h6, header {
   background-color: #ffff;
 }
 
+hr {
+  width: 75%;
+  border: 0;
+  height: 2px;
+  background-image: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(rgba(41, 61, 106, 0.1)),
+    color-stop(rgba(41, 61, 106, 0.75)),
+    to(rgb(41, 61, 106, 0.1))
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(41, 61, 106, 0.1),
+    rgba(41, 61, 106, 0.75),
+    rgb(41, 61, 106, 0.1)
+  );
+  background-image: linear-gradient(
+    to right,
+    rgba(41, 61, 106, 0.1),
+    rgba(41, 61, 106, 0.75),
+    rgb(41, 61, 106, 0.1)
+  );
+  margin: 20px 0px;
+}
+
+
 /* The below code originates from https://codepen.io/chancesq/pen/qBOyQoW 
     It is substantially amended to make responsive and work on my site.
     The ::before and ::after create additional borders that are not visible to the eye and overlap all but the corners of the border around the nav link.
@@ -250,6 +277,10 @@ footer ul {
       justify-content: space-around;
 }
 
+.footer-content-wrapper {
+  padding-bottom: 2.5rem;
+}
+
 .fa-instagram:hover {
   /* code from https://www.mazzitorch.com/instagram-logo-css-gradient-html-web-design/ */
   background: -o-radial-gradient(
@@ -289,12 +320,32 @@ footer ul {
   color: #0e76a8;
 }
 
+/* On load, all of the event page (except the header and footer) and the form on the create event form will fade in from zero opacity to opacity of 1 over a period of 1 second */
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Home Page (Events Page) */
 
 .event-page,
 .create-event-form {
-  -webkit-animation: fadein 3s;
-          animation: fadein 3s;
+  -webkit-animation: fade-in 3s;
+          animation: fade-in 3s;
 }
 
 .home-event-summary-container {
@@ -379,9 +430,7 @@ footer ul {
   background-color: #ffff;
 }
 
-.home-content-wrapper {
-  padding-bottom: 2.5rem;
-}
+
 
 /* The below code is copied from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load 
 
@@ -507,7 +556,7 @@ footer ul {
 
 /* Party Page */
 
-.eventBox {
+.event-box {
   width: 100vw;
   /* margin-top: 5%; */
   /* border: 1px solid red; */
@@ -526,7 +575,7 @@ footer ul {
           align-items: center;
 }
 
-.eventBox img {
+.event-box img {
   max-height: 50vh;
   max-width: 95vw;
   border-radius: 5px;
@@ -535,7 +584,7 @@ footer ul {
   border-width: clamp(1px, 1vw, 5px);
 }
 
-.eventDetails {
+.event-details {
   padding: 2.5% 2.5% 2.5%;
   border: 1px solid #8f897c;
   background-color: #ffff;
@@ -545,10 +594,10 @@ footer ul {
   max-width: 95vw;
 }
 
-.eventDetails p,
-.eventDetails i,
-.eventDetails a,
-.eventDetails header {
+.event-details p,
+.event-details i,
+.event-details a,
+.event-details header {
   background-color: #ffff;
   font-size: clamp(10px, 2vw, 14px);
   color: #8f897c;
@@ -557,7 +606,7 @@ footer ul {
 
 
 
-.eventDetails header, .description header {
+.event-details header, .event-description header {
   color: #293d6a;
   font-size: clamp(24px, 4vw, 35px);
   text-align: center;
@@ -565,16 +614,16 @@ footer ul {
   margin-bottom: 3px;
 }
 
-.eventDetails i {
+.event-details i {
   margin-right: 1.6vw;
   color: #293d6a94;
 }
 
-.eventDetails a {
+.event-details a {
   text-decoration: underline;
 }
 
-.descriptionAndTicketsWrapper {
+.event-description-and-tickets-wrapper {
 
   width: 100vw;
   /* margin-top: 3px; */
@@ -594,7 +643,7 @@ footer ul {
           align-items: center;
 }
 
-.description {
+.event-description {
   font-family: "Bitter", serif;
   background-color: #fff;
   color: #000;
@@ -607,7 +656,7 @@ footer ul {
   margin-top: clamp(1px, 10%, 85px);
 }
 
-.description p {
+.event-description p {
   margin-bottom: 1em;
   line-height: 1.5em;
   background-color: #fff;
@@ -615,7 +664,7 @@ footer ul {
   font-size: 14px;
 }
 
-.tickets, .tickets form {
+.event-tickets, .event-tickets form {
   border: 1px solid #8f897c;
   background-color: #fff;
   -ms-flex-item-align: start;
@@ -630,13 +679,13 @@ footer ul {
   max-width: 95vw;
 }
 
-.tickets form {
+.event-tickets form {
     border: none;
     margin: 0;
     padding: 0;
 }
 
-.tickets header {
+.event-tickets header {
   color: #293d6a;
   font-size: clamp(24px, 4vw, 35px);
   text-align: center;
@@ -644,21 +693,21 @@ footer ul {
   margin-bottom: 3px;
 }
 
-.tickets hr {
+.event-tickets hr {
   margin: 0px auto 40px;
 }
 
-.eventDetails hr, .description hr {
+.event-details hr, .event-description hr {
   margin: 0px auto 10px;
   margin-bottom: clamp(10px, 2.5vw, 30px);
 }
 
-.description hr{
+.event-description hr{
     margin-bottom: clamp(10px, 4.5vw, 40px);
 }
 
 
-.tickets button,
+.event-tickets button,
 .create-event-form button {
   background-color: #293d6a;
   color: #fff;
@@ -692,7 +741,7 @@ footer ul {
 
 /* transition from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
 
-.tickets button:hover,
+.event-tickets button:hover,
 .create-event-form button:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -706,7 +755,7 @@ footer ul {
   border: 1px solid #f9ab55;
 }
 
-.date-field {
+.event-date-field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,7 +767,7 @@ footer ul {
 
 /* Code originates from https://codepen.io/verpixelt/pen/cEJLa but amended substantially to make responsive and to work on my site */
 
-.cardWrap {
+.event-card-wrap {
   color: #fff;
   font-family: sans-serif;
   display: -webkit-box;
@@ -735,7 +784,7 @@ footer ul {
   padding-right: clamp(0px, 3%, 30px);
 }
 
-.card {
+.event-card {
   background: -webkit-gradient(
     linear,
     left top, left bottom,
@@ -765,19 +814,19 @@ footer ul {
   width: clamp(300px, 45vw, 350px);
 }
 
-.cardLeft {
+.event-card-left {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
 
-.cardRight {
+.event-card-right {
   width: 33%;
   border-left: 0.18em dashed #fff;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-.cardRight:before,
-.cardRight:after {
+.event-card-right:before,
+.event-card-right:after {
   content: "";
   position: absolute;
   display: block;
@@ -787,75 +836,74 @@ footer ul {
   border-radius: 50%;
   left: -0.5em;
 }
-.cardRight:before {
+
+.event-card-right:before {
   top: -0.4em;
 }
-.cardRight:after {
+.event-card-right:after {
   bottom: -0.4em;
 }
 
-h1 {
+.event-ticket-title {
   font-size: clamp(3px, 5.4vw, 25px);
   margin-top: 0;
   background-color: #e84c3d;
 }
-h1 span {
+.event-ticket-title span {
   font-weight: normal;
   background-color: #e84c3d;
 }
 
-.title,
-.name,
-.price,
-.refunds {
+.event-title,
+.event-price,
+.event-refunds {
   text-transform: uppercase;
   font-weight: normal;
 }
-.title h2,
-.name h2,
-.price h2,
-.refunds h2 {
+.event-title h2,
+.event-price h2,
+.event-refunds h2 {
   font-size: 0.9em;
   color: #525252;
   margin: 0;
   text-transform: none;
 }
-.title span,
-.name span,
-.price span,
-.refunds span,
-.number span {
+.event-title span,
+.event-price span,
+.event-refunds span,
+.event-number span {
   font-size: 0.7em;
   color: #a2aeae;
 }
 
-.title {
+.event-title {
   margin: 0.9em 0 0 0;
 }
 
-.name,
-.price {
+.event-name,
+.event-price {
   margin: 0.7em 0 0 0;
 }
 
-.refunds {
+.event-refunds {
   margin: 0.7em 0 0 1em;
   position: absolute;
   bottom: 5px;
   right: 5px;
 }
 
-.price,
-.refunds {
+.event-price,
+.event-refunds {
   float: left;
 }
 
-.price {
+.event-price {
   position: absolute;
   bottom: 5px;
 }
 
-.eye {
+
+.event-eye {
   position: relative;
   width: 2em;
   height: 1.5em;
@@ -864,14 +912,14 @@ h1 span {
   border-radius: 1em/0.6em;
   z-index: 1;
 }
-.eye:before,
-.eye:after {
+.event-eye:before,
+.event-eye:after {
   content: "";
   display: block;
   position: absolute;
   border-radius: 50%;
 }
-.eye:before {
+.event-eye:before {
   width: 1em;
   height: 1em;
   background: #e84c3d;
@@ -879,7 +927,7 @@ h1 span {
   left: 8px;
   top: 4px;
 }
-.eye:after {
+.event-eye:after {
   width: 0.5em;
   height: 0.5em;
   background: #fff;
@@ -888,11 +936,11 @@ h1 span {
   top: 8px;
 }
 
-.number {
+.event-number {
   text-align: center;
   text-transform: uppercase;
 }
-.number input {
+.event-number input {
   background-color: #fff;
   color: #e84c3d;
   margin: 0 0 0 0;
@@ -901,51 +949,31 @@ h1 span {
   text-align: center;
   border-radius: 5px;
 }
-.number span {
+.event-number span {
   display: block;
   color: #a2aeae;
   margin-top: 2.5em;
 }
 
-.barcode {
-  height: 2em;
-  width: 0;
-  -webkit-box-shadow: 1px 0 0 1px #343434, 5px 0 0 1px #343434, 10px 0 0 1px #343434,
-    11px 0 0 1px #343434, 15px 0 0 1px #343434, 18px 0 0 1px #343434,
-    22px 0 0 1px #343434, 23px 0 0 1px #343434, 26px 0 0 1px #343434,
-    30px 0 0 1px #343434, 35px 0 0 1px #343434, 37px 0 0 1px #343434,
-    41px 0 0 1px #343434, 44px 0 0 1px #343434, 47px 0 0 1px #343434,
-    51px 0 0 1px #343434, 56px 0 0 1px #343434, 59px 0 0 1px #343434,
-    64px 0 0 1px #343434, 68px 0 0 1px #343434, 72px 0 0 1px #343434,
-    74px 0 0 1px #343434, 77px 0 0 1px #343434, 81px 0 0 1px #343434;
-          box-shadow: 1px 0 0 1px #343434, 5px 0 0 1px #343434, 10px 0 0 1px #343434,
-    11px 0 0 1px #343434, 15px 0 0 1px #343434, 18px 0 0 1px #343434,
-    22px 0 0 1px #343434, 23px 0 0 1px #343434, 26px 0 0 1px #343434,
-    30px 0 0 1px #343434, 35px 0 0 1px #343434, 37px 0 0 1px #343434,
-    41px 0 0 1px #343434, 44px 0 0 1px #343434, 47px 0 0 1px #343434,
-    51px 0 0 1px #343434, 56px 0 0 1px #343434, 59px 0 0 1px #343434,
-    64px 0 0 1px #343434, 68px 0 0 1px #343434, 72px 0 0 1px #343434,
-    74px 0 0 1px #343434, 77px 0 0 1px #343434, 81px 0 0 1px #343434;
-}
+
 
 /* End of copied (but amended) code */
 
 /* Below Code originates from https://designmodo.com/create-credit-card-ui/#download-the-credit-card-html. Substantially amended for my site. */
 
-.tickets h4,
-.card-number,
-.form-body,
-.month,
-.year,
-.cvv-input,
-.cvv-details p,
-.cvv-input input,
-.month select,
-.year select {
+.event-tickets h4,
+.event-card-number,
+.event-form-body,
+.event-month,
+.event-year,
+.event-cvv-input,
+.event-cvv-input input,
+.event-month select,
+.event-year select {
   background-color: white;
 }
 
-.credit-card {
+.event-credit-card {
   width: 360px;
   max-width: 95%;
   margin: 0 auto 0;
@@ -953,30 +981,30 @@ h1 span {
   background-color: #fff;
 }
 
-.card-number,
-.cvv-input input,
-.month select,
-.year select {
+.event-card-number,
+.event-cvv-input input,
+.event-month select,
+.event-year select {
   font-size: 14px;
   font-weight: 100;
   line-height: 30px;
 }
 
-.card-number,
-.month select,
-.year select {
+.event-card-number,
+.event-month select,
+.event-year select {
   font-size: 14px;
   font-weight: 100;
 }
 
-.card-number,
-.cvv-input input,
-.month select,
-.year select {
+.event-card-number,
+.event-cvv-input input,
+.event-month select,
+.event-year select {
   color: #8e8e8e;
 }
 
-.card-number {
+.event-card-number {
   width: 100%;
   margin-bottom: 20px;
   padding-left: 20px;
@@ -984,8 +1012,8 @@ h1 span {
   border-radius: 6px;
 }
 
-.month select,
-.year select {
+.event-month select,
+.event-year select {
   width: clamp(86px, 29vw, 130px);
   margin-bottom: 20px;
   padding-left: 20px;
@@ -997,7 +1025,7 @@ h1 span {
   -webkit-appearance: none;
 }
 
-.cvv-input input {
+.event-cvv-input input {
   float: left;
   width: 145px;
   padding-left: 20px;
@@ -1006,54 +1034,31 @@ h1 span {
   background: #fff;
 }
 
-.cvv-details {
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 16px;
-  float: right;
-  margin-bottom: 20px;
-}
 
 /* End of copied code */
 
-.card input:focus {
+.event-card input:focus {
   /* From https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
   outline: none;
 }
 
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 @media only screen and (min-width: 1160px) {
-    .eventBox img{
+    .event-box img{
         width: 600px;
         margin-left: 1.5%;
         margin-right: 1.5%
     }
 
-    .eventDetails {
+    .event-details {
         width: 500px;
         /* margin-top: 0; */
     margin-left: 1.5%;
     margin-right: 1.5%;
     }
 
-    .description{
+    .event-description{
         width: 600px;
         margin-left: 1.5%;
         margin-right: 1.5%;
@@ -1061,11 +1066,11 @@ h1 span {
         padding: 2% 4% 2% 4%;
     }
 
-    .description p {
+    .event-description p {
         font-size: 16px;
     }
 
-    .tickets {
+    .event-tickets {
         width: 500px;
     margin-left: 1.5%;
     margin-right: 1.5%;
@@ -1075,22 +1080,23 @@ h1 span {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1159px) {
-  .description {
+  .event-description {
     width: min(70ch, 95vw);
   }
 
-  .description p {
+  .event-description p {
     font-size: 16px;
   }
 
-  .cardRight {
+  .event-card-right {
     width: 25%;
   }
 }
 
 /* Create Event Page */
 
-.formWrapper {
+
+.create-form-wrapper {
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1136,9 +1142,9 @@ h1 span {
 
 .create-event-form input,
 .create-event-form textarea,
-.radio,
-.uploadImage,
-.imageLabel {
+.create-radio,
+.create-upload-image,
+.create-image-label {
   background-color: #ffff;
   outline: none;
   font-size: 14px;
@@ -1157,7 +1163,7 @@ h1 span {
   height: 150px;
 }
 
-.radio {
+.create-radio {
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1168,26 +1174,26 @@ h1 span {
   padding: 0;
 }
 
-.radio input {
+.create-radio input {
   margin: 0;
   width: auto;
 }
 
-.allowRefunds,
-.noRefunds {
+.create-allow-refunds,
+.create-no-refunds {
   display: inline-block;
   background-color: #ffff;
 }
 
-.allowRefunds {
+.create-allow-refunds {
   padding-left: 2vw;
 }
 
-.noRefunds {
+.create-no-refunds {
   padding-right: 2vw;
 }
 
-.radio label {
+.create-radio label {
   background-color: #ffff;
   color: #8e8e8e;
 }
@@ -1210,7 +1216,7 @@ input[type="file"] {
   margin-top: 0;
 }
 
-.imageLabel {
+.create-image-label {
   color: #8e8e8e;
   margin-top: 1.3%;
   margin-bottom: 0;
@@ -1218,15 +1224,15 @@ input[type="file"] {
   border: none;
 }
 
-.imageLabel,
+.create-image-label,
 input[type="file"] {
   padding-left: 0;
   margin: 0;
   border: none;
 }
 
-.uploadImage:hover .imageLabel,
-.uploadImage:hover input {
+.create-upload-image:hover .create-image-label,
+.create-upload-image:hover input {
   /* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
   color: #293d6a;
 }
@@ -1253,38 +1259,13 @@ input[type="radio"]:checked {
 
 /* styling of hrs based on https://css-tricks.com/examples/hrs/ */
 
-hr {
-  width: 75%;
-  border: 0;
-  height: 2px;
-  background-image: -webkit-gradient(
-    linear,
-    left top, right top,
-    from(rgba(41, 61, 106, 0.1)),
-    color-stop(rgba(41, 61, 106, 0.75)),
-    to(rgb(41, 61, 106, 0.1))
-  );
-  background-image: -o-linear-gradient(
-    left,
-    rgba(41, 61, 106, 0.1),
-    rgba(41, 61, 106, 0.75),
-    rgb(41, 61, 106, 0.1)
-  );
-  background-image: linear-gradient(
-    to right,
-    rgba(41, 61, 106, 0.1),
-    rgba(41, 61, 106, 0.75),
-    rgb(41, 61, 106, 0.1)
-  );
-  margin: 20px 0px;
-}
 
-#createEventHr {
+#create-event-hr {
   margin: 0px 0px 20px;
 }
 
-.allowRefunds:hover label,
-.noRefunds:hover label {
+.create-allow-refunds:hover label,
+.create-no-refunds:hover label {
   color: #293d6a;
 }
 
@@ -1296,16 +1277,16 @@ hr {
   background-color: #ffff;
 }
 
-.credit-card input:focus,
-.credit-card select:focus,
-.credit-card input:hover,
-.credit-card select:hover,
+.event-credit-card input:focus,
+.event-credit-card select:focus,
+.event-credit-card input:hover,
+.event-credit-card select:hover,
 .create-event-form input:focus,
 .create-event-form textarea:focus,
 .create-event-form input:hover,
 .create-event-form textarea:hover,
-.uploadImage:hover,
-.uploadImage:focus {
+.create-upload-image:hover,
+.create-upload-image:focus {
   color: #293d6a;
   outline: none;
   -webkit-box-shadow: 0 0 5px #f9ab55;
@@ -1317,7 +1298,7 @@ input[type="radio"]:checked, input[type="radio"]:focus{
     border: 1px solid #293d6a;
 }
 
-.uploadImage:hover input {
+.create-upload-image:hover input {
   /* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
   outline: none;
   -webkit-box-shadow: 0 0px #ffff;

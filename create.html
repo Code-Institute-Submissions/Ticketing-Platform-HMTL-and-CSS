@@ -36,12 +36,13 @@
       </ul>
     </nav>
 
-    <div class="formWrapper contentWrapper">
+    <div class="create-form-wrapper footer-content-wrapper">
+
 
 
     <section class="create-event-form">
         <header>Create Event</header>
-        <hr id="createEventHr" />
+        <hr id="create-event-hr" />
 
         <!-- If this was connected to the backend my opening form tag would be
         <form method="post" action="">
@@ -58,7 +59,7 @@
         <textarea
           required
           placeholder="Event Description"
-          id="eventDescription"
+          id="create-event-description"
           name="eventDescription"
         ></textarea>
         <input
@@ -90,8 +91,8 @@
           onfocus="(this.type='datetime-local')"
           onblur="(this.type='text')"
         />
-        <div class="uploadImage">
-          <label class="imageLabel" for="image">Upload Image:</label>
+        <div class="create-upload-image">
+          <label class="create-image-label" for="image">Upload Image:</label>
           <input
             required
             type="file"
@@ -107,52 +108,52 @@
           required
           type="text"
           placeholder="Ticket Name"
-          id="t1TicketName"
-          name="t1TicketName"
+          id="ticket-one-ticket-name"
+          name="ticket-one-ticket-name"
         />
         <textarea
           required
           placeholder="Ticket Description"
-          id="t1TicketDescription"
-          name="t1TicketDescription"
+          id="ticket-one-ticket-description"
+          name="ticket-one-ticket-description"
         ></textarea>
         <input
           required
           type="number"
           placeholder="Number of Tickets"
-          id="t1Capacity"
-          name="t1Capacity"
+          id="ticket-one-capacity"
+          name="ticket-one-capacity"
           min="1"
         />
         <input
           required
           type="number"
           placeholder="Price"
-          id="t1Price"
-          name="t1Price"
+          id="ticket-one-price"
+          name="ticket-one-price"
           min="0"
         />
-        <div class="radio">
-          <div class="allowRefunds">
+        <div class="create-radio">
+          <div class="create-allow-refunds">
             <input
               required
               type="radio"
-              id="t1AllowRefunds"
-              name="t1Refunds"
-              value="t1AllowRefunds"
+              id="ticket-one-allow-refunds"
+              name="ticket-one-Refunds"
+              value="ticket-one-allow-refunds"
               checked
             />
-            <label for="t1AllowRefunds">Allow Refunds</label><br />
+            <label for="ticket-one-allow-refunds">Allow Refunds</label><br />
           </div>
-          <div class="noRefunds">
+          <div class="create-no-refunds">
             <input
               required
               type="radio"
-              id="t1NoRefunds"
-              name="t1Refunds"
-              value="t1NoRefunds"
+              id="ticket-one-no-refunds"
+              name="ticket-one-Refunds"
+              value="ticket-one-no-refunds"
             />
-            <label for="t1NoRefunds">No Refunds</label><br />
+            <label for="ticket-one-no-refunds">No Refunds</label><br />
           </div>
         </div>
 
@@ -163,52 +164,52 @@
           required
           type="text"
           placeholder="Ticket Name"
-          id="t2TicketName"
-          name="t2TicketName"
+          id="ticket-two-ticket-name"
+          name="ticket-two-ticket-name"
         />
         <textarea
           required
           placeholder="Ticket Description"
-          id="t2TicketDescription"
-          name="t2TicketDescription"
+          id="ticket-two-ticket-description"
+          name="ticket-two-ticket-description"
         ></textarea>
         <input
           required
           type="number"
           placeholder="Number of Tickets"
-          id="t2Capacity"
-          name="t2Capacity"
+          id="ticket-two-capacity"
+          name="ticket-two-capacity"
           min="1"
         />
         <input
           required
           type="number"
           placeholder="Price"
-          id="t2Price"
-          name="t2Price"
+          id="ticket-two-price"
+          name="ticket-two-price"
           min="0"
         />
-        <div class="radio">
-          <div class="allowRefunds">
+        <div class="create-radio">
+          <div class="create-allow-refunds">
             <input
               required
               type="radio"
-              id="t2AllowRefunds"
-              name="t2Refunds"
-              value="t2AllowRefunds"
+              id="ticket-two-allow-refunds"
+              name="ticket-two-Refunds"
+              value="ticket-two-allow-refunds"
               checked
             />
-            <label for="t2AllowRefunds">Allow Refunds</label><br />
+            <label for="ticket-two-allow-refunds">Allow Refunds</label><br />
           </div>
-          <div class="noRefunds">
+          <div class="create-no-refunds">
             <input
               required
               type="radio"
-              id="t2NoRefunds"
-              name="t2Refunds"
-              value="t2NoRefunds"
+              id="ticket-two-no-refunds"
+              name="ticket-two-Refunds"
+              value="ticket-two-no-refunds"
             />
-            <label for="t2NoRefunds">No Refunds</label><br />
+            <label for="ticket-two-no-refunds">No Refunds</label><br />
           </div>
         </div>
 
@@ -219,52 +220,52 @@
           required
           type="text"
           placeholder="Ticket Name"
-          id="t3TicketName"
-          name="t3TicketName"
+          id="ticket-three-ticket-name"
+          name="ticket-three-ticket-name"
         />
         <textarea
           required
           placeholder="Ticket Description"
-          id="t3TicketDescription"
-          name="t3TicketDescription"
+          id="ticket-three-ticket-description"
+          name="ticket-three-ticket-description"
         ></textarea>
         <input
           required
           type="number"
           placeholder="Number of Tickets"
-          id="t3Capacity"
-          name="t3Capacity"
+          id="ticket-three-capacity"
+          name="ticket-three-capacity"
           min="1"
         />
         <input
           required
           type="number"
           placeholder="Price"
-          id="t3Price"
-          name="t3Price"
+          id="ticket-three-price"
+          name="ticket-three-price"
           min="0"
         />
-        <div class="radio">
-          <div class="allowRefunds">
+        <div class="create-radio">
+          <div class="create-allow-refunds">
             <input
               required
               type="radio"
-              id="t3AllowRefunds"
-              name="t3Refunds"
-              value="t3AllowRefunds"
+              id="ticket-three-allow-refunds"
+              name="ticket-three-Refunds"
+              value="ticket-three-allow-refunds"
               checked
             />
-            <label for="t3AllowRefunds">Allow Refunds</label><br />
+            <label for="ticket-three-allow-refunds">Allow Refunds</label><br />
           </div>
-          <div class="noRefunds">
+          <div class="create-no-refunds">
             <input
               required
               type="radio"
-              id="t3NoRefunds"
-              name="t3Refunds"
-              value="t3NoRefunds"
+              id="ticket-three-no-refunds"
+              name="ticket-three-Refunds"
+              value="ticket-three-no-refunds"
             />
-            <label for="t3NoRefunds">No Refunds</label><br />
+            <label for="ticket-three-no-refunds">No Refunds</label><br />
           </div>
         </div>
 

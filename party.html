@@ -32,12 +32,12 @@
             </ul>
         </nav>
 
-        <div class="event-page contentWrapper">
+        <div class="event-page footer-content-wrapper">
 
-            <div class="eventBox">
+            <div class="event-box">
                 <img src="/assets/images/party.jpg" alt="party goers with their hands in the air at a music event">
 
-                <section class="eventDetails">
+                <section class="event-details">
                     <header>New Year's Eve Party</header>
                     <hr>
                     <p><i class="far fa-calendar"></i>31st December 2020 at 20:00 until 1st January at 03:00</p>
@@ -48,9 +48,9 @@
                 </section>
             </div>
 
-            <div class="descriptionAndTicketsWrapper">
+            <div class="event-description-and-tickets-wrapper">
 
-                <section class="description">
+                <section class="event-description">
                     <header>Details</header>
                     <hr>
 
@@ -270,11 +270,11 @@
                 </section>
 
                 <!-- If this was connected to the backend my opening form tag would be
-                <form class="tickets" method="post" action="">
+                <form method="post" action="">
                 For a better experience, I want the page to refresh when the form is submitted rather than display an error -->
 
 
-                <section class="tickets">
+                <section class="event-tickets">
 
                     <header>Tickets</header>
                     <hr>
@@ -282,77 +282,77 @@
                     <!-- Code taken from internet and substantially amended to make responsive and to work on my site. Original code is at https://codepen.io/verpixelt/pen/cEJLa -->
                 <form>
 
-                    <div class="cardWrap">
-                        <div class="card cardLeft">
-                            <h1>Early <span>Bird</span></h1>
-                            <div class="title">
+                    <div class="event-card-wrap">
+                        <div class="event-card event-card-left">
+                            <h1 class="event-ticket-title">Early <span>Bird</span></h1>
+                            <div class="event-title">
                                 <span>description</span>
                                 <h2>Best Value. Limited Availability</h2>
                             </div>
-                            <div class="price">
+                            <div class="event-price">
                                 <span>price</span>
                                 <h2>€11</h2>
                             </div>
-                            <div class="refunds">
+                            <div class="event-refunds">
                                 <span>refunds</span>
                                 <h2>None</h2>
                             </div>
 
                         </div>
-                        <div class="card cardRight">
-                            <div class="eye"></div>
-                            <div class="number">
+                        <div class="event-card event-card-right">
+                            <div class="event-eye"></div>
+                            <div class="event-number">
                                 <span>quantity:</span>
                                 <input type="number" name="ticket1" id="ticket1" value="0" min="0" max="10">
                             </div>
                         </div>
                     </div>
 
-                    <div class="cardWrap">
-                        <div class="card cardLeft">
-                            <h1>General <span>Admission</span></h1>
-                            <div class="title">
+                    <div class="event-card-wrap">
+                        <div class="event-card event-card-left">
+                            <h1 class="event-ticket-title">General <span>Admission</span></h1>
+                            <div class="event-title">
                                 <span>description</span>
                                 <h2>Standard Price</h2>
                             </div>
-                            <div class="price">
+                            <div class="event-price">
                                 <span>price</span>
                                 <h2>€15</h2>
                             </div>
-                            <div class="refunds">
+                            <div class="event-refunds">
                                 <span>refunds</span>
                                 <h2>None</h2>
                             </div>
                         </div>
-                        <div class="card cardRight">
-                            <div class="eye"></div>
-                            <div class="number">
+                        <div class="event-card event-card-right">
+                            <div class="event-eye"></div>
+                            <div class="event-number">
                                 <span>quantity:</span>
                                 <input type="number" name="ticket2" id="ticket2"  value="0" min="0" max="10">
                             </div>
                         </div>
                     </div>
 
-                    <div class="cardWrap">
-                        <div class="card cardLeft">
-                            <h1>Skip <span>The Queue</span></h1>
-                            <div class="title">
+                    <div class="event-card-wrap">
+                        <div class="event-card event-card-left">
+                            <h1 class="event-ticket-title">Skip <span>The Queue</span></h1>
+                            <div class="event-title">
                                 <span>description</span>
                                 <h2>Save time. Jump to the top of the queue</h2>
                             </div>
-                            <div class="price">
+                            <div class="event-price">
                                 <span>price</span>
                                 <h2>€20</h2>
                             </div>
-                            <div class="refunds">
+                            <div class="event-refunds">
                                 <span>refunds</span>
                                 <h2>None</h2>
                             </div>
 
                         </div>
-                        <div class="card cardRight">
-                            <div class="eye"></div>
-                                <div class="number">
+                        <div class="event-card event-card-right">
+                            <div class="event-eye"></div>
+                                <div class="event-number">
                                     <span>quantity:</span>
                                     <input type="number" name="ticket3" id="ticket3" value="0"  min="0" max="10">
                                 </div>
@@ -361,14 +361,14 @@
 
                     <hr>
 
-                    <div class="credit-card">
+                    <div class="event-credit-card">
 
-                        <div class="form-body">
+                        <div class="event-form-body">
                         
-                            <input required pattern="[0-9]{16}" title="16 digit number required"  class="card-number" placeholder=" Credit Card Number" name="creditCard" id="creditCard" >
+                            <input required pattern="[0-9]{16}" title="16 digit number required"  class="event-card-number" placeholder=" Credit Card Number" name="creditCard" id="creditCard" >
 
-                            <div class="date-field">
-                                <div class="month">
+                            <div class="event-date-field">
+                                <div class="event-month">
                                     <select required name="month" id="month" >
                                         <option selected value="" hidden>Month</option>
                                         <option value="january">Jan</option>
@@ -385,7 +385,7 @@
                                         <option value="december">Dec</option>
                                     </select>
                                 </div>
-                                <div class="year">
+                                <div class="event-year">
                                     <select required name="year" id="year">
                                         <option selected value="" hidden>Year</option>
                                         <option value="2020">2020</option>
@@ -401,7 +401,7 @@
                             </div>
 
                             <div class="card-verification">
-                                <div class="cvv-input">
+                                <div class="event-cvv-input">
                                     <input required pattern="[0-9]{3}" title="3 numbers" placeholder="CVV" name="cvv" id="cvv">
                                 </div>
                             </div>
