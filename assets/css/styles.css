@@ -45,6 +45,7 @@ nav {
   font-size: clamp(10px, 3vw, 16px);
   border-bottom: 1px solid #293d6a;
   width: 100vw;
+  position: fixed;
 }
 
 nav ul {
@@ -80,8 +81,7 @@ h6, header {
 /* styling of hrs based on https://css-tricks.com/examples/hrs/ */
 
 hr {
-  width: 75%;
-  border: 0;
+/* styling of hrs based on https://css-tricks.com/examples/hrs/ */  border: 0;
   height: 2px;
   background-image: -webkit-gradient(
     linear,
