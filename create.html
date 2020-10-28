@@ -71,7 +71,7 @@
         />
 
         <!-- Made placeholder show using solution from https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687 -->
-
+        <!-- This uses a small bit of javascript. It is the only JS on the site. It was neccessary because it is not possible to amend the placeholder for input datetime-local using CSS -->
         <input
           required
           type="text"
@@ -91,6 +91,8 @@
           onfocus="(this.type='datetime-local')"
           onblur="(this.type='text')"
         />
+
+        <!-- This input will allow allow png, jpeg or jpg files to be uploaded -->
         <div class="create-upload-image">
           <label class="create-image-label" for="image">Upload Image:</label>
           <input
@@ -98,10 +100,10 @@
             type="file"
             id="image"
             name="image"
-            accept="image/png, image/jpeg"
+            accept="image/png, image/jpeg, image/jpg"
           />
         </div>
-        <hr />
+        <hr >
 
         <h4>Ticket 1 Details</h4>
         <input
@@ -117,6 +119,7 @@
           id="ticket-one-ticket-description"
           name="ticket-one-ticket-description"
         ></textarea>
+        <!-- The minimum value accepted is 1 -->
         <input
           required
           type="number"
@@ -125,6 +128,7 @@
           name="ticket-one-capacity"
           min="1"
         />
+        <!-- The minimum value accepted is 0 -->
         <input
           required
           type="number"
@@ -143,7 +147,7 @@
               value="ticket-one-allow-refunds"
               checked
             />
-            <label for="ticket-one-allow-refunds">Allow Refunds</label><br />
+            <label for="ticket-one-allow-refunds">Allow Refunds</label>
           </div>
           <div class="create-no-refunds">
             <input
@@ -153,11 +157,11 @@
               name="ticket-one-Refunds"
               value="ticket-one-no-refunds"
             />
-            <label for="ticket-one-no-refunds">No Refunds</label><br />
+            <label for="ticket-one-no-refunds">No Refunds</label>
           </div>
         </div>
 
-        <hr />
+        <hr>
 
         <h4>Ticket 2 Details</h4>
         <input
@@ -173,6 +177,7 @@
           id="ticket-two-ticket-description"
           name="ticket-two-ticket-description"
         ></textarea>
+        <!-- The minimum value accepted is 1 -->
         <input
           required
           type="number"
@@ -181,6 +186,7 @@
           name="ticket-two-capacity"
           min="1"
         />
+        <!-- The minimum value accepted is 0 -->
         <input
           required
           type="number"
@@ -199,7 +205,7 @@
               value="ticket-two-allow-refunds"
               checked
             />
-            <label for="ticket-two-allow-refunds">Allow Refunds</label><br />
+            <label for="ticket-two-allow-refunds">Allow Refunds</label>
           </div>
           <div class="create-no-refunds">
             <input
@@ -209,11 +215,11 @@
               name="ticket-two-Refunds"
               value="ticket-two-no-refunds"
             />
-            <label for="ticket-two-no-refunds">No Refunds</label><br />
+            <label for="ticket-two-no-refunds">No Refunds</label>
           </div>
         </div>
 
-        <hr />
+        <hr>
 
         <h4>Ticket 3 Details</h4>
         <input
@@ -229,6 +235,7 @@
           id="ticket-three-ticket-description"
           name="ticket-three-ticket-description"
         ></textarea>
+        <!-- The minimum value accepted is 1 -->
         <input
           required
           type="number"
@@ -237,6 +244,7 @@
           name="ticket-three-capacity"
           min="1"
         />
+        <!-- The minimum value accepted is 0 -->
         <input
           required
           type="number"
@@ -255,7 +263,7 @@
               value="ticket-three-allow-refunds"
               checked
             />
-            <label for="ticket-three-allow-refunds">Allow Refunds</label><br />
+            <label for="ticket-three-allow-refunds">Allow Refunds</label>
           </div>
           <div class="create-no-refunds">
             <input
@@ -265,11 +273,11 @@
               name="ticket-three-Refunds"
               value="ticket-three-no-refunds"
             />
-            <label for="ticket-three-no-refunds">No Refunds</label><br />
+            <label for="ticket-three-no-refunds">No Refunds</label>
           </div>
         </div>
 
-        <hr />
+        <hr>
 
         <button type="submit">Create Event</button>
       </form>

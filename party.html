@@ -269,9 +269,7 @@
 
                 </section>
 
-                <!-- If this was connected to the backend my opening form tag would be
-                <form method="post" action="">
-                For a better experience, I want the page to refresh when the form is submitted rather than display an error -->
+
 
 
                 <section class="event-tickets">
@@ -279,8 +277,13 @@
                     <header>Tickets</header>
                     <hr>
 
-                    <!-- Code taken from internet and substantially amended to make responsive and to work on my site. Original code is at https://codepen.io/verpixelt/pen/cEJLa -->
+                <!-- If this was connected to the backend my opening form tag would be
+                <form method="post" action="">
+                For a better experience, I want the page to refresh when the form is submitted rather than display an error -->
+
                 <form>
+
+                <!-- Code taken from internet and substantially amended to make responsive and to work on my site. Original code is at https://codepen.io/verpixelt/pen/cEJLa -->
 
                     <div class="event-card-wrap">
                         <div class="event-card event-card-left">
@@ -303,6 +306,7 @@
                             <div class="event-eye"></div>
                             <div class="event-number">
                                 <span>quantity:</span>
+                                <!-- It is only possible to select a value between 0 and 10 -->
                                 <input type="number" name="ticket1" id="ticket1" value="0" min="0" max="10">
                             </div>
                         </div>
@@ -328,6 +332,7 @@
                             <div class="event-eye"></div>
                             <div class="event-number">
                                 <span>quantity:</span>
+                                <!-- It is only possible to select a value between 0 and 10 -->
                                 <input type="number" name="ticket2" id="ticket2"  value="0" min="0" max="10">
                             </div>
                         </div>
@@ -354,6 +359,7 @@
                             <div class="event-eye"></div>
                                 <div class="event-number">
                                     <span>quantity:</span>
+                                    <!-- It is only possible to select a value between 0 and 10 -->
                                     <input type="number" name="ticket3" id="ticket3" value="0"  min="0" max="10">
                                 </div>
                         </div>
@@ -364,8 +370,8 @@
                     <div class="event-credit-card">
 
                         <div class="event-form-body">
-                        
-                            <input required pattern="[0-9]{16}" title="16 digit number required"  class="event-card-number" placeholder=" Credit Card Number" name="creditCard" id="creditCard" >
+                            <!-- Form will not send if this input does not have exactly 16 numbers -->
+                            <input required pattern="[0-9]{16}" title="Credit card number must be 16 digits"  class="event-card-number" placeholder=" Credit Card Number" name="creditCard" id="creditCard" >
 
                             <div class="event-date-field">
                                 <div class="event-month">
@@ -402,7 +408,8 @@
 
                             <div class="card-verification">
                                 <div class="event-cvv-input">
-                                    <input required pattern="[0-9]{3}" title="3 numbers" placeholder="CVV" name="cvv" id="cvv">
+                                <!-- Form will not send if this input does not have exactly 3 numbers -->
+                                    <input required pattern="[0-9]{3}" title="CVV number must be 3 digits" placeholder="CVV" name="cvv" id="cvv">
                                 </div>
                             </div>
 
