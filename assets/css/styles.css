@@ -755,7 +755,7 @@ footer li {
   text-align: center;
   font-size: 150%;
   cursor: pointer;
-  width: 100%;
+  width: 90%;
   border-color: transparent;
   margin-top: 13%;
   margin-bottom: 13%;
@@ -777,7 +777,7 @@ footer li {
 
 .create-event-form button {
   margin-top: 5%;
-  width: 85%;
+  width: 75%;
 }
 
 /* transition from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
