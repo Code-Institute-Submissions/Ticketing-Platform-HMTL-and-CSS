@@ -29,6 +29,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit
 }
 
 ul {
@@ -73,7 +74,7 @@ nav a:visited {
 h3,
 h5,
 h6,
-header {
+header, .home-text-container header {
   background-color: #ffff;
 }
 
