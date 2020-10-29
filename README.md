@@ -23,6 +23,10 @@ Features
 
 #### Home Page:
 
+![home page screen shot](https://github.com/colmfah/Ticketing-Platform-HMTL-and-CSS/blob/master/assets/images/home.png?raw=true "Home Page")
+
+
+
 The home page will list all of the events and show summary details for each event. When a user clicks an event, they will be brought to that event's specific page.
 
 #### Event Page:
@@ -107,7 +111,7 @@ Testing:
 
 Tested HTML using https://validator.w3.org/. No errors displayed.
 
-Tested website on chrome, firefox and edge (on a mac).
+Tested website on chrome, firefox and safari on a desktop map and tested on chrome and firefox on an andriod mobile.
 
 Used google chrome simulator to test for responsiveness for moto g4, galaxy s5, pixel 2, pixel 2xl, iphone5/se, iphone 6/7/8, iphone 6/7/8 plus, iphone x, ipad, ipad pro, surface duo, galaxy fold and desktop.
 
@@ -126,13 +130,9 @@ Placeholder for input type= "datetimelocal" wouldn't show. I used the solution f
 
 Couldn't add shadow to tickets because they are comprised of two many divs. If tickets were constructed better, this would be possible.
 
+<input type="datetime-local"> is not supported by safari. <input type="time"> is also not supported by safari
+
 Tested CSS using https://jigsaw.w3.org/css-validator. It highlighted that .cardWrap has the same color and background-color. However this is required for the ticket overall to display properly. It also highlighted that, when checked, the radio button's border color is the same as its background color. I am also satisfied this is okay as there is a gap between the border and the button. The other warnings all related to code that I imported from elsewhere in the internet. All other warnings relate to vendor extension. After seeking advice on slack, I have not changed these.
-
-Checked for responsiveness on all devices listed in chrome development tools
-
-
-
-
 
 
 
