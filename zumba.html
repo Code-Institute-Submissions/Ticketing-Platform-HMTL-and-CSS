@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zumba Classes</title>
+        <script src="https://kit.fontawesome.com/e9611e5a4d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <!-- Favicon code from https://favicon.io/emoji-favicons/ticket -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    </head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">
+                        <div class="nav-btn" id="nav-events">
+                            <span class="nav-noselect">Events</span>
+                        </div>
+                    </a></li>
+
+                <li><a href="create.html">
+                        <div class="nav-btn" id="nav-create-event">
+                            <span class="nav-noselect">Create Event</span>
+                        </div>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <div class="event-page footer-content-wrapper">
+
+            <div class="event-box">
+                <img src="/assets/images/zumba.jpg" alt="party goers with their hands in the air at a music event">
+
+                <section class="event-details">
+                <div class="event-center">
+                    <header>Zumba Classes</header>
+                    <hr>
+                    <p><i class="far fa-calendar"></i>  2nd January 2021 at 08:00 until 2nd January 2021 at 16:30</p>
+                    <p><i class="fas fa-map-marker"></i>  Ben Dunne Gym, Sandyford, Dublin
+              18</p>
+                    <p><a href="https://www.google.com/maps/place/Ben+Dunne+Gym+Sandyford/@53.2778675,-6.2177456"
+                            target="_blank"><i class="fas fa-globe-americas"></i>  View Map</a></p>
+                    <p class="ticketsRemaining"><i class="fas fa-ticket-alt"></i>  4 Tickets Remaining</p>
+                </div>
+                </section>
+            </div>
+
+            <div class="event-description-and-tickets-wrapper">
+
+                <section class="event-description">
+                    <header>Details</header>
+                    <hr>
+
+
+                    <p>We all want a fitness experience that gets our heart pumping and our bodies moving. Many of us are also looking for a workout that is fun, enjoyable and leaves us feeling sexier. Zumba classes do all of these things. And that’s why this fitness craze has swept the world.</p>
+
+<p>The 45 minute class is the sassy dance party workout where you move your hips and dance away the calories.</p>   
+
+<p>Not surprisingly, Zumba classes came from South America. Beto Pérez, a Colombian choreographer and dancer in the late 1990s developed the world-famous fitness class. Beto taught aerobics classes and after forgetting his music one day, decided to run the class.</p>
+
+<p>Most importantly, Zumba is a ridiculously fun dance class that doubles as a total body workout. Zumba is all about moving your body to fun, sexy music. It features dance moves set to a blend of popular contemporary Latin music styles like salsa, cumbia, reggaeton and merengue.  Zumba’s moves are all based around these four dance styles. But don’t worry if you’ve never done a Zumba class or taken a salsa dance lesson. You don’t need any experience to start doing Zumba. You can learn it easily and quickly.</p>
+
+<p>People of all ages love Zumba. And people from all around the world love Zumba. Whether you were born to dance or just starting your fitness journey, zumba will give you the burn your body craves. After just one class, you’ll find yourself moving in time with these powerful Latin beats.</p>  
+
+<p>Zumba really is the total body workout. During the class, specific tracks are played that tone the upper body, strengthen your arms and shake that booty. The whole time, your legs are working, your heart is pounding and your knees and ankles are getting stronger. This is all done to a sexy Latin soundtrack. Over time, you will enhance your coordination and boost your endurance.</p>
+
+<p>Zumba is an incredible aerobic workout, with remarkable heart benefits. You won’t notice the calories dripping away in this empowering environment. It will tone your abs, arms and glutes. And just as important, these classes can provide something else: happiness. With zumba, you can leave the stress of the working day outside the dance studio and enter a Latin dance environment that is infectiously fun and supportive.</p>
+
+<p>We offer zumba with a difference; Les Mills Sh’Bam. It’s an all-out dance party that provides incredible body gains. These classes range from 30 to 45 minutes in length. By the end of a Sh’Bam class, you’ll have had so much fun, you’ll have forgotten how many calories you’ve burned along the way. </p>
+
+<p>Two or three Zumba-style Sh’Bam classes per week alongside strength training can help you lose weight and get the body you’ve been dreaming about.  If you’re ready to dance the fat away, buy a ticket today</p>  
+
+                </section>
+
+
+
+
+                <section class="event-tickets">
+
+                    <header>Tickets</header>
+                    <hr>
+
+                <!-- If this was connected to the backend my opening form tag would be
+                <form method="post" action="">
+                For a better experience, I want the page to refresh when the form is submitted rather than display an error -->
+
+                <form>
+
+                <!-- Code taken from internet and substantially amended to make responsive and to work on my site. Original code is at https://codepen.io/verpixelt/pen/cEJLa -->
+
+                    <div class="event-card-wrap">
+                        <div class="event-card event-card-left">
+                            <h1 class="event-ticket-title">Early <span>Morning Dance</span></h1>
+                            <div class="event-title">
+                                <span>description</span>
+                                <h2>Shake the cobwebs off at 8am</h2>
+                            </div>
+                            <div class="event-price">
+                                <span>price</span>
+                                <h2>€20</h2>
+                            </div>
+                            <div class="event-refunds">
+                                <span>refunds</span>
+                                <h2>None</h2>
+                            </div>
+
+                        </div>
+                        <div class="event-card event-card-right">
+                            <div class="event-eye"></div>
+                            <div class="event-number">
+                                <span>quantity:</span>
+                                <!-- It is only possible to select a value between 0 and 10 -->
+                                <input type="number" name="ticket1" id="ticket1" value="0" min="0" max="10">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card-wrap">
+                        <div class="event-card event-card-left">
+                            <h1 class="event-ticket-title">Late <span>Morning Dance</span></h1>
+                            <div class="event-title">
+                                <span>description</span>
+                                <h2>Get Moving at 11am</h2>
+                            </div>
+                            <div class="event-price">
+                                <span>price</span>
+                                <h2>€20</h2>
+                            </div>
+                            <div class="event-refunds">
+                                <span>refunds</span>
+                                <h2>None</h2>
+                            </div>                            
+                        </div>
+                        <div class="event-card event-card-right">
+                            <div class="event-eye"></div>
+                            <div class="event-number">
+                                <span>quantity:</span>
+                                <!-- It is only possible to select a value between 0 and 10 -->
+                                <input type="number" name="ticket2" id="ticket2"  value="0" min="0" max="10">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card-wrap">
+                        <div class="event-card event-card-left">
+                            <h1 class="event-ticket-title">Afternoon <span>Zumba</span></h1>
+                            <div class="event-title">
+                                <span>description</span>
+                                <h2>Dance After Lunch</h2>
+                            </div>
+                            <div class="event-price">
+                                <span>price</span>
+                                <h2>€20</h2>
+                            </div>
+                            <div class="event-refunds">
+                                <span>refunds</span>
+                                <h2>None</h2>
+                            </div>
+
+                        </div>
+                        <div class="event-card event-card-right">
+                            <div class="event-eye"></div>
+                                <div class="event-number">
+                                    <span>quantity:</span>
+                                    <!-- It is only possible to select a value between 0 and 10 -->
+                                    <input type="number" name="ticket3" id="ticket3" value="0"  min="0" max="10">
+                                </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="event-credit-card">
+
+                        <div class="event-form-body">
+                            <!-- Form will not send if this input does not have exactly 16 numbers -->
+                            <input required pattern="[0-9]{16}" title="Credit card number must be 16 digits"  class="event-card-number" placeholder=" Credit Card Number" name="creditCard" id="creditCard" >
+
+                            <div class="event-date-field">
+                                <div class="event-month">
+                                    <select required name="month" id="month" >
+                                        <option selected value="" hidden>Month</option>
+                                        <option value="january">Jan</option>
+                                        <option value="february">Feb</option>
+                                        <option value="march">Mar</option>
+                                        <option value="april">Apr</option>
+                                        <option value="may">May</option>
+                                        <option value="june">Jun</option>
+                                        <option value="july">Jul</option>
+                                        <option value="august">Aug</option>
+                                        <option value="september">Sep</option>
+                                        <option value="october">Oct</option>
+                                        <option value="november">Nov</option>
+                                        <option value="december">Dec</option>
+                                    </select>
+                                </div>
+                                <div class="event-year">
+                                    <select required name="year" id="year">
+                                        <option selected value="" hidden>Year</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="card-verification">
+                                <div class="event-cvv-input">
+                                <!-- Form will not send if this input does not have exactly 3 numbers -->
+                                    <input required pattern="[0-9]{3}" title="CVV number must be 3 digits" placeholder="CVV" name="cvv" id="cvv">
+                                </div>
+                            </div>
+
+                            <button type="submit">Get Tickets</button>
+
+                        </div>
+                    </div>
+
+                </form>
+                </section>
+            </div>
+
+        </div>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    </body>
+
+</html>
