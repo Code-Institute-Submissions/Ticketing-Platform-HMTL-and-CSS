@@ -597,14 +597,21 @@ footer ul {
   border-width: clamp(1px, 1vw, 5px);
 }
 
+.event-center {
+    margin: auto;
+    background-color: #ffff;
+    display: inline-block;
+}
+
 .event-details {
-  padding: 2.5% 2.5% 2.5%;
+  padding: 1.5% 2.5% 0.5% 2.5%;
   border: 1px solid #8f897c;
   background-color: #ffff;
   border-radius: 5px;
   margin: 3% 5% 0% 5%;
   margin-top: clamp(1px, 10%, 85px);
   max-width: 95vw;
+  display: flex;
 }
 
 .event-details p,
@@ -630,7 +637,7 @@ footer ul {
   color: #293d6a94;
 }
 
-.event-details a {
+.event-details a:hover {
   text-decoration: underline;
 }
 
