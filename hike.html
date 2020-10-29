@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Year's Eve Party</title>
+        <script src="https://kit.fontawesome.com/e9611e5a4d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <!-- Favicon code from https://favicon.io/emoji-favicons/ticket -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    </head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">
+                        <div class="nav-btn" id="nav-events">
+                            <span class="nav-noselect">Events</span>
+                        </div>
+                    </a></li>
+
+                <li><a href="create.html">
+                        <div class="nav-btn" id="nav-create-event">
+                            <span class="nav-noselect">Create Event</span>
+                        </div>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <div class="event-page footer-content-wrapper">
+
+            <div class="event-box">
+                <img src="/assets/images/hike.jpg" alt="party goers with their hands in the air at a music event">
+
+                <section class="event-details">
+                    <header>New Year's Day Hike</header>
+                    <hr>
+                    <p><i class="far fa-calendar"></i>1st January 2021 at 08:00 until 16:30</p>
+                    <p><i class="fas fa-map-marker"></i>Glendalough, Co. Wicklow</p>
+                    <p><a href="https://www.google.com/maps/place/Derrybawn,+Glendalough,+Co.+Wicklow/@53.0119782,-6.3473496"
+                            target="_blank"><i class="fas fa-globe-americas"></i>View Map</a></p>
+                    <p class="ticketsRemaining"><i class="fas fa-ticket-alt"></i>10 Tickets Remaining</p>
+                </section>
+            </div>
+
+            <div class="event-description-and-tickets-wrapper">
+
+                <section class="event-description">
+                    <header>Details</header>
+                    <hr>
+
+                    <p>This would be a fairly easy route but we've made it a bit more challenging: after about 2km, we plan to leave the route and ascend the prominent boulder field, heading up towards the two fangs of rock near the top.</p> 
+
+                    <p>This is not especially difficult but it can be disconcerting to feel some of the large boulders pivot when you put your weight on them! Hands-on scrambling required.</p>
+
+                    <p> We've got a couple of other deviations from the normal route in mind too.</p>
+
+                    <p>Return will be either on the Sugarloaf Way or on a different track that goes around the other side of the mountain, coming out at the GAA grounds.</p>
+
+                    <p>Current government regulations specify a strict limit of 15 people for outdoor events.</p>
+
+                </section>
+
+
+
+
+                <section class="event-tickets">
+
+                    <header>Tickets</header>
+                    <hr>
+
+                <!-- If this was connected to the backend my opening form tag would be
+                <form method="post" action="">
+                For a better experience, I want the page to refresh when the form is submitted rather than display an error -->
+
+                <form>
+
+                <!-- Code taken from internet and substantially amended to make responsive and to work on my site. Original code is at https://codepen.io/verpixelt/pen/cEJLa -->
+
+                    <div class="event-card-wrap">
+                        <div class="event-card event-card-left">
+                            <h1 class="event-ticket-title">8am <span>Hike</span></h1>
+                            <div class="event-title">
+                                <span>description</span>
+                                <h2>Early Morning Hike</h2>
+                            </div>
+                            <div class="event-price">
+                                <span>price</span>
+                                <h2>Free</h2>
+                            </div>
+
+                        </div>
+                        <div class="event-card event-card-right">
+                            <div class="event-eye"></div>
+                            <div class="event-number">
+                                <span>quantity:</span>
+                                <!-- It is only possible to select a value between 0 and 10 -->
+                                <input type="number" name="ticket1" id="ticket1" value="0" min="0" max="10">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card-wrap">
+                        <div class="event-card event-card-left">
+                            <h1 class="event-ticket-title">11am <span>Hike</span></h1>
+                            <div class="event-title">
+                                <span>description</span>
+                                <h2>Late Morning Hike</h2>
+                            </div>
+                            <div class="event-price">
+                                <span>price</span>
+                                <h2>Free</h2>
+                            </div>
+                        </div>
+                        <div class="event-card event-card-right">
+                            <div class="event-eye"></div>
+                            <div class="event-number">
+                                <span>quantity:</span>
+                                <!-- It is only possible to select a value between 0 and 10 -->
+                                <input type="number" name="ticket2" id="ticket2"  value="0" min="0" max="10">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card-wrap">
+                        <div class="event-card event-card-left">
+                            <h1 class="event-ticket-title">1pm<span>Hike</span></h1>
+                            <div class="event-title">
+                                <span>description</span>
+                                <h2>Afternoon Hike</h2>
+                            </div>
+                            <div class="event-price">
+                                <span>price</span>
+                                <h2>Free</h2>
+                            </div>
+
+                        </div>
+                        <div class="event-card event-card-right">
+                            <div class="event-eye"></div>
+                                <div class="event-number">
+                                    <span>quantity:</span>
+                                    <!-- It is only possible to select a value between 0 and 10 -->
+                                    <input type="number" name="ticket3" id="ticket3" value="0"  min="0" max="10">
+                                </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="event-credit-card">
+
+                        <div class="event-form-body">
+                            <!-- Form will not send if this input does not have exactly 16 numbers -->
+                            <input required pattern="[0-9]{16}" title="Credit card number must be 16 digits"  class="event-card-number" placeholder=" Credit Card Number" name="creditCard" id="creditCard" >
+
+                            <div class="event-date-field">
+                                <div class="event-month">
+                                    <select required name="month" id="month" >
+                                        <option selected value="" hidden>Month</option>
+                                        <option value="january">Jan</option>
+                                        <option value="february">Feb</option>
+                                        <option value="march">Mar</option>
+                                        <option value="april">Apr</option>
+                                        <option value="may">May</option>
+                                        <option value="june">Jun</option>
+                                        <option value="july">Jul</option>
+                                        <option value="august">Aug</option>
+                                        <option value="september">Sep</option>
+                                        <option value="october">Oct</option>
+                                        <option value="november">Nov</option>
+                                        <option value="december">Dec</option>
+                                    </select>
+                                </div>
+                                <div class="event-year">
+                                    <select required name="year" id="year">
+                                        <option selected value="" hidden>Year</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="card-verification">
+                                <div class="event-cvv-input">
+                                <!-- Form will not send if this input does not have exactly 3 numbers -->
+                                    <input required pattern="[0-9]{3}" title="CVV number must be 3 digits" placeholder="CVV" name="cvv" id="cvv">
+                                </div>
+                            </div>
+
+                            <button type="submit">Buy Now</button>
+
+                        </div>
+                    </div>
+
+                </form>
+                </section>
+            </div>
+
+        </div>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    </body>
+
+</html>
