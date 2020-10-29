@@ -601,13 +601,17 @@ footer ul {
     margin: auto;
     background-color: #ffff;
     display: inline-block;
+    border: 1px solid #8f897c;
+    border-radius: 5px;
+    padding: 2.5% 2.5% 2.5% 2.5%;
 }
 
 .event-details {
-  padding: 1.5% 2.5% 0.5% 2.5%;
-  border: 1px solid #8f897c;
-  background-color: #ffff;
-  border-radius: 5px;
+  /* padding: 1.5% 2.5% 0.5% 2.5%; */
+  /* border: 1px solid #8f897c; */
+  /* background-color: #ffff; */
+  /* border-radius: 5px; */
+  background-color: #ececec;
   margin: 3% 5% 0% 5%;
   margin-top: clamp(1px, 10%, 85px);
   max-width: 95vw;
