@@ -31,9 +31,13 @@ The home page will list all of the events and show summary details for each even
 
 #### Event Page:
 
+![event page screen shot](https://github.com/colmfah/Ticketing-Platform-HMTL-and-CSS/blob/master/assets/images/event.png?raw=true "Create Event Page")
+
 The event page will have a image for the event; display all the details relating to the event (start time and date, location etc.); it will display the tickets for purchase; an option of the user to select how many of each ticket they wish to purchase and a button to complete purchase.
 
 #### Create Event Page:
+
+![create event page screen shot](https://github.com/colmfah/Ticketing-Platform-HMTL-and-CSS/blob/master/assets/images/create.png?raw=true "Create Event Page")
 
 The create event page will contain a form allowing the event organiser to post event details - name of event, location, start date and time, end date and time. 
 There will be three ticket types (eg. early bird, general admission, back-stage access etc.) for each event. 
@@ -115,6 +119,10 @@ Tested website on chrome, firefox and safari on a desktop map and tested on chro
 
 Used google chrome simulator to test for responsiveness for moto g4, galaxy s5, pixel 2, pixel 2xl, iphone5/se, iphone 6/7/8, iphone 6/7/8 plus, iphone x, ipad, ipad pro, surface duo, galaxy fold and desktop.
 
+I have tested the credit card form in the events page by attempting to submit while leaving each input blank one by one and entering values other than 16 digits for credit card numbers and less than 3 digits for CVV numbers. The form would not send and displayed error.
+
+I have tested the create event form by leaving each input blank one by one and also by selecting a value less than zero for price and less than one for ticket quantity. The form would not send and an error was displayed.
+
 #### Fixed Issues:
 
 Initially I had the image, summary details, description and tickets all contained in the one flexbox container. This worked for all default phone and tablet sizes in google chrome developer tools but at certain screen lengths, it caused the page structure to collapse. I fixed this by putting the image and summary details in one flexbox and the other elements into a separate flexbox.
@@ -134,21 +142,41 @@ Couldn't add shadow to tickets because they are comprised of two many divs. If t
 
 Tested CSS using https://jigsaw.w3.org/css-validator. It highlighted that .cardWrap has the same color and background-color. However this is required for the ticket overall to display properly. It also highlighted that, when checked, the radio button's border color is the same as its background color. I am also satisfied this is okay as there is a gap between the border and the button. The other warnings all related to code that I imported from elsewhere in the internet. All other warnings relate to vendor extension. After seeking advice on slack, I have not changed these.
 
-
-
-
 Version control:
 ======
 
+This project was developed using Gitpod, committed to git and pushed to GitHub using the built in function within Gidpod.
+
 Deployment:
 ======
+
+To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+
+Log into GitHub.
+From the list of repositories on the screen, select colmfah/Ticketing-Platform-HMTL-and-CSS.
+From the menu items near the top of the page, select Settings.
+Scroll down to the GitHub Pages section.
+Under Source click the drop-down menu labelled None and select Master Branch
+On selecting Master Branch the page is automatically refreshed, the website is now deployed.
+Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
+
+To clone this project from GitHub:
+
+
+Follow [this link to the Project GitHub repository](https://github.com/colmfah/Ticketing-Platform-HMTL-and-CSS).
+Under the repository name, click "Clone or download".
+In the Clone with HTTPs section, copy the clone URL for the repository.
+In your local IDE open Git Bash.
+Change the current working directory to the location where you want the cloned directory to be made.
+Type git clone, and then paste the URL you copied in Step 3.
+Press Enter. Your local clone will be created.
 
 Credits:
 ======
 
 Tickets based on https://codepen.io/verpixelt/pen/cEJLa 
 
-Colors from www.rte.ie/news and www.gaytodo.com
+Colors from https://www.rte.ie/news and https://www.gaytodo.com
 
 Nav links animations from https://codepen.io/chancesq/pen/qBOyQoW
 
@@ -199,13 +227,17 @@ Style child when hovering on parent: /* Learnt from here: https://stackoverflow.
 
 Fav icon from https://favicon.io/emoji-favicons/ticket
 
+Flex box troubleshooting: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Font awesome troubleshooting: https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+
+CSS property clamp: https://css-tricks.com/min-max-and-clamp-are-css-magic/
+
+
 Acknowledgements: 
 ======
 My Code Institute Mentor, Rohit
 
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-https://www.w3schools.com/icons/fontawesome_icons_intro.asp
-https://css-tricks.com/min-max-and-clamp-are-css-magic/
 
 
 
