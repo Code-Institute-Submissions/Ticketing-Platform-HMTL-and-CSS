@@ -662,6 +662,7 @@ footer ul {
   border: 1px solid #8f897c;
   margin: 3% 5% 0% 5%;
   margin-top: clamp(1px, 10%, 85px);
+  align-self: flex-start;
 }
 
 .event-description p {
