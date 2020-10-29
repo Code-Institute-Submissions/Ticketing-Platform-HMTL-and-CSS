@@ -109,6 +109,10 @@ hr {
   margin: 20px 0px;
 }
 
+  #tickets-remaining {
+    margin-bottom: 0;
+  }
+
 
 /* The below code originates from https://codepen.io/chancesq/pen/qBOyQoW 
     It is substantially amended to make responsive and work on my site.
@@ -554,7 +558,7 @@ footer ul {
     margin-left: 10%;
   }
 
-  .home-tickets-remaining {
+  .tickets-remaining {
     margin-bottom: 0;
   }
 }
@@ -603,7 +607,8 @@ footer ul {
     display: inline-block;
     border: 1px solid #8f897c;
     border-radius: 5px;
-    padding: 2.5% 2.5% 2.5% 2.5%;
+    padding: 5%;
+     /* padding: 1.5% 2.5% 0.5% 2.5%; */
 }
 
 .event-details {
@@ -612,9 +617,9 @@ footer ul {
   /* background-color: #ffff; */
   /* border-radius: 5px; */
   background-color: #ececec;
-  margin: 3% 5% 0% 5%;
+  margin: 3% 2.5% 0% 2.5%;
   margin-top: clamp(1px, 10%, 85px);
-  max-width: 95vw;
+  width: 100%;
   display: flex;
 }
 
@@ -627,6 +632,10 @@ footer ul {
   color: #8f897c;
   margin-bottom: clamp(5px, 1vw, 8px);
 }
+
+  .tickets-remaining {
+    margin-bottom: 0;
+  }
 
 
 
@@ -669,10 +678,10 @@ footer ul {
   color: #000;
   width: min(40ch, 95vw);
   word-wrap: break-word;
-  padding: 2%;
+  padding: 5%;
   border-radius: 5px;
   border: 1px solid #8f897c;
-  margin: 3% 5% 0% 5%;
+  margin: 3% 2.5% 0% 2.5%;
   margin-top: clamp(1px, 10%, 85px);
   align-self: flex-start;
 }
@@ -1074,6 +1083,10 @@ footer ul {
         margin-left: 1.5%;
         margin-right: 1.5%
     }
+
+    .event-center {
+    padding: 8%;
+}
 
     .event-details {
         width: 500px;
