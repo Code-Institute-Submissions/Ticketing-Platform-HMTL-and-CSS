@@ -165,14 +165,14 @@ hr {
 }
 
 .nav-btn:hover::before,
-#nav-events:hover::before,
+#nav-home:hover::before,
 #nav-create-event:hover::before {
   width: 0px;
   background: #f7f7f7;
 }
 
 .nav-btn:hover::after,
-#nav-events:hover::after,
+#nav-home:hover::after,
 #nav-create-event:hover::after {
   height: 0px;
   background: #f7f7f7;
@@ -184,16 +184,16 @@ hr {
 
 /* Ends copied code */
 
-#nav-events {
+#nav-home {
   border: 1px solid #293d6a;
 }
 
-#nav-events::before {
-  height: clamp(1px, 7vw, 35px);
-  width: clamp(1px, 8.5vw, 41px);
+#nav-home::before {
+    height: clamp(1px, 8.5vw, 35px);
+    width: clamp(1px, 6.7vw, 35px);
 }
 
-#nav-events::after {
+#nav-home::after {
   width: clamp(40px, 13vw, 70px);
   height: clamp(1px, 3vw, 13px);
 }
