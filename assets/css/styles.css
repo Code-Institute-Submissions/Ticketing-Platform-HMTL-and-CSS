@@ -1075,6 +1075,15 @@ footer li {
 
 /* End of copied code */
 
+.event-form-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-form-body button {
+  align-self: center;
+}
+
 .event-card input:focus {
   /* From https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
   outline: none;
