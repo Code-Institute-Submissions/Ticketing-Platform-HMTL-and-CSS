@@ -29,7 +29,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit
+  color: inherit;
 }
 
 ul {
@@ -74,7 +74,8 @@ nav a:visited {
 h3,
 h5,
 h6,
-header, .home-text-container header {
+header,
+.home-text-container header {
   background-color: #ffff;
 }
 
@@ -287,12 +288,19 @@ footer ul {
 }
 
 footer li {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 
 .footer-content-wrapper {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.-fa-facebook-f,
+.fa-twitter,
+.fa-linkedin-in,
+.fa-instagram {
+  background-color: #f7f7f7;
 }
 
 .fa-instagram:hover {
@@ -407,7 +415,7 @@ footer li {
 }
 
 .home-event-summary-container a {
-    background-color: #ffff;
+  background-color: #ffff;
 }
 
 .home-event-summary-container p {
