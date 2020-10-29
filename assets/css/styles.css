@@ -402,6 +402,10 @@ footer ul {
   border-radius: 5px;
 }
 
+.home-event-summary-container a {
+    background-color: #ffff;
+}
+
 .home-event-summary-container p {
   background-color: #ffff;
   font-size: 60%;
