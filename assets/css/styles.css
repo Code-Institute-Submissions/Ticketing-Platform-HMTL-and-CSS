@@ -286,6 +286,10 @@ footer ul {
   justify-content: space-around;
 }
 
+footer li {
+    background-color: #f7f7f7;
+}
+
 .footer-content-wrapper {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
