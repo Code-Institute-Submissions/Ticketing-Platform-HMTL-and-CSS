@@ -8,12 +8,26 @@
       src="https://kit.fontawesome.com/e9611e5a4d.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
     <!-- Favicon code from https://favicon.io/emoji-favicons/ticket -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
   </head>
   <body>
     <nav>
@@ -37,250 +51,247 @@
     </nav>
 
     <div class="create-form-wrapper footer-content-wrapper">
-
-
-
-    <section class="create-event-form">
+      <section class="create-event-form">
         <header>Create Event</header>
         <hr id="create-event-hr" />
 
         <!-- If this was connected to the backend my opening form tag would be
         <form method="post" action="">
         For a better experience, I want the page to refresh when the form is submitted rather than display an error -->
-        
-    <form >
-        <input
-          required
-          type="text"
-          placeholder="Event Title"
-          id="eventTitle"
-          name="eventTitle"
-        />
-        <textarea
-          required
-          placeholder="Event Description"
-          id="create-event-description"
-          name="eventDescription"
-        ></textarea>
-        <input
-          required
-          type="text"
-          placeholder="Location"
-          id="location"
-          name="location"
-        />
 
-        <!-- Made placeholder show using solution from https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687 -->
-        <!-- This uses a small bit of javascript. It is the only JS on the site. It was neccessary because it is not possible to amend the placeholder for input datetime-local using CSS -->
-        <input
-          required
-          type="text"
-          placeholder="Start Date and Time"
-          id="startTime"
-          name="startTime"
-          onfocus="(this.type='datetime-local')"
-          onblur="(this.type='text')"
-        />
-
-        <input
-          required
-          type="text"
-          placeholder="End Date and Time"
-          id="endTime"
-          name="endTime"
-          onfocus="(this.type='datetime-local')"
-          onblur="(this.type='text')"
-        />
-
-        <!-- This input will allow allow png, jpeg or jpg files to be uploaded -->
-        <div class="create-upload-image">
-          <label class="create-image-label" for="image">Upload Image:</label>
+        <form>
           <input
             required
-            type="file"
-            id="image"
-            name="image"
-            accept="image/png, image/jpeg, image/jpg"
+            type="text"
+            placeholder="Event Title"
+            id="eventTitle"
+            name="eventTitle"
           />
-        </div>
-        <hr >
+          <textarea
+            required
+            placeholder="Event Description"
+            id="create-event-description"
+            name="eventDescription"
+          ></textarea>
+          <input
+            required
+            type="text"
+            placeholder="Location"
+            id="location"
+            name="location"
+          />
 
-        <h4>Ticket 1 Details</h4>
-        <input
-          required
-          type="text"
-          placeholder="Ticket Name"
-          id="ticket-one-ticket-name"
-          name="ticket-one-ticket-name"
-        />
-        <textarea
-          required
-          placeholder="Ticket Description"
-          id="ticket-one-ticket-description"
-          name="ticket-one-ticket-description"
-        ></textarea>
-        <!-- The minimum value accepted is 1 -->
-        <input
-          required
-          type="number"
-          placeholder="Number of Tickets"
-          id="ticket-one-capacity"
-          name="ticket-one-capacity"
-          min="1"
-        />
-        <!-- The minimum value accepted is 0 -->
-        <input
-          required
-          type="number"
-          placeholder="Price"
-          id="ticket-one-price"
-          name="ticket-one-price"
-          min="0"
-        />
-        <div class="create-radio">
-          <div class="create-allow-refunds">
+          <!-- Made placeholder show using solution from https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687 -->
+          <!-- This uses a small bit of javascript. It is the only JS on the site. It was neccessary because it is not possible to amend the placeholder for input datetime-local using CSS -->
+          <input
+            required
+            type="text"
+            placeholder="Start Date and Time"
+            id="startTime"
+            name="startTime"
+            onfocus="(this.type='datetime-local')"
+            onblur="(this.type='text')"
+          />
+
+          <input
+            required
+            type="text"
+            placeholder="End Date and Time"
+            id="endTime"
+            name="endTime"
+            onfocus="(this.type='datetime-local')"
+            onblur="(this.type='text')"
+          />
+
+          <!-- This input will allow allow png, jpeg or jpg files to be uploaded -->
+          <div class="create-upload-image">
+            <label class="create-image-label" for="image">Upload Image:</label>
             <input
               required
-              type="radio"
-              id="ticket-one-allow-refunds"
-              name="ticket-one-Refunds"
-              value="ticket-one-allow-refunds"
-              checked
+              type="file"
+              id="image"
+              name="image"
+              accept="image/png, image/jpeg, image/jpg"
             />
-            <label for="ticket-one-allow-refunds">Allow Refunds</label>
           </div>
-          <div class="create-no-refunds">
-            <input
-              required
-              type="radio"
-              id="ticket-one-no-refunds"
-              name="ticket-one-Refunds"
-              value="ticket-one-no-refunds"
-            />
-            <label for="ticket-one-no-refunds">No Refunds</label>
+          <hr />
+
+          <h4>Ticket 1 Details</h4>
+          <input
+            required
+            type="text"
+            placeholder="Ticket Name"
+            id="ticket-one-ticket-name"
+            name="ticket-one-ticket-name"
+          />
+          <textarea
+            required
+            placeholder="Ticket Description"
+            id="ticket-one-ticket-description"
+            name="ticket-one-ticket-description"
+          ></textarea>
+          <!-- The minimum value accepted is 1 -->
+          <input
+            required
+            type="number"
+            placeholder="Number of Tickets"
+            id="ticket-one-capacity"
+            name="ticket-one-capacity"
+            min="1"
+          />
+          <!-- The minimum value accepted is 0 -->
+          <input
+            required
+            type="number"
+            placeholder="Price"
+            id="ticket-one-price"
+            name="ticket-one-price"
+            min="0"
+          />
+          <div class="create-radio">
+            <div class="create-allow-refunds">
+              <input
+                required
+                type="radio"
+                id="ticket-one-allow-refunds"
+                name="ticket-one-Refunds"
+                value="ticket-one-allow-refunds"
+                checked
+              />
+              <label for="ticket-one-allow-refunds">Allow Refunds</label>
+            </div>
+            <div class="create-no-refunds">
+              <input
+                required
+                type="radio"
+                id="ticket-one-no-refunds"
+                name="ticket-one-Refunds"
+                value="ticket-one-no-refunds"
+              />
+              <label for="ticket-one-no-refunds">No Refunds</label>
+            </div>
           </div>
-        </div>
 
-        <hr>
+          <hr />
 
-        <h4>Ticket 2 Details</h4>
-        <input
-          required
-          type="text"
-          placeholder="Ticket Name"
-          id="ticket-two-ticket-name"
-          name="ticket-two-ticket-name"
-        />
-        <textarea
-          required
-          placeholder="Ticket Description"
-          id="ticket-two-ticket-description"
-          name="ticket-two-ticket-description"
-        ></textarea>
-        <!-- The minimum value accepted is 1 -->
-        <input
-          required
-          type="number"
-          placeholder="Number of Tickets"
-          id="ticket-two-capacity"
-          name="ticket-two-capacity"
-          min="1"
-        />
-        <!-- The minimum value accepted is 0 -->
-        <input
-          required
-          type="number"
-          placeholder="Price"
-          id="ticket-two-price"
-          name="ticket-two-price"
-          min="0"
-        />
-        <div class="create-radio">
-          <div class="create-allow-refunds">
-            <input
-              required
-              type="radio"
-              id="ticket-two-allow-refunds"
-              name="ticket-two-Refunds"
-              value="ticket-two-allow-refunds"
-              checked
-            />
-            <label for="ticket-two-allow-refunds">Allow Refunds</label>
+          <h4>Ticket 2 Details</h4>
+          <input
+            required
+            type="text"
+            placeholder="Ticket Name"
+            id="ticket-two-ticket-name"
+            name="ticket-two-ticket-name"
+          />
+          <textarea
+            required
+            placeholder="Ticket Description"
+            id="ticket-two-ticket-description"
+            name="ticket-two-ticket-description"
+          ></textarea>
+          <!-- The minimum value accepted is 1 -->
+          <input
+            required
+            type="number"
+            placeholder="Number of Tickets"
+            id="ticket-two-capacity"
+            name="ticket-two-capacity"
+            min="1"
+          />
+          <!-- The minimum value accepted is 0 -->
+          <input
+            required
+            type="number"
+            placeholder="Price"
+            id="ticket-two-price"
+            name="ticket-two-price"
+            min="0"
+          />
+          <div class="create-radio">
+            <div class="create-allow-refunds">
+              <input
+                required
+                type="radio"
+                id="ticket-two-allow-refunds"
+                name="ticket-two-Refunds"
+                value="ticket-two-allow-refunds"
+                checked
+              />
+              <label for="ticket-two-allow-refunds">Allow Refunds</label>
+            </div>
+            <div class="create-no-refunds">
+              <input
+                required
+                type="radio"
+                id="ticket-two-no-refunds"
+                name="ticket-two-Refunds"
+                value="ticket-two-no-refunds"
+              />
+              <label for="ticket-two-no-refunds">No Refunds</label>
+            </div>
           </div>
-          <div class="create-no-refunds">
-            <input
-              required
-              type="radio"
-              id="ticket-two-no-refunds"
-              name="ticket-two-Refunds"
-              value="ticket-two-no-refunds"
-            />
-            <label for="ticket-two-no-refunds">No Refunds</label>
+
+          <hr />
+
+          <h4>Ticket 3 Details</h4>
+          <input
+            required
+            type="text"
+            placeholder="Ticket Name"
+            id="ticket-three-ticket-name"
+            name="ticket-three-ticket-name"
+          />
+          <textarea
+            required
+            placeholder="Ticket Description"
+            id="ticket-three-ticket-description"
+            name="ticket-three-ticket-description"
+          ></textarea>
+          <!-- The minimum value accepted is 1 -->
+          <input
+            required
+            type="number"
+            placeholder="Number of Tickets"
+            id="ticket-three-capacity"
+            name="ticket-three-capacity"
+            min="1"
+          />
+          <!-- The minimum value accepted is 0 -->
+          <input
+            required
+            type="number"
+            placeholder="Price"
+            id="ticket-three-price"
+            name="ticket-three-price"
+            min="0"
+          />
+          <div class="create-radio">
+            <div class="create-allow-refunds">
+              <input
+                required
+                type="radio"
+                id="ticket-three-allow-refunds"
+                name="ticket-three-Refunds"
+                value="ticket-three-allow-refunds"
+                checked
+              />
+              <label for="ticket-three-allow-refunds">Allow Refunds</label>
+            </div>
+            <div class="create-no-refunds">
+              <input
+                required
+                type="radio"
+                id="ticket-three-no-refunds"
+                name="ticket-three-Refunds"
+                value="ticket-three-no-refunds"
+              />
+              <label for="ticket-three-no-refunds">No Refunds</label>
+            </div>
           </div>
-        </div>
 
-        <hr>
+          <hr />
 
-        <h4>Ticket 3 Details</h4>
-        <input
-          required
-          type="text"
-          placeholder="Ticket Name"
-          id="ticket-three-ticket-name"
-          name="ticket-three-ticket-name"
-        />
-        <textarea
-          required
-          placeholder="Ticket Description"
-          id="ticket-three-ticket-description"
-          name="ticket-three-ticket-description"
-        ></textarea>
-        <!-- The minimum value accepted is 1 -->
-        <input
-          required
-          type="number"
-          placeholder="Number of Tickets"
-          id="ticket-three-capacity"
-          name="ticket-three-capacity"
-          min="1"
-        />
-        <!-- The minimum value accepted is 0 -->
-        <input
-          required
-          type="number"
-          placeholder="Price"
-          id="ticket-three-price"
-          name="ticket-three-price"
-          min="0"
-        />
-        <div class="create-radio">
-          <div class="create-allow-refunds">
-            <input
-              required
-              type="radio"
-              id="ticket-three-allow-refunds"
-              name="ticket-three-Refunds"
-              value="ticket-three-allow-refunds"
-              checked
-            />
-            <label for="ticket-three-allow-refunds">Allow Refunds</label>
-          </div>
-          <div class="create-no-refunds">
-            <input
-              required
-              type="radio"
-              id="ticket-three-no-refunds"
-              name="ticket-three-Refunds"
-              value="ticket-three-no-refunds"
-            />
-            <label for="ticket-three-no-refunds">No Refunds</label>
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="submit">Create Event</button>
-      </form>
+          <button type="submit">Create Event</button>
+        </form>
       </section>
     </div>
 
