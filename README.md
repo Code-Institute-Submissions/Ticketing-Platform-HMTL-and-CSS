@@ -225,8 +225,6 @@ Prevent horizontal overflow. Second Answer here: https://stackoverflow.com/quest
 
 Upload image: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
 
-Make placeholder show for input="datetimelocal": https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687
-
 html select date and time: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local
 
 Style radio buttons: https://stackoverflow.com/questions/45327086/how-change-the-color-of-the-radio-button
