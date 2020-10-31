@@ -33,15 +33,25 @@ The home page will list all of the events and show summary details for each even
 
 ![event page screen shot](https://github.com/colmfah/Ticketing-Platform-HMTL-and-CSS/blob/master/assets/images/event.png?raw=true "Create Event Page")
 
-The event page will have a image for the event; display all the details relating to the event (start time and date, location etc.); it will display the tickets for purchase; an option of the user to select how many of each ticket they wish to purchase and a button to complete purchase.
+The event page will have a image for the event. 
+
+It will display all the details relating to the event (start time and date, location etc.). 
+
+It will display the tickets for purchase. 
+
+An option of the user to select how many of each ticket they wish to purchase and a button to complete purchase.
 
 #### Create Event Page:
 
 ![create event page screen shot](https://github.com/colmfah/Ticketing-Platform-HMTL-and-CSS/blob/master/assets/images/create.png?raw=true "Create Event Page")
 
 The create event page will contain a form allowing the event organiser to post event details - name of event, location, start date and time, end date and time. 
+
 There will be three ticket types (eg. early bird, general admission, back-stage access etc.) for each event. 
-For each ticket type, the event organiser must include a name of the ticket type, the price and the quantity of tickets to sell. There will be an option to include a description.
+
+For each ticket type, the event organiser must include a name of the ticket type, the price and the quantity of tickets to sell. 
+
+There will be an option to include a description.
 
 #### Header:
 
@@ -107,7 +117,9 @@ Best Practices:
 ======
 
 Used camel-case for class selectors. 
+
 Each class starts with the page or feature it applies to.
+
 For example a class that impacts the home pages starts with "home-"; a class that impacts the create event page starts with "create-"; a class that impacts the nav starts with "nav-" etc.
 
 Testing:
@@ -129,18 +141,18 @@ Initially I had the image, summary details, description and tickets all containe
 
 Tried using maxlength and minlenght to ensure user would get error if they didn't enter credit card with 16 digits and cvv code with 3 digits. This wouldn't work so I used the html pattern attribute instead. Acknowledgement to W3 school is in Acknowledgement section.
 
-There was a horizontal scrollbar even though elements were set to 100vw. This is because a visual error is caused when the vh is above 100vh. Fixed this using overflow-x:hidden. Acknowledgement to stackoverflow answer is in the Acknowledgement section.
+There was a horizontal scrollbar even though elements were set to 100vw. This is because a visual error is caused when the vh is above 100vh. Fixed this using `overflow-x:hidden`. Acknowledgement to stackoverflow answer is in the Acknowledgement section.
 
-Placeholder for input type= "datetimelocal" wouldn't show. I used the solution from this answer: https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687 and amended it to work for datetimelocal.
+Content was scrolling over the nav bar. I fixed this by giving the nav `z-index: 2`. This works because the only other z-index on the page has a value of 1
 
 
 #### Open Issues:
 
 Couldn't add shadow to tickets because they are comprised of two many divs. If tickets were constructed better, this would be possible.
 
-<input type="datetime-local"> is not supported by safari. <input type="time"> is also not supported by safari
+`<input type="datetime-local">` is not supported by safari. `<input type="time">` is also not supported by safari
 
-Tested CSS using https://jigsaw.w3.org/css-validator. It highlighted that .cardWrap has the same color and background-color. However this is required for the ticket overall to display properly. It also highlighted that, when checked, the radio button's border color is the same as its background color. I am also satisfied this is okay as there is a gap between the border and the button. The other warnings all related to code that I imported from elsewhere in the internet. All other warnings relate to vendor extension. After seeking advice on slack, I have not changed these.
+Tested CSS using https://jigsaw.w3.org/css-validator. It highlighted that `.cardWrap` has the same color and background-color. However this is required for the ticket overall to display properly. It also highlighted that, when checked, the radio button's border color is the same as its background color. I am also satisfied this is okay as there is a gap between the border and the button. The other warnings all related to code that I imported from elsewhere in the internet. All other warnings relate to vendor extension. After seeking advice on slack, I have not changed these.
 
 Version control:
 ======
@@ -152,24 +164,24 @@ Deployment:
 
 To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
-Log into GitHub.
-From the list of repositories on the screen, select colmfah/Ticketing-Platform-HMTL-and-CSS.
-From the menu items near the top of the page, select Settings.
-Scroll down to the GitHub Pages section.
-Under Source click the drop-down menu labelled None and select Master Branch
-On selecting Master Branch the page is automatically refreshed, the website is now deployed.
-Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
+* Log into GitHub.
+* From the list of repositories on the screen, select colmfah/Ticketing-Platform-HMTL-and-CSS.
+* From the menu items near the top of the page, select Settings.
+* Scroll down to the GitHub Pages section.
+* Under Source click the drop-down menu labelled None and select Master Branch
+* On selecting Master Branch the page is automatically refreshed, the website is now deployed.
+* Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
 
 To clone this project from GitHub:
 
 
-Follow [this link to the Project GitHub repository](https://github.com/colmfah/Ticketing-Platform-HMTL-and-CSS).
-Under the repository name, click "Clone or download".
-In the Clone with HTTPs section, copy the clone URL for the repository.
-In your local IDE open Git Bash.
-Change the current working directory to the location where you want the cloned directory to be made.
-Type git clone, and then paste the URL you copied in Step 3.
-Press Enter. Your local clone will be created.
+* Follow [this link to the Project GitHub repository](https://github.com/colmfah/Ticketing-Platform-HMTL-and-CSS).
+* Click the Code button.
+* Copy the HTTPs URL.
+* In your local IDE open Git Bash.
+* Change the current working directory to the location where you want the cloned directory to be made.
+* Type git clone, and then paste the HTTPs URL you copied.
+* Press Enter. Your local clone will be created.
 
 Credits:
 ======
@@ -189,9 +201,9 @@ Keep footer at bottom of page from: https://www.freecodecamp.org/news/how-to-kee
 Box shadows from: https://codepen.io/sdthornton/pen/wBZdXq
 
 images from unsplash:
-https://unsplash.com/photos/hzgs56Ze49s
-https://unsplash.com/photos/3ckWUnaCxzc
-https://unsplash.com/photos/juHayWuaaoQ
+* https://unsplash.com/photos/hzgs56Ze49s
+* https://unsplash.com/photos/3ckWUnaCxzc
+* https://unsplash.com/photos/juHayWuaaoQ
 
 Text for party event based on https://www.eventbrite.ie/e/psychedelic-gaff-23-dark-progressive-night-w-hypogeo-tickets-96357603185?aff=erelexpmlt
 
@@ -221,9 +233,9 @@ Style radio buttons: https://stackoverflow.com/questions/45327086/how-change-the
 
 Style hrs - code based on: https://css-tricks.com/examples/hrs/
 
-Placeholder changes color on hover - based on:https://stackoverflow.com/questions/54308139/how-to-show-placeholder-when-we-hover-on-input-type-text
+Placeholder changes color on hover based on https://stackoverflow.com/questions/54308139/how-to-show-placeholder-when-we-hover-on-input-type-text
 
-Style child when hovering on parent: /* Learnt from here: https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent */
+Style child when hovering on parent from https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent
 
 Fav icon from https://favicon.io/emoji-favicons/ticket
 
