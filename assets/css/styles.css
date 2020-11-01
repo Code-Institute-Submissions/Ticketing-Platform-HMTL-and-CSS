@@ -88,6 +88,12 @@ hr {
   border: 0;
   height: 2px;
   width: 75%;
+  background-image: -o-linear-gradient(
+    left,
+    rgba(41, 61, 106, 0.1),
+    rgba(41, 61, 106, 0.75),
+    rgb(41, 61, 106, 0.1)
+  );
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -95,12 +101,6 @@ hr {
     from(rgba(41, 61, 106, 0.1)),
     color-stop(rgba(41, 61, 106, 0.75)),
     to(rgb(41, 61, 106, 0.1))
-  );
-  background-image: -o-linear-gradient(
-    left,
-    rgba(41, 61, 106, 0.1),
-    rgba(41, 61, 106, 0.75),
-    rgb(41, 61, 106, 0.1)
   );
   background-image: linear-gradient(
     to right,
@@ -397,8 +397,13 @@ footer li {
 }
 
 .home-details-container {
-    display: flex;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #ffff;
   margin: 7px;
 }
@@ -452,7 +457,7 @@ footer li {
 
 .home-text-container {
   background-color: #ffff;
-    margin: auto;
+  margin: auto;
 }
 
 /* The below code is copied from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load 
@@ -632,6 +637,8 @@ footer li {
   margin: 3% 2.5% 0% 2.5%;
   margin-top: clamp(1px, 10%, 85px);
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -693,6 +700,7 @@ footer li {
   border: 1px solid #8f897c;
   margin: 3% 2.5% 0% 2.5%;
   margin-top: clamp(1px, 10%, 85px);
+  -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
@@ -829,6 +837,13 @@ footer li {
 }
 
 .event-card {
+  background: -o-linear-gradient(
+    top,
+    #e84c3d 0%,
+    #e84c3d 26%,
+    #ecedef 26%,
+    #ecedef 100%
+  );
   background: -webkit-gradient(
     linear,
     left top,
@@ -837,13 +852,6 @@ footer li {
     color-stop(26%, #e84c3d),
     color-stop(26%, #ecedef),
     to(#ecedef)
-  );
-  background: -o-linear-gradient(
-    top,
-    #e84c3d 0%,
-    #e84c3d 26%,
-    #ecedef 26%,
-    #ecedef 100%
   );
   background: linear-gradient(
     to bottom,
@@ -1078,11 +1086,18 @@ footer li {
 /* End of copied code */
 
 .event-form-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .event-form-body button {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
 }
 
