@@ -397,6 +397,8 @@ footer li {
 }
 
 .home-details-container {
+    display: flex;
+    flex-direction: column;
   background-color: #ffff;
   margin: 7px;
 }
@@ -450,6 +452,7 @@ footer li {
 
 .home-text-container {
   background-color: #ffff;
+    margin: auto;
 }
 
 /* The below code is copied from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load 
