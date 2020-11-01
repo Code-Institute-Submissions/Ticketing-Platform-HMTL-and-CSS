@@ -36,41 +36,6 @@ ul {
   list-style-type: none;
 }
 
-/* clamp property keeps the font size at 3vw but won't allow it to be larger than 16px or smaller than 10px */
-
-nav {
-  padding: 10px;
-  background-color: #f7f7f7;
-  color: #293d6a;
-  font-size: clamp(10px, 3vw, 16px);
-  border-bottom: 1px solid #293d6a;
-  width: 100vw;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  background-color: #f7f7f7;
-}
-
-nav li {
-  background-color: #f7f7f7;
-  margin-right: 5vw;
-}
-
-nav a,
-nav a:visited {
-  background-color: #f7f7f7;
-  color: #293d6a;
-}
-
 h3,
 h5,
 h6,
@@ -113,6 +78,41 @@ hr {
 
 #tickets-remaining {
   margin-bottom: 0;
+}
+
+/* clamp property keeps the font size at 3vw but won't allow it to be larger than 16px or smaller than 10px */
+
+nav {
+  padding: 10px;
+  background-color: #f7f7f7;
+  color: #293d6a;
+  font-size: clamp(10px, 3vw, 16px);
+  border-bottom: 1px solid #293d6a;
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-color: #f7f7f7;
+}
+
+nav li {
+  background-color: #f7f7f7;
+  margin-right: 5vw;
+}
+
+nav a,
+nav a:visited {
+  background-color: #f7f7f7;
+  color: #293d6a;
 }
 
 /* The below code originates from https://codepen.io/chancesq/pen/qBOyQoW 
