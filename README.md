@@ -243,6 +243,8 @@ Font awesome troubleshooting: https://www.w3schools.com/icons/fontawesome_icons_
 
 CSS property clamp: https://css-tricks.com/min-max-and-clamp-are-css-magic/
 
+Make placeholder show for `input="datetimelocal"`: https://stackoverflow.com/questions/20321202/not-showing-placeholder-for-input-type-date-field/23683687#23683687	
+
 
 Acknowledgements: 
 ======
