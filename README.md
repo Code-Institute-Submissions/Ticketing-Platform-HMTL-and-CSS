@@ -29,6 +29,7 @@ Features
 
 The home page will list all of the events and show summary details for each event. When a user clicks an event, they will be brought to that event's specific page.
 
+
 #### Event Page:
 
 ![event page screen shot](https://github.com/colmfah/Ticketing-Platform-HMTL-and-CSS/blob/master/assets/images/event.png?raw=true "Create Event Page")
@@ -107,8 +108,6 @@ Technology:
 HTML5
 CSS3
 
-Tested HTML using https://validator.w3.org/
-Tested CSS using https://jigsaw.w3.org/css-validator
 Browser prefixes from https://autoprefixer.github.io/
 Gitpod
 
@@ -122,10 +121,13 @@ Each class starts with the page or feature it applies to.
 
 For example a class that impacts the home pages starts with "home-"; a class that impacts the create event page starts with "create-"; a class that impacts the nav starts with "nav-" etc.
 
+Validated CSS using https://jigsaw.w3.org/css-validator. 
+
+Validated HTML using https://validator.w3.org/.
+
 Testing:
 ======
 
-Tested HTML using https://validator.w3.org/. No errors displayed.
 
 Tested website on chrome, firefox and safari on a desktop map and tested on chrome and firefox on an andriod mobile.
 
@@ -134,6 +136,78 @@ Used google chrome simulator to test for responsiveness for moto g4, galaxy s5, 
 I have tested the credit card form in the events page by attempting to submit while leaving each input blank one by one and entering values other than 16 digits for credit card numbers and less than 3 digits for CVV numbers. The form would not send and displayed error.
 
 I have tested the create event form by leaving each input blank one by one and also by selecting a value less than zero for price and less than one for ticket quantity. The form would not send and an error was displayed.
+
+Test cases:
+
+1. Home Page
+
+Open the home page
+
+Home page should have upcoming events listed as cards
+
+Each card will contain an event image, the event title, the event start date and time and the number of tickets remaining.
+
+On hover, the card will increase in size, the box shadow will increase and the card will have a border. It will take 0.3 seconds for this to happen.
+
+2. Event Page
+
+Open the event page
+
+The body will fade in. It's opacity will change from 0 to 1.
+
+The page will show 
+* an image for the event
+* a box detailing the name of the event, its start and end time, its location, a link to that location which will open google maps in a new tab and the number ot tickets remaining
+* the details of the event
+* a form containing three tickets for the event with inputs for credit card details and a 'get tickets' button. On hover, the size of this button increases, it has an orange border and its box shadow turns to orange. 
+
+If a user attempts clicks the 'get tickets' button but has not provided a credit card number with preciesly 16 digits, selected a month and year and provided a CVV code with preciesly 3 digits, the form does not send and an error message is displayed. If the form is filled out correctly, the page refreshes when the button is clicked. It takes 0.2 seconds for this to happen.
+
+3. Create Event Page
+
+Open the create event page
+
+The body will fade in. It's opacity will change from 0 to 1 over 3 seconds.
+
+This page contains a form with fields required to post an event with three ticket types and a button to send the form. 
+
+On hover and on focus, each input and select displays an orange border with orange shadow and the placeholder text (or input text) turns blue.
+
+The upload image input will only allow .jpeg .jpg or .png files to be selected.
+
+All fields must be filled out or the form will not send and an error will display.
+
+The number of tickets must be greater than 0 and the price must be equal to or greater than zero for every ticket or the form will not send and an error will display.
+
+On hover, the size of the 'create event' button increases, it has an orange border and its box shadow turns to orange. 
+
+If all the fields are filled out correctly, the page refreshes when the 'create event' button is clicked.
+
+4. Nav Bar
+
+Open any page.
+
+The nav bar is at the top of the page and stays there as you scroll down.
+
+It contains two links - home and create event. 
+
+If you are on either of these pages, the link for that page will have a solid blue border.
+
+Otherwise you will only see the 4 edges of the border. On hover, the entire border will reveal itself. This will take 1 second.
+
+5. Footer
+
+Open any page.
+
+The footer is at the bottom of the page.
+
+It contains four links to the home page of 4 social media websites. When clicked, these links open in a new tab.
+
+The icon for each social media page is displayed in the default blue color of my website.
+
+On hover, the icon increases and the social media icon color changes to the company's color scheme. This takes half a second.
+
+
 
 #### Fixed Issues:
 
@@ -152,7 +226,7 @@ Couldn't add shadow to tickets because they are comprised of two many divs. If t
 
 `<input type="datetime-local">` is not supported by safari. `<input type="time">` is also not supported by safari
 
-Tested CSS using https://jigsaw.w3.org/css-validator. It highlighted that `.cardWrap` has the same color and background-color. However this is required for the ticket overall to display properly. It also highlighted that, when checked, the radio button's border color is the same as its background color. I am also satisfied this is okay as there is a gap between the border and the button. The other warnings all related to code that I imported from elsewhere in the internet. All other warnings relate to vendor extension. After seeking advice on slack, I have not changed these.
+Validated CSS using https://jigsaw.w3.org/css-validator. It highlighted that `.cardWrap` has the same color and background-color. However this is required for the ticket overall to display properly. It also highlighted that, when checked, the radio button's border color is the same as its background color. I am also satisfied this is okay as there is a gap between the border and the button. The other warnings all related to code that I imported from elsewhere in the internet. All other warnings relate to vendor extension. After seeking advice on slack, I have not changed these.
 
 Version control:
 ======
@@ -172,8 +246,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 * On selecting Master Branch the page is automatically refreshed, the website is now deployed.
 * Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
 
-To clone this project from GitHub:
-
+To deploy locally:
 
 * Follow [this link to the Project GitHub repository](https://github.com/colmfah/Ticketing-Platform-HMTL-and-CSS).
 * Click the Code button.
@@ -182,6 +255,7 @@ To clone this project from GitHub:
 * Change the current working directory to the location where you want the cloned directory to be made.
 * Type git clone, and then paste the HTTPs URL you copied.
 * Press Enter. Your local clone will be created.
+* Open the cloned folder and double click on index.html
 
 Credits:
 ======
