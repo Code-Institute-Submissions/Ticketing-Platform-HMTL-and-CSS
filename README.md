@@ -84,11 +84,17 @@ Typography and Color Scheme:
 ======
 
 Background grey: #eeecec
+
 Dark grey: #8f897c
+
 White: #fff
+
 Black: #000
+
 Dark Blue: #293d6a
+
 Fonts: Nunito and Bitter from Google Fonts
+
 
 Skeleton:
 ======
